@@ -1,2 +1,2 @@
-# dimitri-nicolas.info
-Personal website to show professional skills, experiences and achieved projects .
+# dnicolas.info
+Personal website to showcase different experiences and projects I've been working on.
