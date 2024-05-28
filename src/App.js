@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home.js'
+import Header from './base/Header.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import useLocalStorage from 'use-local-storage'
+
+
 
 function App() {
+  const defaultDark = true;
+  // Create theme mode state...
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" data-bs-theme={theme}>
+      <Header theme={theme} setTheme={setTheme}/>
+      <Home/>
     </div>
   );
 }
