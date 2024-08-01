@@ -1,8 +1,12 @@
 import './App.css';
 import Home from './pages/Home.js'
-import Header from './base/Header.js';
+import Header from './layout/Header.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import useLocalStorage from 'use-local-storage'
+import Footer from './layout/Footer.js';
+import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import Login from './pages/Login.js';
 
 
 
@@ -16,9 +20,17 @@ function App() {
 
 
   return (
-    <div className="App" data-bs-theme={theme}>
+    <div className="App bg-body-tertiary full-height" data-bs-theme={theme}>
       <Header theme={theme} setTheme={setTheme}/>
-      <Home/>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/home" element={<Home/>}/>
+            <Route path="/login" element={<Login/>}/>
+          </Routes>
+        </BrowserRouter>
+      <Footer/>
+
     </div>
   );
 }
