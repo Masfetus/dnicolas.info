@@ -1,5 +1,6 @@
-import { Navbar, Container, Nav, NavDropdown, Button, NavLink } from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Button, NavLink, Dropdown } from "react-bootstrap";
 import React, { useState } from 'react';
+import i18n from "../i18n";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faPerson, faSignIn, faSignInAlt, faSignOut, faSignOutAlt, faSun, faSunPlantWilt, faUser, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -45,6 +46,17 @@ function Header({ theme, setTheme }) {
                   </Nav.Link>
                   <Nav.Link href="#profile">
                     <FontAwesomeIcon icon={faUserAlt}/> Profile
+                  </Nav.Link>
+                  <Nav.Link>
+                    <Dropdown>
+                      <Dropdown.Toggle variant="success" id="lang-selector">
+                        Language Selector
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </Nav.Link>
                   <Nav.Link className="btn btn-secondary" onClick={onDarkModeButtonClicked}>
                     <FontAwesomeIcon icon={theme === "dark" ? faMoon : faSun}>

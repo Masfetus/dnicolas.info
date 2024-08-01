@@ -8,10 +8,11 @@ import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Login from './pages/Login.js';
 
-
-
 function App() {
   const defaultDark = true;
+
+  const { t, i18n } = useTranslation();
+
   // Create theme mode state...
   const [theme, setTheme] = useLocalStorage(
     "theme",
