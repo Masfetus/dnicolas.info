@@ -38,27 +38,7 @@ function Header({ theme, setTheme }) {
 
               <Navbar>
                 <Nav className="me-auto">
-                  <Nav.Link href="#login">
-                    <FontAwesomeIcon icon={faSignInAlt}/> Sign in
-                  </Nav.Link>
-                  <Nav.Link href="#logout">
-                    <FontAwesomeIcon icon={faSignOutAlt}/> Sign Out
-                  </Nav.Link>
-                  <Nav.Link href="#profile">
-                    <FontAwesomeIcon icon={faUserAlt}/> Profile
-                  </Nav.Link>
-                  <Nav.Link>
-                    <Dropdown>
-                      <Dropdown.Toggle variant="success" id="lang-selector">
-                        Language Selector
-                      </Dropdown.Toggle>
-
-                      <Dropdown.Menu>
-
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </Nav.Link>
-                  <Nav.Link className="btn btn-secondary" onClick={onDarkModeButtonClicked}>
+                  <Nav.Link className="btn btn-outline-secondary" onClick={onDarkModeButtonClicked}>
                     <FontAwesomeIcon icon={theme === "dark" ? faMoon : faSun}>
                     </FontAwesomeIcon>
                   </Nav.Link>

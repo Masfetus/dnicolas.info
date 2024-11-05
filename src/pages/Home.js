@@ -1,8 +1,11 @@
 import { CardGroup, Container , Card, Button, CardHeader} from 'react-bootstrap';
 import logo from '../logo.svg';
+import React, { useEffect, useState } from "react";
 
 function Home() {
+
     return (
+      
     <Container>
       <CardGroup>
         <CardHeader title='Quick access'/>
@@ -47,7 +50,6 @@ function Home() {
             </Card.Body>
           </Card>
       </CardGroup>
-
     </Container>
     )
 }
