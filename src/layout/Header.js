@@ -2,7 +2,7 @@ import { Navbar, Container, Nav, NavDropdown, Button, NavLink, Dropdown } from "
 import React, { useState } from 'react';
 import i18n from "../i18n";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon, faPerson, faSignIn, faSignInAlt, faSignOut, faSignOutAlt, faSun, faSunPlantWilt, faUser, faUserAlt } from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faPerson, faSignIn, faSignInAlt, faSignOut, faSignOutAlt, faSun, faSunPlantWilt, faUser } from "@fortawesome/free-solid-svg-icons";
 
 
 function Header({ theme, setTheme }) {
@@ -37,11 +37,25 @@ function Header({ theme, setTheme }) {
               </Nav>
 
               <Navbar>
-                <Nav className="me-auto">
-                  <Nav.Link className="btn btn-outline-secondary" onClick={onDarkModeButtonClicked}>
-                    <FontAwesomeIcon icon={theme === "dark" ? faMoon : faSun}>
-                    </FontAwesomeIcon>
+              <Nav className="me-auto">
+                  <Nav.Link>
+                    <Button variant="btn btn-outline-secondary">
+                        <FontAwesomeIcon title="GitHub"/>
+                      </Button>
                   </Nav.Link>
+                </Nav>
+                <Nav className="me-auto">
+                  <Nav.Link>
+                  {theme === "dark"?
+                    <Button variant="btn btn-outline-secondary" onClick={onDarkModeButtonClicked}>
+                      <FontAwesomeIcon title="Switch to light mode" icon={faMoon}/>
+                    </Button> :
+                    <Button variant="btn btn-outline-secondary" onClick={onDarkModeButtonClicked}>
+                      <FontAwesomeIcon title="Switch to dark mode" icon={faSun}/>
+                    
+                    </Button>
+                    }
+                    </Nav.Link>
                 </Nav>
               </Navbar>
 
