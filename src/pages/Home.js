@@ -1,56 +1,46 @@
-import { CardGroup, Container , Card, Button, CardHeader} from 'react-bootstrap';
+import {CardGroup, Container, Card, Button, CardHeader, Carousel, Image} from 'react-bootstrap';
 import logo from '../logo.svg';
 import React, { useEffect, useState } from "react";
+import santorini from '../assets/img/bricks/santorini1.jpg';
+import CarouselImage from "../components/CarouselImage";
+import Blur from "react-css-blur";
+const title = "Home"
 
 function Home() {
-
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = title;
+  });
     return (
-      
-    <Container>
-      <CardGroup>
-        <CardHeader title='Quick access'/>
-          <Card>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-      </CardGroup>
-    </Container>
+        <Container>
+            <Carousel fade className="h-50">
+                <Carousel.Item>
+                    <CarouselImage image={santorini}/>
+                    <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <CarouselImage image={santorini}/>
+                    <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <CarouselImage image={santorini}/>
+                    <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+        </Container>
+
+
     )
 }
 

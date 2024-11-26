@@ -6,6 +6,7 @@ import useLocalStorage from 'use-local-storage'
 import Footer from './layout/Footer.js';
 import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import {useEffect} from "react";
 
 function App() {
   const defaultDark = true;
@@ -17,7 +18,10 @@ function App() {
     defaultDark ? "dark" : "light"
   );
 
-
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `DN - Home`;
+  });
   return (
     <div className="App bg-body-tertiary full-height" data-bs-theme={theme}>
       <Header theme={theme} setTheme={setTheme}/>
