@@ -5,8 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import useLocalStorage from 'use-local-storage'
 import Footer from './layout/Footer.js';
 import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
-
+import { Container, Fade, Row } from 'react-bootstrap';
+import RightBar from './layout/LeftBar.js';
+import anime from 'animejs/lib/anime.es.js';
+import background from "./assets/img/bg/bg-img2.jpg"
 function App() {
   const defaultDark = true;
 
@@ -18,17 +20,22 @@ function App() {
   );
 
 
+
   return (
-    <div className="App bg-body-tertiary full-height" data-bs-theme={theme}>
-      <Header theme={theme} setTheme={setTheme}/>
+    
+    <div className="App bg-body-tertiary animate__animated animate__fadeIn animate__fast" data-bs-theme={theme} style={{ backgroundImage: `url(${background})`, backgroundRepeat:"no-repeat", backgroundSize:"auto", backgroundPosition:"center"}}>
+      <Header/>
+      <Container className='p-5 position-relative'>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/home" element={<Home/>}/>
           </Routes>
         </BrowserRouter>
-      <Footer/>
+      </Container>
+      <RightBar theme={theme} setTheme={setTheme}/>
 
+      <Footer/>
     </div>
   );
 }
