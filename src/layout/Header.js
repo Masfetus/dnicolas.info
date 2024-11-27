@@ -20,19 +20,17 @@ function Header({ theme, setTheme }) {
               <Nav className="me-auto">
                 <Nav.Link href="#home" title="Home">Home</Nav.Link>
                 <Nav.Link href="#link" title="">About me</Nav.Link>
-                <NavDropdown title="Experiences" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">SA-MP & PAWN adventures</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">System Administration</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Software Development</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.4">AR/VR Technologies</NavDropdown.Item>
-                  <NavDropdown.Divider title="Test"/>
-                  <NavDropdown.Item href="#action/3.5">Professional Journey</NavDropdown.Item>
+                <NavDropdown title="Showroom" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Pawn Language</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Play Your Games</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Software & Utilities</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.4">Student Projects</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="Hobbies" id="basic-nav-dropdown">
+                <NavDropdown title="Activities" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Table tennis</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Hiking</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Bricks building</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Bricks</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.4">Gaming</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Hiking</NavDropdown.Item>
               </NavDropdown>
               </Nav>
 

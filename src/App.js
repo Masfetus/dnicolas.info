@@ -30,9 +30,9 @@ function App() {
 
   return (
     
-    <div className="App bg-body-tertiary animate__animated animate__fadeIn animate__fast" data-bs-theme={theme} style={{ backgroundImage: `url(${background})`, backgroundRepeat:"no-repeat", backgroundSize:"auto", backgroundPosition:"center"}}>
+    <div className="App bg-body-tertiary full-width" data-bs-theme={theme}>
       <Header/>
-      <Container className='p-5 position-relative'>
+      <Container className='p-5 position-relative bg-body-tertiary'>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>}/>

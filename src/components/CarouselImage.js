@@ -5,9 +5,7 @@ import Blur from "react-css-blur";
 function CarouselImage({image}) {
 
     return (
-        <Blur radius="3px">
-            <Image src={image} borderRadius="20" className="d-block w-100"/>
-        </Blur>
+            <Image src={image} thumbnail borderRadius="20" className="d-block w-100"/>
     )
 }
 
