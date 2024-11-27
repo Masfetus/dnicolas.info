@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import {useEffect} from "react";
 
-import { Container, Fade, Row } from 'react-bootstrap';
+import { Fade, Row } from 'react-bootstrap';
 import RightBar from './layout/LeftBar.js';
 import anime from 'animejs/lib/anime.es.js';
 import background from "./assets/img/bg/bg-img2.jpg"

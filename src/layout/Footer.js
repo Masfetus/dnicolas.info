@@ -2,31 +2,28 @@ import { Card, Navbar, Container, Nav, NavDropdown, Button, NavItem, ListGroup, 
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun, faHeart, faCode, faCoffee} from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faGitlab, faLinkedinIn, faWikipediaW } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
 
     return (
       <footer className="bg-body-tertiary">
         <Card>
-        <Row className="footer-links">
+        <Row className="footer-links p-5">
             <Col>
-              <CardTitle >
-                Links
-              </CardTitle>
-              <Row>
-                <NavLink>Home</NavLink>
-                <NavLink>Home</NavLink>
-                <NavLink>Home</NavLink>
-              </Row>
+              
             </Col>
             <Col>
-              <CardTitle>
+              <CardTitle className="bold">
                 Links
               </CardTitle>
-              <Row>
-                <NavLink>Home</NavLink>
-                <NavLink>Home</NavLink>
-                <NavLink>Home</NavLink>
+              <Row className="text-left">
+                <NavLink><FontAwesomeIcon icon={faWikipediaW} className="inline"/> Wikipedia</NavLink>
+                <NavLink><FontAwesomeIcon icon={faLinkedinIn} className="inline"/> LinkedIn</NavLink>
+                <NavLink><FontAwesomeIcon icon={faGitlab} className="inline"/> GitLab</NavLink>
+                <NavLink><FontAwesomeIcon icon={faGithub} className="inline"/> GitHub</NavLink>
+                <NavLink><FontAwesomeIcon icon={faWikipediaW} className="inline"/> Wikipedia</NavLink>
+
               </Row>
             </Col>
             <Col>
