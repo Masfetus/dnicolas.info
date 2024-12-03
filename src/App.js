@@ -9,7 +9,7 @@ import { Container } from 'react-bootstrap';
 import {useEffect} from "react";
 
 import { Fade, Row } from 'react-bootstrap';
-import RightBar from './layout/LeftBar.js';
+import RightBar from './layout/RightBar.js';
 import anime from 'animejs/lib/anime.es.js';
 import background from "./assets/img/bg/bg-img2.jpg"
 function App() {
