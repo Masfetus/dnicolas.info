@@ -30,16 +30,14 @@ function App() {
 
   return (
     
-    <div className="App bg-body-tertiary full-width" data-bs-theme={theme}>
+    <div className="App bg-body-tertiary" data-bs-theme={theme}>
       <Header/>
-      <Container className='p-5 position-relative bg-body-tertiary'>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/home" element={<Home/>}/>
           </Routes>
         </BrowserRouter>
-      </Container>
       <RightBar theme={theme} setTheme={setTheme}/>
 
       <Footer/>
