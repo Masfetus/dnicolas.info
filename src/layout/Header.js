@@ -11,7 +11,7 @@ function Header({ theme, setTheme }) {
       setTheme(theme === "dark"? "light" : "dark");
     }
     return (
-      <header>
+      <header data-aos="fade-right" data-aos-delay="100">
         <Navbar expand="lg" >
           <Container>
             <Navbar.Brand href="#home">dnicolas.info</Navbar.Brand>

@@ -7,6 +7,8 @@ import Footer from './layout/Footer.js';
 import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import {useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 import { Fade, Row } from 'react-bootstrap';
 import RightBar from './layout/RightBar.js';
@@ -21,13 +23,7 @@ function App() {
     "theme",
     defaultDark ? "dark" : "light"
   );
-
-  useEffect(() => {
-    // Update the document title using the browser API
-    document.title = `DN - Home`;
-  });
-
-
+  AOS.init();
   return (
     
     <div className="App bg-body-tertiary" data-bs-theme={theme}>
