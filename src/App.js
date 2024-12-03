@@ -30,8 +30,8 @@ function App() {
       <Header/>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/home" element={<Home/>}/>
+            <Route path="/" element={<Home theme={theme} setTheme={setTheme}/>}/>
+            <Route path="/home" element={<Home theme={theme} setTheme={setTheme}/>}/>
           </Routes>
         </BrowserRouter>
       <RightBar theme={theme} setTheme={setTheme}/>

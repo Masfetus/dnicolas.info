@@ -9,7 +9,7 @@ import bricksLogo from "../assets/img/icons/lego.png"
 function Footer() {
 
     return (
-      <footer className="bg-body-tertiary">
+      <footer className="bg-body-tertiary z-1">
         <Card>
         <Row className="text-start p-5">
             <Col>

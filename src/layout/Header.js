@@ -7,11 +7,8 @@ import { faLink, faMoon, faPerson, faSignIn, faSignInAlt, faSignOut, faSignOutAl
 
 function Header({ theme, setTheme }) {
 
-    function onDarkModeButtonClicked() {
-      setTheme(theme === "dark"? "light" : "dark");
-    }
     return (
-      <header data-aos="fade-right" data-aos-delay="100">
+      <header data-aos="z-5 fade-right" data-aos-delay="100">
         <Navbar expand="lg" >
           <Container>
             <Navbar.Brand href="#home">dnicolas.info</Navbar.Brand>
