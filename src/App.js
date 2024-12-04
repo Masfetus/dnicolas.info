@@ -14,6 +14,7 @@ import { Fade, Row } from 'react-bootstrap';
 import RightBar from './layout/RightBar.js';
 import anime from 'animejs/lib/anime.es.js';
 import background from "./assets/img/bg/bg-img2.jpg"
+import PageNotFound from './pages/PageNotFound.js';
 function App() {
   const defaultDark = true;
 
@@ -28,12 +29,16 @@ function App() {
     
     <div className="App bg-body-tertiary" data-bs-theme={theme}>
       <Header/>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home theme={theme} setTheme={setTheme}/>}/>
-            <Route path="/home" element={<Home theme={theme} setTheme={setTheme}/>}/>
-          </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home theme={theme} setTheme={setTheme}/>}/>
+          <Route path="/home" element={<Home theme={theme} setTheme={setTheme}/>}/>
+          <Route
+                  path="*"
+                  element={<PageNotFound />}
+              />
+        </Routes>
+      </BrowserRouter>
       <RightBar theme={theme} setTheme={setTheme}/>
 
       <Footer/>
