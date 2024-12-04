@@ -42,10 +42,10 @@ function Home({ theme, setTheme }) {
     });
     
     return (
-        <div className='bg-body-tertiary full-width'>
+        <div className='bg-body-tertiary' data-aos="fade-up" data-aos-delay="100">
             <Row style={homeSectionStyle}>
                 <Card className="p-5" style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
-                    <div class="row justify-content-center text-center text-white" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row justify-content-center text-center text-white" >
                         <div class="col-xl-6 col-lg-8 p-3">
                             <h1 className='fw-bold'>Dimitri Nicolas</h1>
                             <p>Welcome to my personal website where information on my journey, projects and achievements is available. Grab a coffee and enjoy!</p>

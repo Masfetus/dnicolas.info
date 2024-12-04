@@ -9,7 +9,7 @@ import bricksLogo from "../assets/img/icons/lego.png"
 function Footer() {
 
     return (
-      <footer className="bg-body-tertiary z-1">
+      <footer className="bg-body-tertiary">
         <Card>
         <Row className="text-start p-5">
             <Col>
@@ -17,7 +17,7 @@ function Footer() {
             </Col>
             <Col>
               <CardTitle className="bold">
-                Showroom
+                IT Corner
               </CardTitle>
               <Row className="p-2">
                 <NavLink>

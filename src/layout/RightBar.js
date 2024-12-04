@@ -12,7 +12,7 @@ function RightBar({ theme, setTheme }) {
     return (
 
       
-      <div className="z-5 position-fixed top-50 end-0 translate-middle-y m-3" data-aos="fade-left">
+      <div className="z-9 position-fixed top-50 end-0 translate-middle-y m-3" data-aos="fade-left">
         <Row className="m-2">
             <Nav.Link href="https://fr.wikipedia.org/wiki/Utilisateur:Masf%C3%A9tus">
                 <Button variant="btn btn-outline-secondary btn-m" >

@@ -17,7 +17,7 @@ function PageNotFound({ theme, setTheme }) {
             Unfortunately, the page you requested for is not available. Please check the URL or contact the administrator
             </p>
             <ButtonGroup justify="center">
-                <Button variant="subtle" size="lg">
+                <Button variant="subtle" className="btn-outline-secondary" size="lg" href="/">
                     Take me back to home page
                 </Button>
             </ButtonGroup>

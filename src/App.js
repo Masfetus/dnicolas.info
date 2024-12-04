@@ -4,17 +4,13 @@ import Header from './layout/Header.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import useLocalStorage from 'use-local-storage'
 import Footer from './layout/Footer.js';
-import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
-import {useEffect} from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
-import { Fade, Row } from 'react-bootstrap';
 import RightBar from './layout/RightBar.js';
-import anime from 'animejs/lib/anime.es.js';
-import background from "./assets/img/bg/bg-img2.jpg"
 import PageNotFound from './pages/PageNotFound.js';
+import AboutMe from './pages/AboutMe.js';
 function App() {
   const defaultDark = true;
 
@@ -33,15 +29,17 @@ function App() {
         <Routes>
           <Route path="/" element={<Home theme={theme} setTheme={setTheme}/>}/>
           <Route path="/home" element={<Home theme={theme} setTheme={setTheme}/>}/>
+          <Route path="/about-me" element={<AboutMe theme={theme} setTheme={setTheme}/>}/>
           <Route
                   path="*"
                   element={<PageNotFound />}
               />
         </Routes>
       </BrowserRouter>
-      <RightBar theme={theme} setTheme={setTheme}/>
-
       <Footer/>
+
+
+      <RightBar theme={theme} setTheme={setTheme}/>
     </div>
   );
 }
