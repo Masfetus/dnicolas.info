@@ -31,7 +31,7 @@ function RightBar({ theme, setTheme }) {
         <Row className="m-2">
             <Nav.Link href="https://gitlab.com/Masfetus">
                 <Button variant="btn btn-outline-secondary btn-m" >
-                    <FontAwesomeIcon title="Github" icon={faGitlab} />
+                    <FontAwesomeIcon title="Gitlab" icon={faGitlab} />
                 </Button>
             </Nav.Link>
         </Row>

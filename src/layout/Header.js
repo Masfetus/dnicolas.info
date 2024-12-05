@@ -6,8 +6,8 @@ function Header({ theme, setTheme }) {
 
     return (
       <header  >
-        <Navbar expand="lg" className="z-5" >
-          <Container data-aos="fade-right" data-aos-delay="50">
+        <Navbar expand="lg">
+          <Container >
             <Navbar.Brand href="/">dnicolas.info</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

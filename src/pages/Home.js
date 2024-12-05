@@ -73,7 +73,7 @@ function Home({ theme, setTheme }) {
                             <Card.Body className='text-justify-bottom'>
                                 <Card.Title className='fw-bold'>Play Your Games</Card.Title>
                                 <Card.Text>
-                                A community uniting players together around the most popular games. You can join us via discord using this <a href="https://discord.gg/SYgf8r2Nf9" className='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'>link</a>.
+                                A united community of players around the most popular games. Events, gaming sessions, and encounters are part of the deal. You can join us via discord using this <a href="https://discord.gg/SYgf8r2Nf9" className='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'>link</a>.
                                 </Card.Text>
                                 <Button variant="secondary">Learn more <FontAwesomeIcon icon={faArrowRight}/></Button>
                             </Card.Body>
@@ -99,7 +99,7 @@ function Home({ theme, setTheme }) {
                             <Card.Body className='text-justify'>
                                 <Card.Title className='fw-bold'>Mixed Reality & Duty of Remembrance</Card.Title>
                                 <Card.Text>
-                                When the innovation serves the duty of remembrance. This projects assists a local museum in offering new ways of presenting history through immersive experiences.
+                                When innovation serves the duty of remembrance. This project assists a local museum in creating new ways of presenting history through immersive experiences.
                                 </Card.Text>
                                 <Button variant="secondary">Learn more <FontAwesomeIcon icon={faArrowRight}/></Button>
                             </Card.Body>
