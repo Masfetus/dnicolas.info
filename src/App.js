@@ -2,6 +2,7 @@ import './App.css';
 import Home from './pages/Home.js'
 import Header from './layout/Header.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-vertical-timeline-component/style.min.css';
 import useLocalStorage from 'use-local-storage'
 import Footer from './layout/Footer.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -11,6 +12,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import RightBar from './layout/RightBar.js';
 import PageNotFound from './pages/PageNotFound.js';
 import AboutMe from './pages/AboutMe.js';
+import ProfessionalTimeline from './pages/ProfessionalTimeline.js';
 function App() {
   const defaultDark = true;
 
@@ -30,6 +32,7 @@ function App() {
           <Route path="/" element={<Home theme={theme} setTheme={setTheme}/>}/>
           <Route path="/home" element={<Home theme={theme} setTheme={setTheme}/>}/>
           <Route path="/about-me" element={<AboutMe theme={theme} setTheme={setTheme}/>}/>
+          <Route path="/experience" element={<ProfessionalTimeline theme={theme} setTheme={setTheme}/>}/>
           <Route
                   path="*"
                   element={<PageNotFound />}
