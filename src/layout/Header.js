@@ -13,7 +13,11 @@ function Header({ theme, setTheme }) {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="/" title="Home">Home</Nav.Link>
-                <Nav.Link href="/about-me" title="">About me</Nav.Link>
+                <NavDropdown title="About me" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/about-me">Introduction</NavDropdown.Item>
+                  <NavDropdown.Item href="/experience">Experience</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Education</NavDropdown.Item>
+                </NavDropdown>             
                 <NavDropdown title="IT Corner" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Pawn Language</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">Play Your Games</NavDropdown.Item>
