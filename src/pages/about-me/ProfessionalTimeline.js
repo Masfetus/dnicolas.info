@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Row, Image, Badge } from "react-bootstrap";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import imgNgpa from "../assets/img/logos/ngpa.png"
-import imgAGCO from "../assets/img/logos/agco-logo.png"
-import imgFendt from "../assets/img/logos/fendt-logo.png"
+import imgNgpa from "../../assets/img/logos/ngpa.png"
+import imgAGCO from "../../assets/img/logos/agco-logo.png"
+import imgFendt from "../../assets/img/logos/fendt-logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCube, faCode, faTools, faVrCardboard, faIndustry} from "@fortawesome/free-solid-svg-icons";
-import { fa} from "@fortawesome/free-brands-svg-icons"
 
 
 const pageTitle = `DN - Experience`

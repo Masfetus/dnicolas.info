@@ -1,7 +1,7 @@
 import { Card, Image, Navbar, Container, Nav, NavDropdown, Button, NavItem, ListGroup, ListGroupItem, NavLink, NavbarBrand, Row, Col, ListItem, CardTitle, CardBody, CardFooter } from "react-bootstrap";
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUniversity, faHeart, faCode, faCoffee, faChessPawn, faTools, faTableTennis, faGamepad, faHiking} from "@fortawesome/free-solid-svg-icons";
+import { faUniversity, faHeart, faCode, faCoffee, faChessPawn, faTools, faTableTennis, faGamepad, faHiking, faUser, faIndustry} from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faGitlab, faLinkedinIn, faWikipediaW, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import pygLogo from "../assets/img/icons/pyg.png";
 import bricksLogo from "../assets/img/icons/lego.png"
@@ -14,6 +14,25 @@ function Footer() {
         <Row className="text-start p-5">
             <Col>
               
+            </Col>
+            <Col>
+              <CardTitle className="bold">
+                About me
+              </CardTitle>
+              <Row className="p-2">
+                <NavLink href="/about-me">
+                  <span>Introduction</span>
+                  <FontAwesomeIcon icon={faUser} className="inline fa-sm ms-2"/> 
+                </NavLink>
+                <NavLink href="/experience">
+                  <span>Experience</span> 
+                  <FontAwesomeIcon icon={faIndustry} className="inline fa-sm ms-2"/> 
+                </NavLink>
+                <NavLink href="/education">
+                  <span>Education</span>
+                  <FontAwesomeIcon icon={faUniversity} className="inline fa-sm ms-2"/> 
+                </NavLink>
+              </Row>
             </Col>
             <Col>
               <CardTitle className="bold">

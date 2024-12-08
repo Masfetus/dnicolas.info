@@ -11,8 +11,10 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 import RightBar from './layout/RightBar.js';
 import PageNotFound from './pages/PageNotFound.js';
-import AboutMe from './pages/AboutMe.js';
-import ProfessionalTimeline from './pages/ProfessionalTimeline.js';
+import AboutMe from './pages/about-me/AboutMe.js';
+import ProfessionalTimeline from './pages/about-me/ProfessionalTimeline.js';
+import EducationTimeline from './pages/about-me/EducationTimeline.js';
+import BrickPage from './pages/activities/BrickPage.js';
 function App() {
   const defaultDark = true;
 
@@ -33,6 +35,8 @@ function App() {
           <Route path="/home" element={<Home theme={theme} setTheme={setTheme}/>}/>
           <Route path="/about-me" element={<AboutMe theme={theme} setTheme={setTheme}/>}/>
           <Route path="/experience" element={<ProfessionalTimeline theme={theme} setTheme={setTheme}/>}/>
+          <Route path="/education" element={<EducationTimeline theme={theme} setTheme={setTheme}/>}/>
+          <Route path="/activities/bricks" element={<BrickPage theme={theme} setTheme={setTheme}/>}/>
           <Route
                   path="*"
                   element={<PageNotFound />}

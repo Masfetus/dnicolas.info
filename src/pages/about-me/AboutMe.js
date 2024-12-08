@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import img from "../assets/img/profile/profile-img.JPG"
-import img2 from "../assets/img/profile/profile-img2.jpg"
+import img from "../../assets/img/profile/profile-img.JPG"
+import img2 from "../../assets/img/profile/profile-img2.jpg"
 import { Row, Container, Card, CardBody, CardTitle, Image, Col } from "react-bootstrap";
 
 const pageTitle = `DN - About me`
