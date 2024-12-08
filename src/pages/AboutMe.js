@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import img from "../assets/img/profile/profile-img.JPG"
+import img2 from "../assets/img/profile/profile-img2.jpg"
 import { Row, Container, Card, CardBody, CardTitle, Image, Col } from "react-bootstrap";
 
 const pageTitle = `DN - About me`
@@ -57,12 +58,15 @@ function AboutMe({ theme, setTheme }) {
                                     Professionnally speaking, I work in industrial IT close to MES & PLM systems. Such experience is insightful especially when it comes to a combination of very specific production-related requirements
                                     and innovative solutions. Coordination between IT & Businness teams, data pipelines enablement, 3D data management, these activities lead to a new way of thinking production processes, as part of industry 4.0.
                                     I also contributed to the development of applications computing manufacturing data (MES, Thingworx applications). 
-
-                                    What about after work? Well, I had been playing table tennis for many years in France. This sport requires a lot of "body coordination" as well as mental and technical capabilities. 
+                                </p>
+                                <p>
+                                    What about after work? Well, I had been playing table tennis for many years in France. This sport requires a lot of "body coordination" as well as mental and technical capabilities.
+                                    In addition, I like gaming on PC and hiking in pleasant mountain environments. Lastly, this website will showcase some brick sets I have been working on. The passion of building architectural pieces up is real
+                                    and gives satisfaction when assessing the progress throughout the work.
                                 </p>
                             </Col>
                             <Col sm={4}>
-                                <Image src={img} thumbnail fluid className="h-75" data-aos="flip-right"  data-aos-delay="500"></Image>
+                                <Image src={img2} thumbnail fluid className="h-75" data-aos="flip-right"  data-aos-delay="500"></Image>
                             </Col>
                         </Row>
                     </Card>
