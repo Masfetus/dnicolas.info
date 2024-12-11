@@ -15,12 +15,9 @@ import AboutMe from './pages/about-me/AboutMe.js';
 import ProfessionalTimeline from './pages/about-me/ProfessionalTimeline.js';
 import EducationTimeline from './pages/about-me/EducationTimeline.js';
 import BrickPage from './pages/activities/BrickPage.js';
-
-
-import { useTranslation } from 'react-i18next';
-
 function App() {
   const defaultDark = true;
+
 
   // Create theme mode state...
   const [theme, setTheme] = useLocalStorage(
@@ -29,8 +26,10 @@ function App() {
   );
   AOS.init();
   return (
-    
+
     <div className="App bg-body-tertiary" data-bs-theme={theme}>
+      <meta name="keywords" content="Dimitri Nicolas Lauterach Personal IT analyst developer engineer" />
+      <meta name="description" content="Personal website of Dimitri Nicolas. IT Engineer, analyst, developer, and more to learn. Have a dive into a part of my life." />
       <Header/>
       <BrowserRouter>
         <Routes>
