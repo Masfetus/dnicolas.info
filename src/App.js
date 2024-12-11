@@ -15,9 +15,12 @@ import AboutMe from './pages/about-me/AboutMe.js';
 import ProfessionalTimeline from './pages/about-me/ProfessionalTimeline.js';
 import EducationTimeline from './pages/about-me/EducationTimeline.js';
 import BrickPage from './pages/activities/BrickPage.js';
+
+
+import { useTranslation } from 'react-i18next';
+
 function App() {
   const defaultDark = true;
-
 
   // Create theme mode state...
   const [theme, setTheme] = useLocalStorage(

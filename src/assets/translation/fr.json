@@ -1,0 +1,18 @@
+{
+    "header": {
+        "homeLink": "Accueil",
+        "aboutMeLink": "À propos",
+        "introductionLink": "Présentation",
+        "experienceLink": "Expérience",
+        "educationLink": "Formations",
+        "itCornerLink": "IT Corner",
+        "pawnLanguageLink": "Langage Pawn",
+        "softwareLink": "Logiciels",
+        "studentProjectLink": "Projets d'étude",
+        "activitiesLink": "Activités",
+        "tableTennisLink": "Tennis de Table",
+        "bricksLink": "Briques",
+        "gamingLink": "Gaming",
+        "hikingLink": "Randonnée"
+    }
+}
