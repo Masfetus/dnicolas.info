@@ -6,6 +6,7 @@ import imgAGCO from "../../assets/img/logos/agco-logo.png"
 import imgFendt from "../../assets/img/logos/fendt-logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCube, faCode, faTools, faVrCardboard, faIndustry} from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 
 const pageTitle = `DN - Experience`
@@ -17,6 +18,7 @@ const iconStyle = { background: 'rgb(60, 60, 60)', color: '#fff' }
 const imageStyle = { display: "block", maxWidth: "100%", height: "auto" }
 
 function ProfessionalTimeline({ theme, setTheme }) {
+    const {t, i18n} = useTranslation("experiencePage")
 
     useEffect(() => {
         // Update the document title using the browser API
@@ -25,7 +27,7 @@ function ProfessionalTimeline({ theme, setTheme }) {
     
     return (
         <div className={`${theme === "dark"? "text-light" : "text-dark"} bg-body-tertiary`} data-aos="fade-up" data-aos-delay="100">
-            <h2>Experience</h2>
+            <h2>{t('title')}</h2>
             <VerticalTimeline lineColor={theme === "dark"? "white" : "black"}>
             <VerticalTimelineElement
                     className="vertical-timeline-element--work text-start"
@@ -37,17 +39,17 @@ function ProfessionalTimeline({ theme, setTheme }) {
 
                 >
                     <Image fluid src={imgFendt} className="my-3" style={imageStyle} />
-                    <h4 className="vertical-timeline-element-title fw-bold">IT Analyst</h4>
+                    <h4 className="vertical-timeline-element-title fw-bold">{t('exp1.title')}</h4>
                     <h5 className="vertical-timeline-element-subtitle">
                         <a href="https://agcocorp.com" className="text-secondary">
-                            AGCO Corporation, Marktoberdorf, Germany
+                        {t('exp1.location')}
                         </a>
                     </h5>
                     <ul className="m-3">
-                        <li>IT support on the 3D visualization area of Windchill</li>
-                        <li>Developed Thingworx applications consuming manufacturing data for reporting purposes</li>
-                        <li>Coordinated communication between IT teams and business teams</li>
-                        <li>Designed architectures to build pipelines relying on our PLM and external systems</li>
+                        <li>{t('exp1.item1')}</li>
+                        <li>{t('exp1.item2')}</li>
+                        <li>{t('exp1.item3')}</li>
+                        <li>{t('exp1.item4')}</li>
 
                     </ul>
                     <Container>
@@ -71,15 +73,15 @@ function ProfessionalTimeline({ theme, setTheme }) {
 
                 >
                     <Image fluid src={imgFendt} className="my-3" style={imageStyle} />
-                    <h4 className="vertical-timeline-element-title fw-bold">IT Engineer Industry 4.0 - Internship</h4>
+                    <h4 className="vertical-timeline-element-title fw-bold">{t('exp2.title')}</h4>
                     <h5 className="vertical-timeline-element-subtitle">
                         <a href="https://agcocorp.com" className="text-secondary">
-                            AGCO Corporation, Marktoberdorf, Germany
+                        {t('exp2.location')}
                         </a>
                     </h5>
                     <ul className="m-3">
-                        <li>Designed solutions to enable 3D data pipelines connected to different systems: PLM, MES, AR tools</li>
-                        <li>Cross-site workshop to gather business requirements from the worlwide quality departments</li>
+                        <li>{t('exp2.item1')}</li>
+                        <li>{t('exp2.item2')}</li>
                     </ul>
                     <Container>
                         <Badge bg="secondary" className="mx-2">Architecture</Badge>
@@ -100,15 +102,15 @@ function ProfessionalTimeline({ theme, setTheme }) {
 
                 >
                     <Image fluid src={imgAGCO} className="my-3" style={imageStyle} />
-                    <h4 className="vertical-timeline-element-title fw-bold">IT MES Developer - Apprenticeship</h4>
+                    <h4 className="vertical-timeline-element-title fw-bold">{t('exp3.title')}</h4>
                     <h5 className="vertical-timeline-element-subtitle">
                         <a href="https://agcocorp.com" className="text-secondary">
-                            AGCO Corporation, Beauvais, France
+                        {t('exp3.location')}
                         </a>
                     </h5>
                     <ul className="m-3">
-                        <li>Analyzed production requirements and developed features in the MES</li>
-                        <li>Developed standalone app to register logistic trucks at the entrance</li>
+                        <li>{t('exp3.item1')}</li>
+                        <li>{t('exp3.item2')}</li>
                     </ul>
                     <Container>
                         <Badge bg="secondary" className="mx-2">C#</Badge>
@@ -128,15 +130,15 @@ function ProfessionalTimeline({ theme, setTheme }) {
 
                 >
                     <Image fluid src={imgAGCO} className="my-3" style={imageStyle} />
-                    <h3 className="vertical-timeline-element-title">IT Engineer - Apprenticeship</h3>
+                    <h3 className="vertical-timeline-element-title">{t('exp4.title')}</h3>
                     <h5 className="vertical-timeline-element-subtitle">
                         <a href="https://agcocorp.com" className="text-secondary">
-                            AGCO Corporation, Beauvais, France
+                        {t('exp4.location')}
                         </a>
                     </h5>
                     <ul className="m-3">
-                        <li>Developed 3D application based on the Unity Engine connected to internal APIs</li>
-                        <li>Continuous technology monitoring on AR/VR/OCR</li>
+                        <li>{t('exp4.item1')}</li>
+                        <li>{t('exp4.item2')}</li>
                     </ul>
                     <Container>
                         <Badge bg="secondary" className="mx-2">Unity</Badge>
@@ -156,14 +158,14 @@ function ProfessionalTimeline({ theme, setTheme }) {
 
                 >
                     <Image fluid src={imgNgpa} className="m-2" />
-                    <h3 className="vertical-timeline-element-title">Fullstack Web Developer - Internship</h3>
+                    <h3 className="vertical-timeline-element-title">{t('exp5.title')}</h3>
                     <h5 className="vertical-timeline-element-subtitle">
                         <a href="https://ngpa.com/" className="text-secondary">
-                            Media Data Services - ISAGRI, Beauvais, France 
+                        {t('exp5.location')}
                         </a>
                     </h5>
                     <ul className="m-3">
-                        <li>Developed web apps displaying charts on tractor registration data</li>
+                        <li>{t('exp5.item1')}</li>
                     </ul>
                     <Container>
                         <Badge bg="secondary" className="mx-2">JavaScript</Badge>

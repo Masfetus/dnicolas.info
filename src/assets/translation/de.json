@@ -14,5 +14,107 @@
         "bricksLink": "Bricks",
         "gamingLink": "Gaming",
         "hikingLink": "Hiking"
-    }
+    },
+    "footer": {
+        "homeLink": "Home",
+        "aboutMeLink": "About me",
+        "introductionLink": "Introduction",
+        "experienceLink": "Experience",
+        "educationLink": "Education",
+        "itCornerLink": "IT Corner",
+        "pawnLanguageLink": "Pawn Language",
+        "softwareLink": "Software & Utilities",
+        "studentProjectLink": "Student Projects",
+        "activitiesLink": "Activities",
+        "tableTennisLink": "Table Tennis",
+        "bricksLink": "Bricks",
+        "gamingLink": "Gaming",
+        "hikingLink": "Hiking",
+        "linksTitle": "Links",
+        "copyright": "All rights reserved"
+    },
+    "rightBar": {
+        "scrollTop": "Go to the top",
+        "scrollDown": "Go to the bottom",
+        "switchDark": "Switch to dark mode",
+        "switchLight": "Switch to light mode",
+        "contactMe": "Contact me"
+    },
+    "homePage": {
+        "welcomeDescription": "Welcome to my personal website where information on my journey, projects and achievements is available. Grab a coffee and enjoy!",
+        "seeMore": "See more",
+        "showroom": "Showroom",
+        "learnMore": "Learn more",
+        "pygDescription": "A united community of players around the most popular games. Events, gaming sessions, and encounters are part of the deal. You can join us via discord using this link.",
+        "sampTitle": "San Andreas Multiplayer: Gamemodes development",
+        "sampDescription": "The starting point of my IT journey. Check out how I got the coding passion by learning a really singular language. A development that made sense and served a community of players.",
+        "mxTitle": "Mixed Reality & Duty of Remembrance",
+        "mxDescription": "When innovation serves the duty of remembrance. This project assists a local museum in creating new ways of presenting history through immersive experiences.",
+        "qwirkleTitle": "Qwirkle: Digital Version",
+        "qwirkleDescription": "A digital adaptation of the original game board Qwirkle. A desktop application developed in the scope of studies that runs the game. Same rules, same fun!",
+        "bricksTitle": "Bricks & Lego - Architecture",
+        "bricksDescription": "Dive into a passion that might flash back to your childhood. For more than a year, I enjoy building representations of famous worldwide architectures.",
+        "tableTennisTitle": "Table Tennis",
+        "tableTennisDescription": "Get to know this racket sport I have been playing for more than 10 years. The atmosphere, the mindset, and all the fantastic clubs driven by volunteers worth it.",
+        "gamingTitle": "Gaming",
+        "gamingDescription": "Discover and (why not) try out this few games that provide an unsual experience. Snapshots and links available!",
+        "hikingTitle": "Hiking",
+        "hikingDescription": "The Alps are an unvaluable natural treasure offering breath-taking views. From Bavaria to Tyrol, going by Allgäu and Vorarlberg, the landscapes will give you an overview on the beauty of nature."
+    },
+    "aboutMePage": {
+        "title": "About Me",
+        "subTitle": "Quick words on myself...",
+        "p1": "IT passionate, Lego builder, French, European, ? Not sure what words would describe me the best. Even if my roots are French, I have been living in Germany for more than a year in the beautiful region of Allgäu. The discovery of new cultures and traditions is always an enriching experience. And, this goes by learning the local language to better understand the specifities and the how local people express themselves.",
+        "p2": "Not only I am an eager of these cultures, but also a passionated of IT technologies. Even before going to college, I always had this curiosity on how systems work and can be connected together. Thus, I started working at 14 on some humble development projects. The most important was not to get a worthful return out of it but to feed this passion, and starts writing the very beginning of my journey. There was no more pleasure than working together with friends while learning and growing, autonomously, as self-learners. Then, my IT education perfectly completed the theorical aspects I was lacking of to go one step further.",
+        "p3": "As part of this interest for technologies and innovation, I have been working on several student projects that allowed me to find technical solutions meeting requirements. Whether it is around software engineering, XR/VR/AR technologies, or IoT; each of these projects was the achievement of a collaborative work, and the efforts truly paid off. If you are interested in one of them, explore the website, and get a closer look at how they have been conducted.",
+        "p4": "Professionnally speaking, I work in industrial IT close to MES & PLM systems. Such experience is insightful especially when it comes to a combination of very specific production-related requirements and innovative solutions. Coordination between IT & Businness teams, data pipelines enablement, 3D data management, these activities lead to a new way of thinking production processes, as part of industry 4.0. I also contributed to the development of applications computing manufacturing data (MES, Thingworx applications).",
+        "p5": "What about after work? Well, I had been playing table tennis for many years in France. This sport requires a lot of \"body coordination\" as well as mental and technical capabilities. In addition, I like gaming on PC and hiking in pleasant mountain environments. Lastly, this website will showcase some brick sets I have been working on. The passion of building architectural pieces up is real and gives satisfaction when assessing the progress throughout the work."
+    },
+    "experiencePage": {
+        "title": "Erfahrung",
+        "exp1": {
+            "title": "IT Analyst",
+            "location": "AGCO Corporation, Marktoberdorf, Germany",
+            "item1": "IT support on the 3D visualization area of Windchill",
+            "item2": "Developed Thingworx applications consuming manufacturing data for reporting purposes",
+            "item3": "Coordinated communication between IT teams and business teams",
+            "item4": "Designed architectures to build pipelines relying on our PLM and external systems"
+        },
+        "exp2": {
+            "title": "IT Engineer Industry 4.0 - Internship",
+            "location": "AGCO Corporation, Marktoberdorf, Germany",
+            "item1": "Designed solutions to enable 3D data pipelines connected to different systems: PLM, MES, AR tools",
+            "item2": "Cross-site workshop to gather business requirements from the worlwide quality departments"
+        },
+        "exp3": {
+            "title": "IT MES Developer - Apprenticeship",
+            "location": "AGCO Corporation, Beauvais, France",
+            "item1": "Analyzed production requirements and developed features in the MES",
+            "item2": "Developed standalone app to register logistic trucks at the entrance"
+        },
+        "exp4": {
+            "title": "IT Engineer - Apprenticeship",
+            "location": "AGCO Corporation, Beauvais, France",
+            "item1": "Developed 3D application based on the Unity Engine connected to internal APIs",
+            "item2": "Continuous technology monitoring on AR/VR/OCR"
+        },
+        "exp5": {
+            "title": "Fullstack Web Developer - Internship",
+            "location": "Media Data Services - ISAGRI, Beauvais, France",
+            "item1": "Developed web apps providing statistics based on tractor registration data"
+        }
+    },
+    "educationPage": {
+        "title": "Ausbildung",
+        "utc": {
+            "title": "Engineering Degree in Computer Science",
+            "location": "Université de Technologie de Compiègne, Compiègne, France",
+            "item1": "Computer Engineering, apprenticeship (dual-program)"
+        },
+        "iut": {
+            "title": "IT Bachelor Degree",
+            "location": "Institut Universitaire de Technologie, Amiens, France",
+            "item1": "Technical Bachelor Degree"
+        }
+    }   
 }

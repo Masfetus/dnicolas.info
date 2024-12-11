@@ -5,8 +5,10 @@ import { faUniversity, faHeart, faCode, faCoffee, faChessPawn, faTools, faTableT
 import { faGithub, faGitlab, faLinkedinIn, faWikipediaW, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import pygLogo from "../assets/img/icons/pyg.png";
 import bricksLogo from "../assets/img/icons/lego.png"
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t, i18n} = useTranslation("footer")
 
     return (
       <footer className="bg-body-tertiary">
@@ -14,61 +16,61 @@ function Footer() {
         <Row className="text-start p-5">
             <Col>
               <CardTitle className="bold">
-                About me
+                {t('aboutMeLink')}
               </CardTitle>
               <Container className="py-2">
                 <NavLink href="/about-me">
-                  <span>Introduction </span>
+                  <span>{t('introductionLink')} </span>
                 </NavLink>
                 <NavLink href="/experience">
-                  <span>Experience</span> 
+                  <span>{t('experienceLink')}</span> 
                 </NavLink>
                 <NavLink href="/education">
-                  <span>Education</span>
+                  <span>{t('educationLink')}</span>
                 </NavLink>
               </Container>
             </Col>
             <Col>
               <CardTitle className="bold">
-                IT Corner
+              {t('itCornerLink')}
               </CardTitle>
               <Container className="py-2">
                 <NavLink>
-                  <span>Pawn Language</span>
+                  <span>{t('pawnLanguageLink')}</span>
                 </NavLink>
                 <NavLink>
                   <span>Play Your Games</span> 
                 </NavLink>
                 <NavLink>
-                  <span>Software & Utilities</span>
+                  <span>{t('softwareLink')}</span>
                 </NavLink>
                 <NavLink>
-                  <span>Student Projects</span>
+                  <span>{t('studentProjectLink')}</span>
                 </NavLink>
               </Container>
             </Col>
             <Col>
               <CardTitle className="bold">
-                Activities
+              {t('activitiesLink')}
               </CardTitle>
               <Container className="py-2">
                 <NavLink>
-                  <span>Table Tennis</span>
+                  <span>{t('tableTennisLink')}</span>
                 </NavLink>
                 <NavLink>
-                  <span>Bricks</span> 
+                  <span>{t('bricksLink')}</span> 
                 </NavLink>
                 <NavLink>
-                  <span>Gaming</span>
+                  <span>{t('gamingLink')}</span>
                 </NavLink>
                 <NavLink>
-                  <span>Hiking</span>
+                  <span>{t('hikingLink')}</span>
                 </NavLink>
               </Container>
             </Col>
             <Col>
               <CardTitle className="bold">
-                Links
+              {t('linksTitle')}
               </CardTitle>
               <Container className="py-2">
                 <NavLink href="https://fr.wikipedia.org/wiki/Utilisateur:Masf%C3%A9tus">
@@ -98,7 +100,7 @@ function Footer() {
           <Card>
             <CardBody>
               Made with <FontAwesomeIcon icon={faHeart} color="red" className="inline"/>, some <FontAwesomeIcon icon={faCode} className="inline"/>, and too much <FontAwesomeIcon icon={faCoffee} color="brown" className="inline"/>
-              <p>dnicolas.info © 2024 - All rights reserved.</p>
+              <p>dnicolas.info © 2024 - {t('copyright')}</p>
             </CardBody>
           </Card>
         </Row>

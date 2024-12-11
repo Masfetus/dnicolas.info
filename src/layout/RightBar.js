@@ -8,8 +8,10 @@ import { useTranslation } from "react-i18next";
 import Select from 'react-select'
 
 function RightBar({ theme, setTheme }) {
-    const {t, i18n} = useTranslation("")
-
+    const {t, i18n} = useTranslation("rightBar")
+    const buttonStyle = {
+        maxWidth: "60px"
+    }
     function onDarkModeButtonClicked() {
         setTheme(theme === "dark"? "light" : "dark");
       }
@@ -21,25 +23,29 @@ function RightBar({ theme, setTheme }) {
       const menuTheme = (base, state) => ({
         ...base,
         backgroundColor: theme === "dark" ? "#111111" : "#DDDDDD",
-        color: theme === "dark" ? "#111111" : "#DDDDDD",
-        maxWidth: "50%"
+        color: theme === "dark" ? "#111111" : "#DDDDDD"
         })      
       const controlTheme = (base, state) => ({
         ...base,
         backgroundColor: "transparent",
         borderColor: "gray",
-        maxWidth: "50%"
+        display: "inline-block"
         })
         const dropdownIndicatorTheme = (base, state) => ({
         ...base,
         display: "none"
         })
+        const containerTheme = (base, state) => ({
+            ...base,
+            maxWidth: "60px"
+            })
       const CustomStyle = {
         option: (base, state) => baseSwitchTheme(base, state),
         menu: (base, state) => menuTheme(base, state),
         control: (base, state) => controlTheme(base, state),
         dropdownIndicator: (base, state) => dropdownIndicatorTheme(base, state),
-        indicatorSeparator: (base, state) => dropdownIndicatorTheme(base, state)
+        indicatorSeparator: (base, state) => dropdownIndicatorTheme(base, state),
+        container: (base, state) => containerTheme(base, state)
       }
       const cardImageStyle = {
         objectFit: "cover"
@@ -58,41 +64,41 @@ function RightBar({ theme, setTheme }) {
     return (
 
       
-      <div className="z-9 position-fixed top-50 end-0 translate-middle-y text-end w-20 d-grid gap-2 col-1" data-aos="fade-left">
-            <Button className="w-50" href="https://fr.wikipedia.org/wiki/Utilisateur:Masf%C3%A9tus" variant="btn btn-outline-secondary btn-m" >
+      <div className="z-9 position-fixed top-50 justify-content-center end-0 translate-middle-y d-grid gap-2 col-2 mx-2"  data-aos="fade-left">
+            <Button className="px-2" href="https://fr.wikipedia.org/wiki/Utilisateur:Masf%C3%A9tus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title="Wikipedia" icon={faWikipediaW} className="fa-m" />
             </Button>
-            <Button className="w-50" href="https://www.linkedin.com/in/dimnicolas/" variant="btn btn-outline-secondary btn-m" >
+            <Button className="px-2" href="https://www.linkedin.com/in/dimnicolas/" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title="LinkedIn" icon={faLinkedin}  className="fa-m" />
             </Button>
-            <Button className="w-50" href="https://gitlab.com/Masfetus" variant="btn btn-outline-secondary btn-m" >
+            <Button className="px-2" href="https://gitlab.com/Masfetus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title="Gitlab" icon={faGitlab}  className="fa-m"/>
             </Button>
-            <Button className="w-50" href="https://github.com/Masfetus" variant="btn btn-outline-secondary btn-m" >
+            <Button className="px-2" href="https://github.com/Masfetus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title="Github" icon={faGithub}  className="fa-m"/>
             </Button>
 
-            <Button className="w-50 opacity-50" title="Go to the top" variant="btn btn-outline-secondary btn-m" onClick={scroll.scrollToTop}>
+            <Button className="opacity-50 px-2" title={t('scrollTop')} style={buttonStyle} variant="btn btn-outline-secondary btn-m" onClick={scroll.scrollToTop}>
                 <FontAwesomeIcon icon={faArrowUp} className="fa-m"/>
             </Button>
-            <Button className="w-50 opacity-50" title="Go to the bottom" variant="btn btn-outline-secondary btn-m" onClick={scroll.scrollToBottom}>
+            <Button className="opacity-50 px-2" title={t('scrollDown')} style={buttonStyle} variant="btn btn-outline-secondary btn-m" onClick={scroll.scrollToBottom}>
                 <FontAwesomeIcon icon={faArrowDown} className="fa-m"/>
             </Button>
             {theme === "dark"?
-            <Button className="w-50" variant="btn btn-outline-secondary btn-m" onClick={onDarkModeButtonClicked}>
-                <FontAwesomeIcon title="Switch to light mode" icon={faMoon}/>
+            <Button className="px-2" variant="btn btn-outline-secondary btn-m" style={buttonStyle} onClick={onDarkModeButtonClicked}>
+                <FontAwesomeIcon title={t('switchLight')} icon={faMoon}/>
             </Button> :
-            <Button className="w-50" variant="btn btn-outline-secondary btn-m" onClick={onDarkModeButtonClicked}>
-                <FontAwesomeIcon title="Switch to dark mode" icon={faSun}/>
+            <Button className="px-2" variant="btn btn-outline-secondary btn-m" style={buttonStyle} onClick={onDarkModeButtonClicked}>
+                <FontAwesomeIcon title={t('switchDark')} icon={faSun}/>
             </Button>
             }
-            <Select defaultValue={defaultValue} options={languages} onChange={setNewLanguage} styles={CustomStyle}  formatOptionLabel={lng => (
+            <Select defaultValue={defaultValue} options={languages} onChange={setNewLanguage} style={buttonStyle} styles={CustomStyle}  formatOptionLabel={lng => (
                 <Row>
                     <Image fluid src={`/icons/${lng.value}.png`} style={cardImageStyle}/>  
                 </Row>  
             )}/>
-            <Button className="w-50" href="mailto:dimi-nico@outlook.fr" variant="btn btn-outline-secondary btn-m" >
-                <FontAwesomeIcon title="Contact me" icon={faEnvelope} />
+            <Button className="px-2" href="mailto:dimi-nico@outlook.fr" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
+                <FontAwesomeIcon title={t('contactMe')} icon={faEnvelope} />
             </Button>
       </div>
 

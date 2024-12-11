@@ -5,6 +5,7 @@ import imgUTC from "../../assets/img/logos/utc-logo.png"
 import imgIUT from "../../assets/img/logos/iut-logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUniversity } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 
 const pageTitle = `DN - Experience`
@@ -16,6 +17,7 @@ const iconStyle = { background: 'rgb(60, 60, 60)', color: '#fff' }
 const imageStyle = { display: "block", maxWidth: "100%", height: "auto" }
 
 function EducationTimeline({ theme, setTheme }) {
+    const {t, i18n} = useTranslation("educationPage")
 
     useEffect(() => {
         // Update the document title using the browser API
@@ -24,7 +26,7 @@ function EducationTimeline({ theme, setTheme }) {
     
     return (
         <div className={`${theme === "dark"? "text-light" : "text-dark"} bg-body-tertiary`} data-aos="fade-up" data-aos-delay="100">
-            <h2>Education</h2>
+            <h2>{t('title')}</h2>
             <VerticalTimeline lineColor={theme === "dark"? "white" : "black"}>
             <VerticalTimelineElement
                     className="vertical-timeline-element--work text-start"
@@ -36,14 +38,14 @@ function EducationTimeline({ theme, setTheme }) {
 
                 >
                     <Image fluid src={imgUTC} className="my-3" style={imageStyle} />
-                    <h4 className="vertical-timeline-element-title fw-bold">Engineering Degree in Computer Science</h4>
+                    <h4 className="vertical-timeline-element-title fw-bold">{t('utc.title')}</h4>
                     <h5 className="vertical-timeline-element-subtitle">
                         <a href="https://www.utc.fr/en/courses-and-training/the-utc-engineering-diploma/computer-sciences-and-engineering-gi/" className="text-secondary">
-                            Université de Technologie de Compiègne, Compiègne, France
+                        {t('utc.location')}
                         </a>
                     </h5>
                     <ul className="m-3">
-                        <li>Computer Engineering, apprenticeship (dual-program)</li>
+                        <li>{t('utc.item1')}</li>
                     </ul>
                     <Container>
                         <Badge bg="secondary" className="mx-2">Network</Badge>
@@ -65,14 +67,14 @@ function EducationTimeline({ theme, setTheme }) {
 
                 >
                     <Image fluid src={imgIUT} className="my-3" style={imageStyle} />
-                    <h4 className="vertical-timeline-element-title fw-bold">IT Bachelor Degree</h4>
+                    <h4 className="vertical-timeline-element-title fw-bold">{t('iut.title')}</h4>
                     <h5 className="vertical-timeline-element-subtitle">
                         <a href="https://www.iut-amiens.fr/" className="text-secondary">
-                            Institut Universitaire de Technologie, Amiens, France
+                        {t('iut.location')}
                         </a>
                     </h5>
                     <ul className="m-3">
-                        <li>Technical Bachelor Degree</li>
+                        <li>{t('iut.item1')}</li>
                     </ul>
                     <Container>
                         <Badge bg="secondary" className="mx-2">Fundamentals</Badge>

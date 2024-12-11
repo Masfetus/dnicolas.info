@@ -14,5 +14,106 @@
         "bricksLink": "Briques",
         "gamingLink": "Gaming",
         "hikingLink": "Randonnée"
+    },
+    "footer": {
+        "homeLink": "Accueil",
+        "aboutMeLink": "À propos",
+        "introductionLink": "Présentation",
+        "experienceLink": "Expérience",
+        "educationLink": "Formations",
+        "itCornerLink": "IT Corner",
+        "pawnLanguageLink": "Langage Pawn",
+        "softwareLink": "Logiciels",
+        "studentProjectLink": "Projets d'étude",
+        "activitiesLink": "Activités",
+        "tableTennisLink": "Tennis de Table",
+        "bricksLink": "Briques",
+        "gamingLink": "Gaming",
+        "hikingLink": "Randonnée",
+        "copyright": "Tous droits réservés"
+    },
+    "rightBar": {
+        "scrollTop": "Aller tout en haut",
+        "scrollDown": "Aller tout en bas",
+        "switchDark": "Activer mode sombre",
+        "switchLight": "Activer mode clair",
+        "contactMe": "Me contacter"
+    },
+    "homePage": {
+        "welcomeDescription": "Bienvenue sur mon site web où tu trouveras des informations sur mes projets, activités et accomplissements. Attrappe un café et profite!",
+        "seeMore": "Voir plus",
+        "showroom": "Showroom",
+        "learnMore": "En savoir plus",
+        "pygDescription": "Une communauté de joueur rassemblée autour des jeux les plus populaires. Evénements, sessions de jeu et rencontre sont de la partie. Tu peux nous rejoindre en utilisant ce lien.",
+        "sampTitle": "San Andreas Multiplayer : Développement de Gamemodes",
+        "sampDescription": "Le départ de mon aventure dans l'IT. Jette un oeil sur comment m'est venue cette passion pour le codage à travers un langage particulier. Un dévéloppement au service des joueurs qui a toujours fait sens.",
+        "mxTitle": "Réalité Mixte & Devoir de mémoire",
+        "mxDescription": "Quand l'innovation est au service du devoir de mémoire. Ce projet propose à un musée local de nouveaux moyens de raconter l'Histoire à travers des expériences immersives.",
+        "qwirkleTitle": "Qwirkle: Version Digitale",
+        "qwirkleDescription": "Une version digitale du jeu: Qwirkle. Cette application de bureau qui propulse le jeu a été développée dans le cadre de mes études. Mêmes règles, même plaisir !",
+        "bricksTitle": "Briques & Lego - Architecture",
+        "bricksDescription": "Plonge dans une de mes passions qui pourrait te rappeler ton enfance. Depuis plus d'un an, je construis avec plaisir des représentations d'architecture, de monuments connus.",
+        "tableTennisTitle": "Tennis de Table",
+        "tableTennisDescription": "Apprends à connaître ce sport de raquettes que j'ai pratiqué depuis plus de 10 ans. L'état d'esprit, l'ambiance, et tous les clubs conduits par les bénévoles en valent le détour.",
+        "gamingTitle": "Gaming",
+        "gamingDescription": "Découvre et (pourquoi pas) essaie ces quelques jeux qui proposent une expérience hors du commun. Liens et captures sont disponibles!",
+        "hikingTitle": "Randonnée",
+        "hikingDescription": "Les Alpes forment un trésor naturel riche qui montre des paysages à couper le souffle. De la Bavière au Tyrol, en passant par l'Allgäu et le Vorarlberg, ces paysages vous donneront un aperçu de la beauté de la nature."
+    },
+    "aboutMePage": {
+        "title": "À propos",
+        "subTitle": "En quelques mots...",
+        "p1": "Passionné par l'IT, fou du Lego, Frenchie, Européen, ? Je ne saurais pas dire quel adjectif me décrirait le mieux. Car même si mes racines sont en France, je vis depuis plus d'un an dans la magnifique région d'Allgäu. La découverte de nouvelles cultures et traditions est toujours une expérience enrichissante. Et, cela passe par apprendre la langue locale pour mieux comprendre les spécificités et la manière dont les locaux s'expriment.",
+        "p2": "Non seulement passionné de ces cultures, je suis également un grand intéressé des technologies. Ça a commencé même avant d'étudier l'informatique, j'ai toujours eu cette curiosité de comprendre comment les systèmes fonctionnent et sont inter-connectés. Ainsi, à 14 ans j'ai pu développer des projets d'humble ampleur. Le plus important n'était pas d'obtenir un résultat probant mais plutôt d'alimenter cette passion qui s'est avérée être le tout début de mon parcours dans l'informatique. Il n'y avait pas plus grand plaisir que d'apprendre de manière autonome, autodidacte, accompagné d'amis. Par la suite, mes études d'informatique ont parfaitement complété les lacunes théoriques qu'il me manquait pour passer à la prochaine étape.",
+        "p3": "Cet intérêt pour l'innovation et les technologies s'est traduit à travers plusieurs projets d'étude qui m'ont permis de développer des solutions répondant à un besoin précis. Qu'il s'agisse d'ingénierie logicielle, de XR/VR/AR, ou d'IoT; chacun de ces projets a été l'accomplissement d'un travail collectif qui a payé ses fruits. Si certains d'entre eux t'intéressent, n'hésite pas à explorer le site et avoir plus de détails sur comment ils ont été conduits.",
+        "p4": "Dans la vie professionnelle, je travaille dans l'informatique industrielle proche de systèmes comme le MES ou le PLM. Une telle expérience est toujours enrichissante, qui plus est quand il s'agit de méler solutions innovantes aux contraintes et processus liés à la production. Coordination entre les équipes IT et Business, analyse de flux de données, gestion de données 3D, ces activités mènent à imaginer de nouvelles méthodes de travail, propres à l'industrie 4.0. J'ai également contribué au développement de ces solutions du manufacturing (MES, Thingworx).",
+        "p5": "Et après le boulot? Eh bien, j'ai pratiqué le tennis de table en France pendant quelques années. Ce sport requiert une importante \"coordination du corps\" ainsi que des facultés techniques mais aussi mentales. De plus, j'aime jouer sur PC et partir en randonnée dans de magnifiques paysages montagneux. Enfin, ce site va présenter quelques sets de briques que j'ai construits au travers d'une nouvelle passion. Cette passion de construire, pièce par pièce, d'une architecture donne une réelle satisfaction, du début à la fin, tout au long de la construction."
+    },
+    "experiencePage": {
+        "title": "Expérience",
+        "exp1": {
+            "title": "IT Analyste",
+            "location": "AGCO Corporation, Marktoberdorf, Allemagne",
+            "item1": "Support IT sur la partie 3D-Visualisation de Windchill (PLM)",
+            "item2": "Développement d'applications pour le manufacturing autour de Thingworx",
+            "item3": "Coordination de la communication entre les équipes IT et Business (Agile implémentation)",
+            "item4": "Analyse d'architectures pour construire des flux de données basées sur notre PLM et les systèmes connectés"
+        },
+        "exp2": {
+            "title": "IT Ingénieur Industrie 4.0 - Stage",
+            "location": "AGCO Corporation, Marktoberdorf, Allemagne",
+            "item1": "Analyse de flux de données de 3D inter-connectant des systèmes comme le PLM ou le MES",
+            "item2": "Organisation de workshop réunissant différents sites pour recueillir les besoins des différentes équipes qualité"
+        },
+        "exp3": {
+            "title": "IT Développeur MES - Apprentissage",
+            "location": "AGCO Corporation, Beauvais, France",
+            "item1": "Analyse du besoin de la production et développement de fonctionnalités dans le MES",
+            "item2": "Développement d'applications indépendantes pour enregistrer les arrivées de camions logistiques"
+        },
+        "exp4": {
+            "title": "IT Ingénieur - Apprentissage",
+            "location": "AGCO Corporation, Beauvais, France",
+            "item1": "Développement d'applications 3D basées sur Unity et connectées à des APIs internes",
+            "item2": "Veille technologique sur AR/VR/OCR"
+        },
+        "exp5": {
+            "title": "Développeur Web Fullstack - Stage",
+            "location": "Media Data Services - ISAGRI, Beauvais, France",
+            "item1": "Développement d'applications web fournissant des statistiques sur les données d'immatriculation de tracteurs"
+        }
+    },
+    "educationPage": {
+        "title": "Formations",
+        "utc": {
+            "title": "Diplôme d'Ingénieur - Informatique",
+            "location": "Université de Technologie de Compiègne, Compiègne, France",
+            "item1": "Ingénierie de l'informatique, apprentissage"
+        },
+        "iut": {
+            "title": "Diplôme Universitaire Technologique - Informatique",
+            "location": "Institut Universitaire de Technologie, Amiens, France",
+            "item1": "Technicien informatique"
+        }
     }
 }
