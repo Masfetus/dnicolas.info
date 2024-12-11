@@ -13,78 +13,64 @@ function Footer() {
         <Card>
         <Row className="text-start p-5">
             <Col>
-              
-            </Col>
-            <Col>
               <CardTitle className="bold">
                 About me
               </CardTitle>
-              <Row className="p-2">
+              <Container className="py-2">
                 <NavLink href="/about-me">
-                  <span>Introduction</span>
-                  <FontAwesomeIcon icon={faUser} className="inline fa-sm ms-2"/> 
+                  <span>Introduction </span>
                 </NavLink>
                 <NavLink href="/experience">
                   <span>Experience</span> 
-                  <FontAwesomeIcon icon={faIndustry} className="inline fa-sm ms-2"/> 
                 </NavLink>
                 <NavLink href="/education">
                   <span>Education</span>
-                  <FontAwesomeIcon icon={faUniversity} className="inline fa-sm ms-2"/> 
                 </NavLink>
-              </Row>
+              </Container>
             </Col>
             <Col>
               <CardTitle className="bold">
                 IT Corner
               </CardTitle>
-              <Row className="p-2">
+              <Container className="py-2">
                 <NavLink>
                   <span>Pawn Language</span>
-                  <FontAwesomeIcon icon={faChessPawn} className="inline fa-sm ms-2"/> 
                 </NavLink>
                 <NavLink>
                   <span>Play Your Games</span> 
-                  <Image src={pygLogo} width="4%" className="ms-2"/>
                 </NavLink>
                 <NavLink>
                   <span>Software & Utilities</span>
-                  <FontAwesomeIcon icon={faTools} className="inline fa-sm ms-2"/> 
                 </NavLink>
                 <NavLink>
                   <span>Student Projects</span>
-                  <FontAwesomeIcon icon={faUniversity} className="inline fa-sm ms-2"/> 
                 </NavLink>
-              </Row>
+              </Container>
             </Col>
             <Col>
               <CardTitle className="bold">
                 Activities
               </CardTitle>
-              <Row className="p-2">
+              <Container className="py-2">
                 <NavLink>
                   <span>Table Tennis</span>
-                  <FontAwesomeIcon icon={faTableTennis} className="inline fa-sm ms-2"/> 
                 </NavLink>
                 <NavLink>
                   <span>Bricks</span> 
-                  <Image src={bricksLogo} width="4%" className="fa-sm ms-2"/>
                 </NavLink>
                 <NavLink>
                   <span>Gaming</span>
-                  <FontAwesomeIcon icon={faGamepad} className="inline fa-sm ms-2"/> 
                 </NavLink>
                 <NavLink>
                   <span>Hiking</span>
-                  <FontAwesomeIcon icon={faHiking} className="inline fa-sm ms-2"/> 
                 </NavLink>
-              </Row>
+              </Container>
             </Col>
             <Col>
               <CardTitle className="bold">
                 Links
               </CardTitle>
-              <Row className="p-2">
+              <Container className="py-2">
                 <NavLink href="https://fr.wikipedia.org/wiki/Utilisateur:Masf%C3%A9tus">
                   <span>Wikipedia</span>
                   <FontAwesomeIcon icon={faWikipediaW} className="inline fa-sm ms-2"/> 
@@ -105,7 +91,7 @@ function Footer() {
                   <span>Discord</span>
                   <FontAwesomeIcon icon={faDiscord} className="inline fa-sm ms-2"/> 
                 </NavLink>
-              </Row>
+              </Container>
             </Col>
         </Row>
         <Row>

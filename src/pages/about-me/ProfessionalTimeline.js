@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Row, Image, Badge } from "react-bootstrap";
+import { Container, Image, Badge } from "react-bootstrap";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import imgNgpa from "../../assets/img/logos/ngpa.png"
 import imgAGCO from "../../assets/img/logos/agco-logo.png"
@@ -50,14 +50,16 @@ function ProfessionalTimeline({ theme, setTheme }) {
                         <li>Designed architectures to build pipelines relying on our PLM and external systems</li>
 
                     </ul>
-                    <Badge bg="secondary" className="mx-2">Architecture</Badge>
-                    <Badge bg="secondary" className="mx-2">PLM</Badge>
-                    <Badge bg="secondary" className="mx-2">Windchill</Badge>
-                    <Badge bg="secondary" className="mx-2">Thingworx</Badge>
-                    <Badge bg="secondary" className="mx-2">JavaScript</Badge>
-                    <Badge bg="secondary" className="mx-2">Communication</Badge>
-                    <Badge bg="secondary" className="mx-2">SAFe</Badge>
-                    <Badge bg="secondary" className="mx-2">Azure DevOps</Badge>
+                    <Container>
+                        <Badge bg="secondary" className="mx-2">Architecture</Badge>
+                        <Badge bg="secondary" className="mx-2">PLM</Badge>
+                        <Badge bg="secondary" className="mx-2">Windchill</Badge>
+                        <Badge bg="secondary" className="mx-2">Thingworx</Badge>
+                        <Badge bg="secondary" className="mx-2">JavaScript</Badge>
+                        <Badge bg="secondary" className="mx-2">Communication</Badge>
+                        <Badge bg="secondary" className="mx-2">SAFe</Badge>
+                        <Badge bg="secondary" className="mx-2">Azure DevOps</Badge>
+                    </Container>
                 </VerticalTimelineElement>
             <VerticalTimelineElement
                     className="vertical-timeline-element--work text-start"
@@ -79,11 +81,14 @@ function ProfessionalTimeline({ theme, setTheme }) {
                         <li>Designed solutions to enable 3D data pipelines connected to different systems: PLM, MES, AR tools</li>
                         <li>Cross-site workshop to gather business requirements from the worlwide quality departments</li>
                     </ul>
-                    <Badge bg="secondary" className="mx-2">Architecture</Badge>
-                    <Badge bg="secondary" className="mx-2">PLM</Badge>
-                    <Badge bg="secondary" className="mx-2">Windchill</Badge>
-                    <Badge bg="secondary" className="mx-2">Vuforia</Badge>
-                    <Badge bg="secondary" className="mx-2">SAFe - Agile</Badge>
+                    <Container>
+                        <Badge bg="secondary" className="mx-2">Architecture</Badge>
+                        <Badge bg="secondary" className="mx-2">PLM</Badge>
+                        <Badge bg="secondary" className="mx-2">Windchill</Badge>
+                        <Badge bg="secondary" className="mx-2">Vuforia</Badge>
+                        <Badge bg="secondary" className="mx-2">SAFe - Agile</Badge>
+                    </Container>
+
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work text-start"
@@ -105,10 +110,13 @@ function ProfessionalTimeline({ theme, setTheme }) {
                         <li>Analyzed production requirements and developed features in the MES</li>
                         <li>Developed standalone app to register logistic trucks at the entrance</li>
                     </ul>
-                    <Badge bg="secondary" className="mx-2">C#</Badge>
-                    <Badge bg="secondary" className="mx-2">WPF</Badge>
-                    <Badge bg="secondary" className="mx-2">MES</Badge>
-                    <Badge bg="secondary" className="mx-2">MS-SQL</Badge>
+                    <Container>
+                        <Badge bg="secondary" className="mx-2">C#</Badge>
+                        <Badge bg="secondary" className="mx-2">WPF</Badge>
+                        <Badge bg="secondary" className="mx-2">MES</Badge>
+                        <Badge bg="secondary" className="mx-2">MS-SQL</Badge>
+                    </Container>
+                    
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work text-start"
@@ -130,10 +138,13 @@ function ProfessionalTimeline({ theme, setTheme }) {
                         <li>Developed 3D application based on the Unity Engine connected to internal APIs</li>
                         <li>Continuous technology monitoring on AR/VR/OCR</li>
                     </ul>
-                    <Badge bg="secondary" className="mx-2">Unity</Badge>
-                    <Badge bg="secondary" className="mx-2">C#</Badge>
-                    <Badge bg="secondary" className="mx-2">ASP.NET</Badge>
-                    <Badge bg="secondary" className="mx-2">Python</Badge>
+                    <Container>
+                        <Badge bg="secondary" className="mx-2">Unity</Badge>
+                        <Badge bg="secondary" className="mx-2">C#</Badge>
+                        <Badge bg="secondary" className="mx-2">ASP.NET</Badge>
+                        <Badge bg="secondary" className="mx-2">Python</Badge>
+                    </Container>
+                    
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work text-start"
@@ -154,12 +165,15 @@ function ProfessionalTimeline({ theme, setTheme }) {
                     <ul className="m-3">
                         <li>Developed web apps displaying charts on tractor registration data</li>
                     </ul>
-                    <Badge bg="secondary" className="mx-2">JavaScript</Badge>
-                    <Badge bg="secondary" className="mx-2">ASP.NET</Badge>
-                    <Badge bg="secondary" className="mx-2">C#</Badge>
-                    <Badge bg="secondary" className="mx-2">MS-SQL</Badge>
-                    <Badge bg="secondary" className="mx-2">Agile</Badge>
-                    <Badge bg="secondary" className="mx-2">Azure DevOps</Badge>
+                    <Container>
+                        <Badge bg="secondary" className="mx-2">JavaScript</Badge>
+                        <Badge bg="secondary" className="mx-2">ASP.NET</Badge>
+                        <Badge bg="secondary" className="mx-2">C#</Badge>
+                        <Badge bg="secondary" className="mx-2">MS-SQL</Badge>
+                        <Badge bg="secondary" className="mx-2">Agile</Badge>
+                        <Badge bg="secondary" className="mx-2">Azure DevOps</Badge>
+                    </Container>
+
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}

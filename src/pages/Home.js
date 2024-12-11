@@ -12,11 +12,11 @@ import bgHiking from '../assets/img/bg/bg-hiking.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowDown} from "@fortawesome/free-solid-svg-icons";
 const cardStyle = {
-    width: '22rem', 
+    minWidth: '22rem', 
     height: '100%'
 }
 const cardImageStyle = {
-    height: "12vw", 
+    minHeight: "12vw", 
     objectFit: "cover"
 }
 const pageTitle = `DN - Home`
@@ -53,7 +53,7 @@ function Home({ theme, setTheme }) {
                         </div>
                     </div>
                     <Row className='justify-content-center text-center'>
-                        <Button className='text-white btn-outline-secondary' variant="outline-secondary" onClick={executeScroll} style={{width: "10vw"}} size="lg">
+                        <Button className='text-white btn-outline-secondary' variant="outline-secondary" onClick={executeScroll} style={{maxWidth: "25vw"}} size="lg">
                             See more <FontAwesomeIcon className='mx-1' icon={faArrowDown}/>
                         </Button> 
                     </Row>
@@ -67,8 +67,8 @@ function Home({ theme, setTheme }) {
                     </h2>
                 </Row>
                 <Row className='my-5'>
-                    <Col className='d-flex justify-content-center'>
-                        <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="100"> 
+                    <Col className='d-flex justify-content-center m-3' >
+                        <Card style={cardStyle} className='' data-aos='zoom-in' data-aos-delay="100"> 
                             <Card.Img variant="top" src={bgPyg} style={cardImageStyle} />
                             <Card.Body className='text-justify-bottom'>
                                 <Card.Title className='fw-bold'>Play Your Games</Card.Title>
@@ -80,7 +80,7 @@ function Home({ theme, setTheme }) {
                         </Card>
                         
                     </Col>
-                    <Col className='d-flex justify-content-center'>
+                    <Col className='d-flex justify-content-center m-3'>
                         <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="300" className='full-height'>
                             <Card.Img variant="top" src={bgSamp} style={cardImageStyle}/>
                             <Card.Body className='text-justify'>
@@ -93,7 +93,7 @@ function Home({ theme, setTheme }) {
                         </Card>
                         
                     </Col>
-                    <Col className='d-flex justify-content-center'>
+                    <Col className='d-flex justify-content-center m-3'>
                         <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="200" className='full-height'>
                             <Card.Img variant="top" src={hololensImg} style={cardImageStyle} />
                             <Card.Body className='text-justify'>
@@ -107,7 +107,7 @@ function Home({ theme, setTheme }) {
                     </Col>
                 </Row>
                 <Row className='my-5'>
-                    <Col className='d-flex justify-content-center'>
+                    <Col className='d-flex justify-content-center m-3'>
                         <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="300" className='full-height'>
                             <Card.Img variant="top" src={qwirkleImage} style={cardImageStyle}/>
                             <Card.Body className='text-justify'>
@@ -119,7 +119,7 @@ function Home({ theme, setTheme }) {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col className='d-flex justify-content-center'>
+                    <Col className='d-flex justify-content-center m-3'>
                         <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="100"> 
                             <Card.Img variant="top" src={santorini} style={cardImageStyle} />
                             <Card.Body className='text-justify-bottom'>
@@ -132,7 +132,7 @@ function Home({ theme, setTheme }) {
                         </Card>
                         
                     </Col>
-                    <Col className='d-flex justify-content-center'>
+                    <Col className='d-flex justify-content-center m-3'>
                         <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="300" className='full-height'>
                             <Card.Img variant="top" src={tableTennis} style={cardImageStyle}/>
                             <Card.Body className='text-justify'>
@@ -149,7 +149,7 @@ function Home({ theme, setTheme }) {
 
                 </Row>
                 <Row className='my-5'>
-                <Col className='d-flex justify-content-center'>
+                <Col className='d-flex justify-content-center m-3'>
                         <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="200" className='full-height'>
                             <Card.Img variant="top" src={ecoImg} style={cardImageStyle} />
                             <Card.Body className='text-justify'>
@@ -161,7 +161,8 @@ function Home({ theme, setTheme }) {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col className='d-flex justify-content-center'>
+                    <Col/>
+                    <Col className='d-flex justify-content-center m-3'>
                         <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="300" className='full-height'>
                             <Card.Img variant="top" src={bgHiking} style={cardImageStyle}/>
                             <Card.Body className='text-justify'>

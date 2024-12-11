@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Row, Image, Badge } from "react-bootstrap";
+import { Row, Image, Badge, Container } from "react-bootstrap";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import imgUTC from "../../assets/img/logos/utc-logo.png"
 import imgIUT from "../../assets/img/logos/iut-logo.png"
@@ -45,13 +45,15 @@ function EducationTimeline({ theme, setTheme }) {
                     <ul className="m-3">
                         <li>Computer Engineering, apprenticeship (dual-program)</li>
                     </ul>
-                    <Badge bg="secondary" className="mx-2">Network</Badge>
-                    <Badge bg="secondary" className="mx-2">Architecture</Badge>
-                    <Badge bg="secondary" className="mx-2">IoT</Badge>
-                    <Badge bg="secondary" className="mx-2">OOP</Badge>
-                    <Badge bg="secondary" className="mx-2">UML</Badge>
-                    <Badge bg="secondary" className="mx-2">QA</Badge>
-                    <Badge bg="secondary" className="mx-2">Project Management</Badge>
+                    <Container>
+                        <Badge bg="secondary" className="mx-2">Network</Badge>
+                        <Badge bg="secondary" className="mx-2">Architecture</Badge>
+                        <Badge bg="secondary" className="mx-2">IoT</Badge>
+                        <Badge bg="secondary" className="mx-2">OOP</Badge>
+                        <Badge bg="secondary" className="mx-2">UML</Badge>
+                        <Badge bg="secondary" className="mx-2">QA</Badge>
+                        <Badge bg="secondary" className="mx-2">Project Management</Badge>
+                    </Container>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work text-start"
@@ -72,10 +74,13 @@ function EducationTimeline({ theme, setTheme }) {
                     <ul className="m-3">
                         <li>Technical Bachelor Degree</li>
                     </ul>
-                    <Badge bg="secondary" className="mx-2">Fundamentals</Badge>
-                    <Badge bg="secondary" className="mx-2">Coding</Badge>
-                    <Badge bg="secondary" className="mx-2">DB</Badge>
-                    <Badge bg="secondary" className="mx-2">Embedded Hardware</Badge>
+                    <Container>
+                        <Badge bg="secondary" className="mx-2">Fundamentals</Badge>
+                        <Badge bg="secondary" className="mx-2">Coding</Badge>
+                        <Badge bg="secondary" className="mx-2">DB</Badge>
+                        <Badge bg="secondary" className="mx-2">Embedded Hardware</Badge>
+                    </Container>
+
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
