@@ -1,4 +1,4 @@
-import {Row, Card, Button, Col} from 'react-bootstrap';
+import {Row, Card, Button, Col, Container} from 'react-bootstrap';
 import React, { useEffect, useRef, useState } from "react";
 import hololensImg from '../assets/img/bg/hololens-card.jpg';
 import qwirkleImage from '../assets/img/bg/qwirkle_diy_02.jpg';
@@ -61,7 +61,7 @@ function Home({ theme, setTheme }) {
                 </Card>
 
             </Row>
-            <Row>
+            <Container className='bg-body-tertiary'>
                 <Row className='my-3 ' ref={showroomRef}>
                     <h2 className={`${theme === "dark" ? 'text-white ': 'text-dark '} justify-content-center text-center my-5`}>
                         {t('showroom')} 
@@ -149,8 +149,8 @@ function Home({ theme, setTheme }) {
                     
 
                 </Row>
-                <Row className='my-5'>
-                <Col className='d-flex justify-content-center m-3'>
+                <Row>
+                    <Col className='d-flex justify-content-center m-3'>
                         <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="200" className='full-height'>
                             <Card.Img variant="top" src={ecoImg} style={cardImageStyle} />
                             <Card.Body className='text-justify'>
@@ -178,7 +178,7 @@ function Home({ theme, setTheme }) {
                     </Col>
 
                 </Row>
-            </Row>
+            </Container>
 
         </div>
 

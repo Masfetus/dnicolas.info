@@ -64,31 +64,31 @@ function RightBar({ theme, setTheme }) {
     return (
 
       
-      <div className="z-9 position-fixed top-50 justify-content-center end-0 translate-middle-y d-grid gap-2 col-2 mx-2"  data-aos="fade-left">
-            <Button className="px-2" href="https://fr.wikipedia.org/wiki/Utilisateur:Masf%C3%A9tus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
+      <div className="z-9 position-fixed top-50 justify-content-center end-0 translate-middle-y d-grid gap-2 col-2" width="auto"  data-aos="fade-left">
+            <Button href="https://fr.wikipedia.org/wiki/Utilisateur:Masf%C3%A9tus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title="Wikipedia" icon={faWikipediaW} className="fa-m" />
             </Button>
-            <Button className="px-2" href="https://www.linkedin.com/in/dimnicolas/" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
+            <Button href="https://www.linkedin.com/in/dimnicolas/" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title="LinkedIn" icon={faLinkedin}  className="fa-m" />
             </Button>
-            <Button className="px-2" href="https://gitlab.com/Masfetus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
+            <Button href="https://gitlab.com/Masfetus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title="Gitlab" icon={faGitlab}  className="fa-m"/>
             </Button>
-            <Button className="px-2" href="https://github.com/Masfetus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
+            <Button href="https://github.com/Masfetus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title="Github" icon={faGithub}  className="fa-m"/>
             </Button>
 
-            <Button className="opacity-50 px-2" title={t('scrollTop')} style={buttonStyle} variant="btn btn-outline-secondary btn-m" onClick={scroll.scrollToTop}>
+            <Button className="opacity-50" title={t('scrollTop')} style={buttonStyle} variant="btn btn-outline-secondary btn-m" onClick={scroll.scrollToTop}>
                 <FontAwesomeIcon icon={faArrowUp} className="fa-m"/>
             </Button>
-            <Button className="opacity-50 px-2" title={t('scrollDown')} style={buttonStyle} variant="btn btn-outline-secondary btn-m" onClick={scroll.scrollToBottom}>
+            <Button className="opacity-50" title={t('scrollDown')} style={buttonStyle} variant="btn btn-outline-secondary btn-m" onClick={scroll.scrollToBottom}>
                 <FontAwesomeIcon icon={faArrowDown} className="fa-m"/>
             </Button>
             {theme === "dark"?
-            <Button className="px-2" variant="btn btn-outline-secondary btn-m" style={buttonStyle} onClick={onDarkModeButtonClicked}>
+            <Button variant="btn btn-outline-secondary btn-m" style={buttonStyle} onClick={onDarkModeButtonClicked}>
                 <FontAwesomeIcon title={t('switchLight')} icon={faMoon}/>
             </Button> :
-            <Button className="px-2" variant="btn btn-outline-secondary btn-m" style={buttonStyle} onClick={onDarkModeButtonClicked}>
+            <Button variant="btn btn-outline-secondary btn-m" style={buttonStyle} onClick={onDarkModeButtonClicked}>
                 <FontAwesomeIcon title={t('switchDark')} icon={faSun}/>
             </Button>
             }
@@ -97,7 +97,7 @@ function RightBar({ theme, setTheme }) {
                     <Image fluid src={`/icons/${lng.value}.png`} style={cardImageStyle}/>  
                 </Row>  
             )}/>
-            <Button className="px-2" href="mailto:dimi-nico@outlook.fr" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
+            <Button href="mailto:dimi-nico@outlook.fr" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title={t('contactMe')} icon={faEnvelope} />
             </Button>
       </div>
