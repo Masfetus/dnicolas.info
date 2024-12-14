@@ -45,8 +45,8 @@ function Home({ theme, setTheme }) {
     
     return (
         <div className='bg-body-tertiary' data-aos="fade-up" data-aos-delay="100">
-            <Row style={homeSectionStyle}>
-                <Card className="p-5" style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
+            <div style={homeSectionStyle}>
+                <Card className="p-5 w-100" style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
                     <div class="row justify-content-center text-center text-white" >
                         <div class="col-xl-6 col-lg-8 p-3">
                             <h1 className='fw-bold'>Dimitri Nicolas</h1>
@@ -60,7 +60,7 @@ function Home({ theme, setTheme }) {
                     </Row>
                 </Card>
 
-            </Row>
+            </div>
             <Container className='bg-body-tertiary'>
                 <Row className='my-3 ' ref={showroomRef}>
                     <h2 className={`${theme === "dark" ? 'text-white ': 'text-dark '} justify-content-center text-center my-5`}>

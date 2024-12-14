@@ -116,5 +116,88 @@
             "location": "Institut Universitaire de Technologie, Amiens, France",
             "item1": "Technical Bachelor Degree"
         }
-    }   
+    },
+    "bricksPage": {
+        "section1": {
+            "title": "City Skylines",
+            "item1": {
+                "title": "Antwerp, Belgien",
+                "description": "Antwerpen ist eine lebendige Stadt im Norden Belgiens, in der flämischen Region Flandern. Als Hauptstadt der Provinz Antwerpen ist sie ein kulturelles und wirtschaftliches Zentrum. Die Stadt ist bekannt für ihre reiche Geschichte, insbesondere im Handel und mit Diamanten, wobei ihr Hafen einer der größten in Europa ist. Antwerpen verfügt über beeindruckende Architektur, wie die Kathedrale Notre-Dame, und eine florierende Kunstszene. Sie war Heimat des berühmten barocken Künstlers Peter Paul Rubens, und sein ehemaliges Haus, das Rubenshuis, ist heute ein Museum. Die Stadt ist auch ein weltweit anerkanntes Modezentrum, das eine renommierte Modeschule und avantgardistische Designer beherbergt. Neben ihrer historischen Bedeutung ist Antwerpen eine moderne, kosmopolitische Stadt, die für ihre lebendige Food-Szene, ihre belebten Einkaufsviertel und ihr dynamisches Nachtleben bekannt ist und dabei Erbe und zeitgenössischen Charme vereint."
+            },
+            "item2": {
+                "title": "Berlin, Deutschland",
+                "description": "Berlin ist die Hauptstadt Deutschlands, bekannt für ihre reiche Geschichte, lebendige Kultur und moderne Architektur. Als eine der einflussreichsten Städte Europas ist sie besonders nach dem Fall der Berliner Mauer im Jahr 1989 ein Symbol der Einheit geworden. Besucher können historische Wahrzeichen wie das Brandenburger Tor, den Reichstag und das Berliner Mauerdenkmal besichtigen, die an die bewegte Vergangenheit der Stadt erinnern. Neben seiner historischen Bedeutung ist Berlin auch ein Zentrum für Kunst, Musik und Innovation und zieht junge Menschen aus der ganzen Welt an. Die verschiedenen Stadtteile bieten eine Mischung aus modernen Cafés, traditionellen Märkten und kreativen Räumen. Berlin ist ein Ort, an dem Altes auf Neues trifft und ein dynamisches Erlebnis für jeden bietet."
+            },
+            "item3": {
+                "title": "London, Vereinigtes Königreich",
+                "description": "London, die Hauptstadt Englands und des Vereinigten Königreichs, ist eine pulsierende Metropole, bekannt für ihre reiche Geschichte, vielfältige Kultur und ikonische Sehenswürdigkeiten. Historische Stätten wie der Tower of London, der Buckingham Palace und das British Museum stehen neben modernen Attraktionen wie dem London Eye und dem Shard. Die Themse durchzieht die Stadt und bietet malerische Ausblicke sowie Bootstouren. London zeichnet sich durch eine lebendige Kunstszene, erstklassige Theater im West End und zahlreiche Galerien aus. Die vielfältige Gastronomie reicht von traditionellen Fish and Chips bis zu internationalen Küchen. Zudem ist die Stadt ein Zentrum für Wirtschaft, Mode und Bildung, mit renommierten Institutionen wie der Universität von London."
+            },
+            "item4": {
+                "title": "New York City, Vereinigte Staaten",
+                "description": "New York City, oft als der „Big Apple“ bezeichnet, ist ein globales Zentrum für Kultur, Finanzen und Unterhaltung. Gelegen im Bundesstaat New York, ist die Stadt bekannt für ihre ikonische Skyline mit Wahrzeichen wie der Freiheitsstatue, dem Empire State Building und dem One World Trade Center. Zu den berühmtesten Attraktionen zählen der Times Square, Broadway und der Central Park. Die Stadt ist ein Schmelztiegel der Kulturen mit vielfältigen Vierteln wie Chinatown, Harlem und Little Italy. Die kulinarische Szene ist unvergleichlich, von Straßenessen bis hin zu Sternerestaurants. Bekannt als die Stadt, die niemals schläft, bietet New York ein pulsierendes Nachtleben, erstklassige Museen und eine lebendige Kunstszene. Zudem ist sie ein wichtiger Standort für Medien, Mode und Bildung mit renommierten Institutionen wie der Columbia University und NYU."
+            },
+            "item5": {
+                "title": "Paris, Frankreich",
+                "description": "Paris, die Hauptstadt Frankreichs, wird oft die Stadt der Lichter genannt und ist bekannt für ihren romantischen Charme, ihre Kunst und ihre Geschichte. Der Eiffelturm, die Kathedrale Notre-Dame und das Louvre-Museum sind ikonische Wahrzeichen, die jedes Jahr Millionen von Besuchern anziehen. Die malerischen Straßen der Stadt, gesäumt von Cafés und Boutiquen, schaffen eine bezaubernde Atmosphäre. Die Seine fließt durch Paris und bietet malerische Bootsfahrten sowie beeindruckende Ausblicke auf historische Brücken. Paris ist für seine kulinarische Exzellenz bekannt, mit Angeboten von Croissants und Baguettes bis hin zu Gourmetküche. Die Stadt ist auch ein globales Zentrum für Mode, mit renommierten Designern und der berühmten Pariser Fashion Week. Ihr kulturelles Erbe wird in zahlreichen Theatern, Kunstgalerien und historischen Stätten gefeiert, was Paris zu einem Top-Reiseziel macht."
+            },
+            "item6": {
+                "title": "Tokio, Japan",
+                "description": "Tokio, die Hauptstadt Japans, ist eine lebhafte Metropole, die Tradition und Moderne nahtlos verbindet. Bekannt für ihre hoch aufragenden Wolkenkratzer, historischen Tempel und pulsierenden Viertel, gehört sie zu den dynamischsten Städten der Welt. Zu den ikonischen Sehenswürdigkeiten zählen der historische Senso-ji-Tempel, der Meiji-Schrein und der moderne Tokyo Skytree. Stadtteile wie Shibuya, Shinjuku und Akihabara bieten einzigartige Erlebnisse, von Spitzentechnologie bis hin zu lebendigem Nachtleben. Tokio ist auch eine globale kulinarische Hauptstadt, berühmt für Sushi, Ramen und Restaurants mit Michelin-Sternen. Das effiziente öffentliche Verkehrssystem verbindet die Stadt und erleichtert die Erkundung. Tokios kultureller Reichtum zeigt sich in seinen Museen, Kunstgalerien und saisonalen Festivals, die jahrhundertealte Traditionen mit futuristischen Innovationen vereinen."
+            },
+            "item7": {
+                "title": "Las Vegas, Vereinigte Staaten",
+                "description": "Las Vegas, gelegen in der Wüste Nevadas, ist bekannt als die Unterhaltungshauptstadt der Welt. Berühmt für sein pulsierendes Nachtleben, erstklassige Casinos und spektakuläre Shows, begeistert die Stadt rund um die Uhr. Der Las Vegas Strip, gesäumt von luxuriösen Resorts wie dem Bellagio, Caesars Palace und Venetian, ist das Zentrum des Geschehens. Besucher können alles genießen, von großen Aufführungen und Konzerten bis hin zu Gourmetküche und Nachtleben. Die berühmten Lichtshows und Themenhotels der Stadt bieten ein unvergleichliches Erlebnis. Abseits des Strips zeigen Attraktionen wie der Red Rock Canyon und das Neon Museum eine andere Seite von Las Vegas. Bekannt für ihre ständige Aufregung ist die Stadt ein Top-Reiseziel für Freizeit und unvergessliche Erlebnisse."
+            },
+            "item8": {
+                "title": "Venedig, Italien",
+                "description": "Venedig, im Nordosten Italiens gelegen, ist eine Stadt, die für ihre romantischen Kanäle, reiche Geschichte und architektonische Schönheit bekannt ist. Erbaut auf einem Netz von Inseln, die durch Brücken verbunden sind, wird sie oft als die \"Schwimmende Stadt\" bezeichnet. Zu den berühmten Wahrzeichen gehören der Markusdom, der Dogenpalast und die Rialtobrücke. Besucher können den Canal Grande mit Gondeln oder Vaporetto erkunden und beeindruckende Ausblicke auf historische Paläste genießen. Venedig ist für seine Kunst berühmt, mit Veranstaltungen wie der Biennale von Venedig und dem jährlichen Karneval, bekannt für kunstvolle Masken und Kostüme. Die engen Gassen und charmanten Plätze sind voller Boutiquen und Cafés mit authentischer italienischer Küche. Venedig ist ein einzigartiges Reiseziel, das Geschichte, Kunst und Romantik vereint."
+            },
+            "item9": {
+                "title": "Sydney, Australien",
+                "description": "Sydney, die größte Stadt Australiens, ist bekannt für ihren atemberaubenden Hafen, ikonische Wahrzeichen und ihre lebendige Kultur. Das Sydney Opera House und die Sydney Harbour Bridge sind weltweit anerkannte Symbole der Stadt. Besucher können die wunderschönen Strände wie Bondi und Manly erkunden oder die ruhigen Royal Botanic Gardens genießen. Der lebhafte Darling Harbour bietet Unterhaltung, Restaurants und Attraktionen wie das SEA LIFE Sydney Aquarium. Sydney ist ein Schmelztiegel der Kulturen, sichtbar in der vielfältigen Küche und den lebendigen Festivals. Die nahegelegenen Blue Mountains bieten Möglichkeiten für Naturerlebnisse, während die Stadt selbst erstklassige Museen, Theater und Einkaufsviertel beherbergt. Mit sonnigem Wetter und ihrem Küstencharme ist Sydney ein Top-Reiseziel für Reisende aus aller Welt."
+            },
+            "item10": {
+                "title": "San Francisco, Vereinigte Staaten",
+                "description": "San Francisco, gelegen in Nordkalifornien, ist eine Stadt, die für ihre malerische Schönheit, kulturelle Vielfalt und ikonischen Wahrzeichen bekannt ist. Die Golden Gate Bridge, Alcatraz Island und die historischen Kabelstraßenbahnen gehören zu den berühmtesten Attraktionen. Stadtteile wie Chinatown, Haight-Ashbury und Fisherman’s Wharf bieten einzigartige Erlebnisse. San Francisco ist bekannt für seine lebendige Kunstszene, innovative Technologiebranche und progressiven Geist. Besucher können den Golden Gate Park erkunden, die Aussicht von Twin Peaks genießen oder erstklassige Museen wie das SFMOMA besuchen. Die kulinarische Szene ist herausragend, mit frischen Meeresfrüchten, Sauerteigbrot und internationalen Küchen. Umgeben vom Pazifischen Ozean und der Bucht von San Francisco verbindet die Stadt natürlichen Charme mit urbaner Eleganz und ist ein beliebtes Reiseziel."
+            },
+            "item11": {
+                "title": "Dubai, Vereinigten Arabischen Emiraten",
+                "description": "Dubai, gelegen in den Vereinigten Arabischen Emiraten, ist eine globale Stadt, bekannt für ihre futuristische Skyline, ihren luxuriösen Lebensstil und ihre lebendige Kultur. Berühmte Wahrzeichen sind der Burj Khalifa, das höchste Gebäude der Welt, und die Palm Jumeirah, eine ikonische künstliche Insel. Besucher können die Dubai Mall, eines der größten Einkaufszentren der Welt, erkunden oder traditionelle Souks mit Gold, Gewürzen und Textilien besuchen. Die Stadt vereint moderne Innovation mit reichem Erbe, sichtbar in Attraktionen wie dem Dubai Museum und dem historischen Viertel Al Fahidi. Mit luxuriösen Resorts, Wüstensafaris und gehobener Küche bietet Dubai Erlebnisse für jeden Reisenden. Der ganzjährige Sonnenschein, erstklassige Veranstaltungen und die kosmopolitische Atmosphäre machen die Stadt zu einem erstklassigen Reiseziel."
+            }
+        },
+        "section2": {
+            "title": "Landmarks",
+            "item1": {
+                "title": "Arc de Triomphe, Paris, Frankreich",
+                "description": "Der Arc de Triomphe, am westlichen Ende der Champs-Élysées in Paris gelegen, ist eines der bekanntesten Wahrzeichen Frankreichs. 1806 von Napoleon in Auftrag gegeben, um seine militärischen Siege zu ehren, steht er als Symbol für nationalen Stolz und Gedenken. Das Monument zeigt detaillierte Skulpturen und Inschriften, die Schlachten und Helden würdigen. Besucher können auf die Spitze steigen und einen atemberaubenden Panoramablick auf Paris genießen, einschließlich des Eiffelturms und der Champs-Élysées. Unter dem Bogen liegt das Grab des unbekannten Soldaten mit einer ewigen Flamme, die den Gefallenen des Ersten Weltkriegs gewidmet ist. Der Arc de Triomphe ist ein kraftvolles Zeugnis der französischen Geschichte und ein Muss für jeden Besucher."
+            },
+            "item2": {
+                "title": "Eiffelturm, Paris, Frankreich",
+                "description": "Der Eiffelturm, der in Paris steht, ist eines der bekanntesten Wahrzeichen der Welt. Entworfen von Gustave Eiffel und 1889 für die Exposition Universelle fertiggestellt, wurde er anfangs kritisiert, ist aber inzwischen zu einem Symbol für französische Ingenieurskunst und Eleganz geworden. Mit einer Höhe von 324 Metern war er das höchste vom Menschen errichtete Bauwerk der Welt, bis 1930 das Chrysler Building fertiggestellt wurde. Besucher können die Aussichtsplattformen des Turms erklimmen und einen atemberaubenden Blick auf Paris genießen, einschließlich Wahrzeichen wie dem Louvre und Notre-Dame. Der Eiffelturm erstrahlt jeden Abend in Lichtern und bietet eine spektakuläre Lichtshow, was ihn zu einem Muss für Reisende macht."
+            },
+            "item3": {
+                "title": "Kathedrale Notre-Dame, Paris, Frankreich",
+                "description": "Die Kathedrale Notre-Dame, auf der Île de la Cité in Paris gelegen, ist eines der bekanntesten gotischen Bauwerke der Welt. Sie wurde zwischen dem 12. und 14. Jahrhundert erbaut und ist berühmt für ihre beeindruckende Architektur, einschließlich der Strebepfeiler, der Rosettenfenster und der kunstvoll gestalteten Fassade. Die Kathedrale hat eine bedeutende Rolle in der französischen Geschichte gespielt, da sie königliche Zeremonien ausrichtete und als Symbol des nationalen Erbes dient. Besucher können das atemberaubende Innere bewundern, die Krypta erkunden oder die Türme erklimmen, um einen panoramischen Blick auf Paris zu genießen. Nach dem verheerenden Brand im Jahr 2019 sind Restaurierungsarbeiten im Gange, um Notre-Dame zu ihrem früheren Glanz zurückzuführen."
+            },
+            "item4": {
+                "title": "Turm von Pisa, Pisa, Italy",
+                "description": "Der Schiefe Turm von Pisa, gelegen in Pisa, Italien, ist eines der bekanntesten architektonischen Wahrzeichen der Welt. Er wurde als freistehender Glockenturm für die benachbarte Kathedrale erbaut und begann aufgrund instabilen Bodens während der Bauarbeiten im 12. Jahrhundert zu kippen. Trotz der Neigung ist der Turm 57 Meter hoch und zeichnet sich durch beeindruckende romanische Architektur aus. Besucher können die 294 Stufen bis zur Spitze erklimmen und einen spektakulären Blick auf die umliegende Stadt genießen. Der Turm ist Teil der Piazza dei Miracoli, einem UNESCO-Weltkulturerbe, und zieht jedes Jahr Millionen von Touristen an. Laufende Restaurierungsarbeiten haben geholfen, den Turm zu stabilisieren und seine Erhaltung für zukünftige Generationen zu sichern."
+            },
+            "item5": {
+                "title": "Santorin, Griechenland",
+                "description": "Santorin, eine griechische Insel in der Ägäis, ist bekannt für ihre atemberaubenden Landschaften, weiß getünchte Gebäude und blau gekuppelte Kirchen. Teil der Kykladen, wurde sie durch einen Vulkanausbruch vor etwa 3.600 Jahren geformt, der die dramatischen Klippen und die Caldera schuf. Die charmanten Dörfer der Insel, wie Oia und Fira, bieten atemberaubende Ausblicke auf das kristallklare Wasser und malerische Sonnenuntergänge. Santorin ist bekannt für seine Weinberge, antiken Ruinen und einzigartigen Strände, wie die schwarzen Sandstrände von Kamari und Perissa. Ihre lebendige Kultur, köstliche Küche und idyllische Atmosphäre machen sie zu einem Top-Reiseziel für Reisende, die Schönheit und Entspannung suchen."
+            },
+            "item6": {
+                "title": "Der Louvre, Paris, Frankreich",
+                "description": "Der Louvre, in Paris, Frankreich, ist eines der größten und bekanntesten Kunstmuseen der Welt. Ursprünglich im späten 12. Jahrhundert als königlicher Palast erbaut, wurde er 1793 während der Französischen Revolution zu einem Museum. Der Louvre beherbergt Tausende von Kunstwerken, darunter Meisterwerke wie Leonardo da Vincis Mona Lisa, die Venus von Milo und Eugène Delacroix’ Die Freiheit führt das Volk. Die riesige Sammlung des Museums erstreckt sich über Tausende von Jahren und umfasst eine Vielzahl von Kulturen und Zivilisationen. Besucher können die beeindruckenden Galerien, Höhlen und den Glas-Pyramiden-Eingang, der von dem Architekten I. M. Pei entworfen wurde, erkunden."
+            }
+        },
+        "section3": {
+            "title": "In einer anderen Welt...",
+            "item1": {
+                "title": "Crafting-Tisch, Minecraft",
+                "description": "Minecraft ist ein beliebtes Sandbox-Videospiel, das von Mojang Studios entwickelt wurde, in dem Spieler in einer blockartigen, prozedural generierten Welt bauen, erkunden und überleben können. Seit seiner Veröffentlichung im Jahr 2011 ist es eines der meistverkauften Spiele aller Zeiten. Das Spiel ermöglicht es den Spielern, Ressourcen zu sammeln, Gegenstände zu craften und Strukturen aus verschiedenen Materialien zu erstellen. Ein wichtiger Bestandteil von Minecraft ist der Crafting-Tisch, den die Spieler nutzen, um komplexere Gegenstände und Werkzeuge herzustellen. Indem sie Ressourcen in einem 3x3-Raster platzieren, können die Spieler Waffen, Rüstungen und andere essentielle Gegenstände erstellen, die für das Überleben und Gedeihen im Spiel notwendig sind."
+            }
+        }
+    }     
 }

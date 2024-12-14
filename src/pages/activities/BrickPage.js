@@ -7,6 +7,10 @@ import paris from "../../assets/img/bricks/paris.png"
 import tokyo from "../../assets/img/bricks/tokyo.png"
 import vegas from "../../assets/img/bricks/vegas.png"
 import venice from "../../assets/img/bricks/venice.png"
+import sf from "../../assets/img/bricks/san-francisco.png"
+import dubai from "../../assets/img/bricks/dubai.png"
+import sydney from "../../assets/img/bricks/sydney.png"
+
 
 import minecraft from "../../assets/img/bricks/minecraft.png"
 
@@ -15,6 +19,7 @@ import eiffel from "../../assets/img/bricks/eiffel.png"
 import notre_dame from "../../assets/img/bricks/notre-dame.png"
 import pisaTower from "../../assets/img/bricks/pisa-tower.png"
 import santorini from "../../assets/img/bricks/santorini.png"
+import louvre from "../../assets/img/bricks/louvre.png"
 
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -57,6 +62,10 @@ function BrickPage({ theme, setTheme }) {
                     <CarouselElement image={tokyo} title={t("section1.item6.title")} description={t("section1.item6.description")}/>
                     <CarouselElement image={vegas} title={t("section1.item7.title")} description={t("section1.item7.description")}/>
                     <CarouselElement image={venice} title={t("section1.item8.title")} description={t("section1.item8.description")}/>
+                    <CarouselElement image={sydney} title={t("section1.item9.title")} description={t("section1.item9.description")}/>
+                    <CarouselElement image={sf} title={t("section1.item10.title")} description={t("section1.item10.description")}/>
+                    <CarouselElement image={dubai} title={t("section1.item11.title")} description={t("section1.item11.description")}/>
+
                 </Carousel>
             </Container>
             <Container className="container-fluid p-5">
@@ -75,6 +84,8 @@ function BrickPage({ theme, setTheme }) {
                     <CarouselElement image={notre_dame} title={t("section2.item3.title")} description={t("section2.item3.description")}/>
                     <CarouselElement image={pisaTower} title={t("section2.item4.title")} description={t("section2.item4.description")}/>
                     <CarouselElement image={santorini} title={t("section2.item5.title")} description={t("section2.item5.description")}/>
+                    <CarouselElement image={louvre} title={t("section2.item6.title")} description={t("section2.item6.description")}/>
+
                 </Carousel>
             </Container>
             <Container className="container-fluid p-5">

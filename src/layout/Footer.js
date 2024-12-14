@@ -13,7 +13,7 @@ function Footer() {
     return (
       <footer className="bg-body-tertiary">
         <Card>
-        <Row className="text-start p-5">
+        <Container className="text-start d-flex p-5">
             <Col>
               <CardTitle className="bold">
                 {t('aboutMeLink')}
@@ -95,15 +95,13 @@ function Footer() {
                 </NavLink>
               </Container>
             </Col>
-        </Row>
-        <Row>
+        </Container>
           <Card>
             <CardBody>
               Made with <FontAwesomeIcon icon={faHeart} color="red" className="inline"/>, some <FontAwesomeIcon icon={faCode} className="inline"/>, and too much <FontAwesomeIcon icon={faCoffee} color="brown" className="inline"/>
               <p>dnicolas.info © 2024 - {t('copyright')}</p>
             </CardBody>
           </Card>
-        </Row>
         </Card>
 
       </footer>
