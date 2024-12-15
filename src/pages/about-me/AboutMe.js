@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect} from "react";
 import img from "../../assets/img/profile/profile-img.JPG"
 import img2 from "../../assets/img/profile/profile-img2.jpg"
 import { Row, Container, Card, CardBody, CardTitle, Image, Col } from "react-bootstrap";
@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 const pageTitle = `DN - About me`
 
 function AboutMe({ theme, setTheme }) {
-    const {t, i18n} = useTranslation("aboutMePage")
+    const {t} = useTranslation("aboutMePage")
     useEffect(() => {
         // Update the document title using the browser API
         document.title = pageTitle;

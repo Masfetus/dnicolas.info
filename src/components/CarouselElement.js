@@ -1,6 +1,5 @@
 import { Col, Image, Row} from "react-bootstrap";
 import React from "react";
-import Blur from "react-css-blur";
 
 const imageStyle = {
     objectFit: "cover"

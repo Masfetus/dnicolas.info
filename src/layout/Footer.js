@@ -1,19 +1,17 @@
-import { Card, Image, Navbar, Container, Nav, NavDropdown, Button, NavItem, ListGroup, ListGroupItem, NavLink, NavbarBrand, Row, Col, ListItem, CardTitle, CardBody, CardFooter } from "react-bootstrap";
-import React, { useState } from 'react';
+import { Card, Container, NavLink, Col, CardTitle, CardBody } from "react-bootstrap";
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUniversity, faHeart, faCode, faCoffee, faChessPawn, faTools, faTableTennis, faGamepad, faHiking, faUser, faIndustry} from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faCode, faCoffee} from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faGitlab, faLinkedinIn, faWikipediaW, faDiscord } from "@fortawesome/free-brands-svg-icons";
-import pygLogo from "../assets/img/icons/pyg.png";
-import bricksLogo from "../assets/img/icons/lego.png"
 import { useTranslation } from "react-i18next";
 
 function Footer() {
-  const { t, i18n} = useTranslation("footer")
+  const { t} = useTranslation("footer")
 
     return (
       <footer className="bg-body-tertiary">
         <Card>
-        <Container className="text-start d-flex p-5">
+        <Container className="text-start d-flex flex-wrap p-5">
             <Col>
               <CardTitle className="bold">
                 {t('aboutMeLink')}

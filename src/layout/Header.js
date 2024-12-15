@@ -1,12 +1,10 @@
 import { Navbar, Container, Nav, NavDropdown} from "react-bootstrap";
-import { faUniversity, faIndustry} from "@fortawesome/free-solid-svg-icons";
 import React from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 
 
 function Header({ theme, setTheme }) {
-    const { t, i18n} = useTranslation("header")
+    const { t} = useTranslation("header")
     return (
       <header  >
         <Navbar expand="lg">

@@ -43,7 +43,7 @@ function BrickPage({ theme, setTheme }) {
     
     return (
         <div data-bs-theme={theme} className={`${theme === "dark"? "text-light": "text-dark"} bg-body-tertiary`} data-aos="fade-up" data-aos-delay="100">
-            <Container className="container-fluid p-5">
+            <Container className="container-fluid p-5" data-aos="zoom-in-up" data-aos-delay="100">
                 <h2 className="my-5">{t("section1.title")}</h2>
                 <Carousel
                     autoPlay
@@ -53,6 +53,7 @@ function BrickPage({ theme, setTheme }) {
                     swipeable
                     useKeyboardArrows
                     stopOnHover
+                    data-aos="zoom-in-up"
                     className="border">
                     <CarouselElement image={anvers} title={t("section1.item1.title")} description={t("section1.item1.description")} />
                     <CarouselElement image={berlin} title={t("section1.item2.title")} description={t("section1.item2.description")} />
@@ -68,7 +69,7 @@ function BrickPage({ theme, setTheme }) {
 
                 </Carousel>
             </Container>
-            <Container className="container-fluid p-5">
+            <Container className="container-fluid p-5" data-aos="zoom-in-up" data-aos-delay="100">
                 <h2 className="my-5">Landmarks</h2>
                 <Carousel
                     autoPlay
@@ -78,6 +79,7 @@ function BrickPage({ theme, setTheme }) {
                     swipeable
                     useKeyboardArrows
                     stopOnHover
+                    
                     className="border">
                     <CarouselElement image={arc_triomphe} title={t("section2.item1.title")} description={t("section2.item1.description")} />
                     <CarouselElement image={eiffel} title={t("section2.item2.title")} description={t("section2.item2.description")} />

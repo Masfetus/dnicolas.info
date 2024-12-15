@@ -1,5 +1,5 @@
-import { Navbar, Card, Nav, NavDropdown, Button, NavItem, Row, Image, Form } from "react-bootstrap";
-import React, { useState } from 'react';
+import {Button, Image,} from "react-bootstrap";
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faArrowUp, faMoon, faSun, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { animateScroll as scroll } from "react-scroll";
@@ -10,7 +10,6 @@ import Select from 'react-select'
 function RightBar({ theme, setTheme }) {
     const {t, i18n} = useTranslation("rightBar")
     const buttonStyle = {
-        maxWidth: "60px"
     }
     function onDarkModeButtonClicked() {
         setTheme(theme === "dark"? "light" : "dark");
@@ -59,12 +58,12 @@ function RightBar({ theme, setTheme }) {
         { value:"fr", label: 'FR'},
         { value:"de", label: 'DE'}
     ]
-    let defaultValue = languages.find((lng) => lng.value == i18n.resolvedLanguage)
+    let defaultValue = languages.find((lng) => lng.value === i18n.resolvedLanguage)
     console.log(defaultValue)
     return (
 
       
-      <div className="z-9 position-fixed top-50 justify-content-center end-0 translate-middle-y d-grid gap-2 col-2" width="auto"  data-aos="fade-left">
+      <div className="z-9 position-fixed top-50 justify-content-center end-0 translate-middle-y d-grid gap-2 mx-3"   data-aos="fade-left">
             <Button href="https://fr.wikipedia.org/wiki/Utilisateur:Masf%C3%A9tus" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title="Wikipedia" icon={faWikipediaW} className="fa-m" />
             </Button>
@@ -93,9 +92,7 @@ function RightBar({ theme, setTheme }) {
             </Button>
             }
             <Select defaultValue={defaultValue} options={languages} onChange={setNewLanguage} style={buttonStyle} styles={CustomStyle}  formatOptionLabel={lng => (
-                <Row>
-                    <Image fluid src={`/icons/${lng.value}.png`} style={cardImageStyle}/>  
-                </Row>  
+                <Image fluid src={`/icons/${lng.value}.png`} style={cardImageStyle}/>  
             )}/>
             <Button href="mailto:dimi-nico@outlook.fr" style={buttonStyle} variant="btn btn-outline-secondary btn-m" >
                 <FontAwesomeIcon title={t('contactMe')} icon={faEnvelope} />

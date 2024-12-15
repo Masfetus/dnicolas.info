@@ -15,6 +15,7 @@ import AboutMe from './pages/about-me/AboutMe.js';
 import ProfessionalTimeline from './pages/about-me/ProfessionalTimeline.js';
 import EducationTimeline from './pages/about-me/EducationTimeline.js';
 import BrickPage from './pages/activities/BrickPage.js';
+import DocumentMeta from 'react-document-meta';
 function App() {
   const defaultDark = true;
 
@@ -24,12 +25,21 @@ function App() {
     "theme",
     defaultDark ? "dark" : "light"
   );
+  const meta = {
+    title: 'Dimitri Nicolas - IT Engineer',
+    description: 'Personal website of Dimitri Nicolas. IT Engineer, analyst, developer, and more to learn. Have a dive into a part of my life.',
+    meta: {
+      charset: 'utf-8',
+      name: {
+        keywords: 'Dimitri Nicolas,Lauterach,Personal,IT analyst,developer,engineer,utc,fendt'
+      }
+    }
+  };
   AOS.init();
   return (
 
     <div className="App bg-body-tertiary full-width" data-bs-theme={theme}>
-      <meta name="keywords" content="Dimitri Nicolas Lauterach Personal IT analyst developer engineer" />
-      <meta name="description" content="Personal website of Dimitri Nicolas. IT Engineer, analyst, developer, and more to learn. Have a dive into a part of my life." />
+      <DocumentMeta {...meta}/>
       <Header/>
       <BrowserRouter>
         <Routes>

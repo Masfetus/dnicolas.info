@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Row, Image, Badge, Container } from "react-bootstrap";
+import React, { useEffect} from "react";
+import { Image, Badge, Container } from "react-bootstrap";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import imgUTC from "../../assets/img/logos/utc-logo.png"
 import imgIUT from "../../assets/img/logos/iut-logo.png"
@@ -17,7 +17,7 @@ const iconStyle = { background: 'rgb(60, 60, 60)', color: '#fff' }
 const imageStyle = { display: "block", maxWidth: "100%", height: "auto" }
 
 function EducationTimeline({ theme, setTheme }) {
-    const {t, i18n} = useTranslation("educationPage")
+    const {t} = useTranslation("educationPage")
 
     useEffect(() => {
         // Update the document title using the browser API
