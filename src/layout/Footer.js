@@ -33,16 +33,16 @@ function Footer() {
               {t('itCornerLink')}
               </CardTitle>
               <Container className="py-2">
-                <NavLink>
+                <NavLink disabled>
                   <span>{t('pawnLanguageLink')}</span>
                 </NavLink>
-                <NavLink>
+                <NavLink disabled>
                   <span>Play Your Games</span> 
                 </NavLink>
-                <NavLink>
+                <NavLink disabled>
                   <span>{t('softwareLink')}</span>
                 </NavLink>
-                <NavLink>
+                <NavLink disabled>
                   <span>{t('studentProjectLink')}</span>
                 </NavLink>
               </Container>
@@ -52,16 +52,16 @@ function Footer() {
               {t('activitiesLink')}
               </CardTitle>
               <Container className="py-2">
-                <NavLink>
+                <NavLink disabled>
                   <span>{t('tableTennisLink')}</span>
                 </NavLink>
-                <NavLink>
+                <NavLink href="/bricks">
                   <span>{t('bricksLink')}</span> 
                 </NavLink>
-                <NavLink>
+                <NavLink disabled>
                   <span>{t('gamingLink')}</span>
                 </NavLink>
-                <NavLink>
+                <NavLink disabled> 
                   <span>{t('hikingLink')}</span>
                 </NavLink>
               </Container>

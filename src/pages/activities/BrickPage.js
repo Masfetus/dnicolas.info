@@ -70,7 +70,7 @@ function BrickPage({ theme, setTheme }) {
                 </Carousel>
             </Container>
             <Container className="container-fluid p-5" data-aos="zoom-in-up" data-aos-delay="100">
-                <h2 className="my-5">Landmarks</h2>
+                <h2 className="my-5">{t("section2.title")}</h2>
                 <Carousel
                     autoPlay
                     emulateTouch
