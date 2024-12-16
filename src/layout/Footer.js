@@ -1,4 +1,4 @@
-import { Card, Container, NavLink, Col, CardTitle, CardBody } from "react-bootstrap";
+import { Card, Container, NavLink, Col, CardTitle, CardBody, Badge } from "react-bootstrap";
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faCode, faCoffee} from "@fortawesome/free-solid-svg-icons";
@@ -34,16 +34,16 @@ function Footer() {
               </CardTitle>
               <Container className="py-2">
                 <NavLink disabled>
-                  <span>{t('pawnLanguageLink')}</span>
+                  <span>{t('pawnLanguageLink')} <Badge pill bg="warning">In work</Badge></span>
                 </NavLink>
                 <NavLink disabled>
-                  <span>Play Your Games</span> 
+                  <span>Play Your Games <Badge pill bg="warning">In work</Badge></span> 
                 </NavLink>
                 <NavLink disabled>
-                  <span>{t('softwareLink')}</span>
+                  <span>{t('softwareLink')} <Badge pill bg="warning">In work</Badge></span>
                 </NavLink>
                 <NavLink disabled>
-                  <span>{t('studentProjectLink')}</span>
+                  <span>{t('studentProjectLink')} <Badge pill bg="warning">In work</Badge></span>
                 </NavLink>
               </Container>
             </Col>
@@ -53,16 +53,16 @@ function Footer() {
               </CardTitle>
               <Container className="py-2">
                 <NavLink disabled>
-                  <span>{t('tableTennisLink')}</span>
+                  <span>{t('tableTennisLink')} <Badge pill bg="warning">In work</Badge></span>
                 </NavLink>
                 <NavLink href="/bricks">
                   <span>{t('bricksLink')}</span> 
                 </NavLink>
                 <NavLink disabled>
-                  <span>{t('gamingLink')}</span>
+                  <span>{t('gamingLink')} <Badge pill bg="warning">In work</Badge></span>
                 </NavLink>
                 <NavLink disabled> 
-                  <span>{t('hikingLink')}</span>
+                  <span>{t('hikingLink')} <Badge pill bg="warning">In work</Badge></span>
                 </NavLink>
               </Container>
             </Col>

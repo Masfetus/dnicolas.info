@@ -1,4 +1,4 @@
-import { Navbar, Container, Nav, NavDropdown} from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Badge} from "react-bootstrap";
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
@@ -20,16 +20,16 @@ function Header({ theme, setTheme }) {
                   <NavDropdown.Item href="/education">{t("educationLink")} </NavDropdown.Item>
                 </NavDropdown>             
                 <NavDropdown title={t("itCornerLink")} id="basic-nav-dropdown">
-                  <NavDropdown.Item disabled className="disabled" href="#action/3.1">{t("pawnLanguageLink")}</NavDropdown.Item>
-                  <NavDropdown.Item disabled className="disabled" href="#action/3.2">Play Your Games</NavDropdown.Item>
-                  <NavDropdown.Item disabled className="disabled" href="#action/3.3">{t("softwareLink")}</NavDropdown.Item>
-                  <NavDropdown.Item disabled href="#action/3.4">{t("studentProjectLink")}</NavDropdown.Item>
+                  <NavDropdown.Item href="/it/pawn">{t("pawnLanguageLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
+                  <NavDropdown.Item disabled className="disabled" href="#action/3.2">Play Your Games <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
+                  <NavDropdown.Item disabled className="disabled" href="#action/3.3">{t("softwareLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
+                  <NavDropdown.Item disabled href="#action/3.4">{t("studentProjectLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title={t("activitiesLink")} id="basic-nav-dropdown">
-                  <NavDropdown.Item disabled href="#action/3.1">{t("tableTennisLink")}</NavDropdown.Item>
-                  <NavDropdown.Item href="/activities/bricks">{t("bricksLink")}</NavDropdown.Item>
-                  <NavDropdown.Item disabled href="#action/3.4">{t("gamingLink")}</NavDropdown.Item>
-                  <NavDropdown.Item disabled href="#action/3.2">{t("hikingLink")}</NavDropdown.Item>
+                  <NavDropdown.Item disabled href="#action/3.1">{t("tableTennisLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
+                  <NavDropdown.Item href="/activities/bricks">{t("bricksLink")} </NavDropdown.Item>
+                  <NavDropdown.Item disabled href="#action/3.4">{t("gamingLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
+                  <NavDropdown.Item disabled href="#action/3.2">{t("hikingLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
               </NavDropdown>
               </Nav>
 

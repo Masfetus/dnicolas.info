@@ -16,6 +16,7 @@ import ProfessionalTimeline from './pages/about-me/ProfessionalTimeline.js';
 import EducationTimeline from './pages/about-me/EducationTimeline.js';
 import BrickPage from './pages/activities/BrickPage.js';
 import DocumentMeta from 'react-document-meta';
+import PawnLanguage from './pages/it-corner/PawnLanguage.js';
 function App() {
   const defaultDark = true;
 
@@ -45,9 +46,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home theme={theme} setTheme={setTheme}/>}/>
           <Route path="/home" element={<Home theme={theme} setTheme={setTheme}/>}/>
+          {/*--------------------- ABOUT-ME - Section ---------------------*/}
           <Route path="/about-me" element={<AboutMe theme={theme} setTheme={setTheme}/>}/>
           <Route path="/experience" element={<ProfessionalTimeline theme={theme} setTheme={setTheme}/>}/>
           <Route path="/education" element={<EducationTimeline theme={theme} setTheme={setTheme}/>}/>
+          {/*--------------------- IT Corner - Section ---------------------*/}  
+          <Route path="/it/pawn" element={<PawnLanguage theme={theme} setTheme={setTheme}/>}/>
+
+          {/*--------------------- ACTIVITIES - Section ---------------------*/}
           <Route path="/activities/bricks" element={<BrickPage theme={theme} setTheme={setTheme}/>}/>
           <Route
                   path="*"

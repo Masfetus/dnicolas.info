@@ -1,4 +1,4 @@
-import {Row, Card, Button, Col, Container} from 'react-bootstrap';
+import {Row, Card, Button, Col, Container, Badge} from 'react-bootstrap';
 import React, { useEffect, useRef, useState } from "react";
 import hololensImg from '../assets/img/bg/hololens-card.jpg';
 import qwirkleImage from '../assets/img/bg/qwirkle_diy_02.jpg';
@@ -76,7 +76,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                     {t('pygDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')}  <FontAwesomeIcon icon={faArrowRight}/></Button>
+                                <Button variant="secondary" disabled>{t('learnMore')}  <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
                             </Card.Body>
                         </Card>
                         
@@ -89,7 +89,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                     {t('sampDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/></Button>
+                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
                             </Card.Body>
                         </Card>
                         
@@ -102,7 +102,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                 {t('mxDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/></Button>
+                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -116,7 +116,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                 {t('qwirkleDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')}<FontAwesomeIcon icon={faArrowRight}/></Button>
+                                <Button variant="secondary" disabled>{t('learnMore')}<FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -141,7 +141,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                 {t('tableTennisDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/></Button>
+                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
                             </Card.Body>
                         </Card>
                         
@@ -158,7 +158,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                 {t('gamingDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/></Button>
+                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -171,7 +171,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                 {t('hikingDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')}<FontAwesomeIcon icon={faArrowRight}/></Button>
+                                <Button variant="secondary" disabled>{t('learnMore')}<FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
                             </Card.Body>
                         </Card>
                         
