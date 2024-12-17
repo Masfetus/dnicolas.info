@@ -63,7 +63,7 @@ function Home({ theme, setTheme }) {
             </div>
             <Container className='bg-body-tertiary'>
                 <Row className='my-3 ' ref={showroomRef}>
-                    <h2 className={`${theme === "dark" ? 'text-white ': 'text-dark '} justify-content-center text-center my-5`}>
+                    <h2 className={`${theme === "dark" ? 'text-white ': 'text-dark '} justify-content-center text-center border-bottom p-3 my-5`}>
                         {t('showroom')} 
                     </h2>
                 </Row>

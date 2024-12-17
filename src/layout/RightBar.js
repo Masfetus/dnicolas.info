@@ -1,7 +1,7 @@
 import {Button, Image,} from "react-bootstrap";
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown, faArrowUp, faMoon, faSun, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp, faMoon, faLightbulb, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { animateScroll as scroll } from "react-scroll";
 import {faGithub, faGitlab, faWikipediaW, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import { useTranslation } from "react-i18next";
@@ -85,10 +85,10 @@ function RightBar({ theme, setTheme }) {
             </Button>
             {theme === "dark"?
             <Button variant="btn btn-outline-secondary btn-m" style={buttonStyle} onClick={onDarkModeButtonClicked}>
-                <FontAwesomeIcon title={t('switchLight')} icon={faMoon}/>
+                <FontAwesomeIcon title={t('switchLight')} icon={faLightbulb} className="fa-regular"/>
             </Button> :
             <Button variant="btn btn-outline-secondary btn-m" style={buttonStyle} onClick={onDarkModeButtonClicked}>
-                <FontAwesomeIcon title={t('switchDark')} icon={faSun}/>
+                <FontAwesomeIcon title={t('switchDark')} icon={faMoon}/>
             </Button>
             }
             <Select defaultValue={defaultValue} options={languages} onChange={setNewLanguage} style={buttonStyle} styles={CustomStyle}  formatOptionLabel={lng => (

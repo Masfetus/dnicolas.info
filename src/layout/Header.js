@@ -20,7 +20,7 @@ function Header({ theme, setTheme }) {
                   <NavDropdown.Item href="/education">{t("educationLink")} </NavDropdown.Item>
                 </NavDropdown>             
                 <NavDropdown title={t("itCornerLink")} id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/it/pawn">{t("pawnLanguageLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
+                  <NavDropdown.Item href="/it/pawn">Pawn & SA-MP <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
                   <NavDropdown.Item disabled className="disabled" href="#action/3.2">Play Your Games <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
                   <NavDropdown.Item disabled className="disabled" href="#action/3.3">{t("softwareLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
                   <NavDropdown.Item disabled href="#action/3.4">{t("studentProjectLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>

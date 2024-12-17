@@ -34,7 +34,7 @@ function Footer() {
               </CardTitle>
               <Container className="py-2">
                 <NavLink disabled>
-                  <span>{t('pawnLanguageLink')} <Badge pill bg="warning">In work</Badge></span>
+                  <span>Pawn & SA-MP <Badge pill bg="warning">In work</Badge></span>
                 </NavLink>
                 <NavLink disabled>
                   <span>Play Your Games <Badge pill bg="warning">In work</Badge></span> 

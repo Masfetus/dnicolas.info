@@ -17,7 +17,7 @@ function AboutMe({ theme, setTheme }) {
         <div className="bg-body-tertiary">
             <Container className='py-5' data-aos="fade-up" data-aos-delay="100">
                 <Row className='my-3 ' >
-                    <h2 className={`${theme === "dark" ? 'text-white ': 'text-dark '} justify-content-center text-center my-5`}>
+                    <h2 className={`${theme === "dark" ? 'text-white ': 'text-dark '} text-start border-bottom p-3 my-5`}>
                         {t('title')}
                     </h2>
                 </Row>

@@ -44,7 +44,7 @@ function BrickPage({ theme, setTheme }) {
     return (
         <div data-bs-theme={theme} className={`${theme === "dark"? "text-light": "text-dark"} bg-body-tertiary`} data-aos="fade-up" data-aos-delay="100">
             <Container className="container-fluid p-5" data-aos="zoom-in-up" data-aos-delay="100">
-                <h2 className="my-5">{t("section1.title")}</h2>
+                <h2 className="my-5 p-3 text-start border-bottom">{t("section1.title")}</h2>
                 <Carousel
                     autoPlay
                     emulateTouch
@@ -70,7 +70,7 @@ function BrickPage({ theme, setTheme }) {
                 </Carousel>
             </Container>
             <Container className="container-fluid p-5" data-aos="zoom-in-up" data-aos-delay="100">
-                <h2 className="my-5">{t("section2.title")}</h2>
+                <h2 className="my-5 p-3 text-start border-bottom">{t("section2.title")}</h2>
                 <Carousel
                     autoPlay
                     emulateTouch
@@ -91,7 +91,7 @@ function BrickPage({ theme, setTheme }) {
                 </Carousel>
             </Container>
             <Container className="container-fluid p-5">
-                <h2 className="my-5">{t("section3.title")}</h2>
+                <h2 className="my-5 p-3 text-start border-bottom">{t("section3.title")}</h2>
                 <Carousel
                     autoPlay
                     emulateTouch

@@ -25,8 +25,9 @@ function EducationTimeline({ theme, setTheme }) {
     });
     
     return (
-        <div className={`${theme === "dark"? "text-light" : "text-dark"} bg-body-tertiary`} data-aos="fade-up" data-aos-delay="100">
-            <h2>{t('title')}</h2>
+        <div className={`${theme === "dark"? "text-light" : "text-dark"} bg-body-tertiary `} data-aos="fade-up" data-aos-delay="100">
+            <Container>
+            <h2 className="border-bottom p-3 text-start">{t('title')}</h2>
             <VerticalTimeline lineColor={theme === "dark"? "white" : "black"}>
             <VerticalTimelineElement
                     className="vertical-timeline-element--work text-start"
@@ -88,6 +89,7 @@ function EducationTimeline({ theme, setTheme }) {
                     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                 />
                 </VerticalTimeline>
+            </Container>
         </div>
 
 
