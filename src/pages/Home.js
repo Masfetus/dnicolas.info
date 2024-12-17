@@ -128,7 +128,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                 {t('bricksDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" href='/bricks'>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/></Button>
+                                <Button variant="secondary" href='/activities/bricks'>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/></Button>
                             </Card.Body>
                         </Card>
                         
