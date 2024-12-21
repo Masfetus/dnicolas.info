@@ -8,6 +8,14 @@ import { Link } from "react-scroll";
 import { faExternalLink, faChessPawn } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faWikipediaW } from "@fortawesome/free-brands-svg-icons";
+import YouTube from "react-youtube";
+import samp from "../../assets/img/samp/Sa-mp-007.webp"
+import samp1 from "../../assets/img/samp/sa-mp-112.png"
+import samp2 from "../../assets/img/samp/unknown.png"
+import samp3 from "../../assets/img/samp/Sa-mp-002-0.webp"
+import samp4 from "../../assets/img/samp/Sa-mp-046.webp"
+
+import { Carousel } from "react-responsive-carousel";
 
 const pageTitle = `DN - Pawn`
 const snippet1 = 
@@ -28,13 +36,22 @@ HexToInt(string[])
     }
     return res;
 }`
+const options = {
+    playerVars: {
+      autoplay: 1,
+      controls: 1,
+    },
+  };
+function _onReady(event) {
+    event.target.pauseVideo();
+}
 function PawnLanguage({ theme, setTheme }) {
 
     useEffect(() => {
         // Update the document title using the browser API
         document.title = pageTitle;
     });
-    
+
     return (
         <div className="bg-body-tertiary">
             <Container className='py-5' data-aos="fade-up" data-aos-delay="100">
@@ -171,38 +188,118 @@ function PawnLanguage({ theme, setTheme }) {
                                     As part of this mod, I contributed to many gamemodes with truly enjoyed working on it together with friends. You will find below the gamemodes I contributed to.
                                 </p>
                                 </CardBody>
-                                <Card className="p-3">
-                                    <CardTitle className="border-bottom p-2">RCTDM - Mode-Libre (Freeroam) </CardTitle>
-                                    <Row className="p-3">
-                                        <Col sm={4} className="d-flex flex-wrap align-items-center">
-                                            <Image fluid src={rctdmLogo} className=""/>
+                                <Accordion defaultActiveKey="0">
+                                    <Accordion.Item eventKey="0">
+                                        <Accordion.Header > 
+                                            <Image fluid src={rctdmLogo} className="w-25"/>
 
-                                        </Col>
-                                        <Col sm={8} className="text-start px-5">
-                                            <h5 className="text-start">
-                                                Mode-Libre? Freeroam?
-                                            </h5>
-                                            <p>
-                                                As you know, SA-MP allows the developers to provide players any kind of experience. That means, various game modes coexist within the SA-MP community such as RPG (RolePlayGame), DM (DeathMatch), Mini-Game, and so on... Freeroam is one of them where the experience is inspired by all of other modes. Thus, some features from RPG are available (jobs, property management, objects & inventory) while excluding the RPG rules and constraints. These features are also combined with DM (DeathMatch) sessions and gang territory captures. In addition, the freeroam mod gives the opportunity of having fun through mini-games, races, stunts, and some other in-game missions.
-                                                This way, users are free to play and benefits from any features matching their gameplay.
+                                            <h5 className="border-bottom mx-3 p-2 fw-bold">RCTDM - Mode-Libre (Freeroam)</h5> 
 
-                                            </p>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col sm={12} className="text-start px-5">
-                                            <h5 className="text-start">
-                                                Birth of the server
-                                            </h5>
-                                            <p>
-                                                This server has a long story since the core was initially developed in 2008. It had been running for many years, until 2014 when it came to an end due to many reasons and turnover within the staff. In parallel to this server, <a href="https://benjamin-wirtz.com/" className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Benjamin W.</a> & I started our first steps into Pawn coding and SA-MP development. 
-                                                We contributed together to this new gamemode that later led to RCTDM - Mode Libre. The idea was to reborn the villages across San Andreas that were mostly left unused by many servers. This gamemode was released in 2015 and has continously been improved by Benjamin. I took over the development activities starting from 2017, and added features suggested or requested by the community. The experience was enriching since regular updates were made, and I have been well-supported by the staff team.
-                                            </p>
-                                        </Col>
-                                    </Row>
-                                </Card>
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                        <Row className="p-3">
+                                            <Col sm={4} className="d-flex flex-wrap align-items-center">
+                                                <Image fluid thumbnail src={samp} className=""/>
+
+                                            </Col>
+                                            <Col sm={8} className="text-start px-5">
+                                                <h5 className="text-start">
+                                                    Mode-Libre? Freeroam?
+                                                </h5>
+                                                <p>
+                                                    As you know, SA-MP allows the developers to provide players any kind of experience. That means, various game modes coexist within the SA-MP community such as RPG (RolePlayGame), DM (DeathMatch), Mini-Game, and so on... Freeroam is one of them where the experience is inspired by all of other modes. Thus, some features from RPG are available (jobs, property management, objects & inventory) while excluding the RPG rules and constraints. These features are also combined with DM (DeathMatch) sessions and gang territory captures. In addition, the freeroam mod gives the opportunity of having fun through mini-games, races, stunts, and some other in-game missions.
+                                                    This way, users are free to play and benefits from any features matching their gameplay.
+
+                                                </p>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col sm={8} className="text-start px-5">
+                                                <h5 className="text-start">
+                                                    Birth of the server
+                                                </h5>
+                                                <p>
+                                                    This server has a long story since the core was initially developed in 2008. It had been running for many years, until 2014 when it came to an end due to many reasons and turnover within the staff. In parallel to this server, <a href="https://benjamin-wirtz.com/" className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Benjamin W.</a> & I started our first steps into Pawn coding and SA-MP development. 
+                                                    We contributed together to this new gamemode that later led to RCTDM - Mode Libre. The idea was to reborn the villages across San Andreas that were mostly left unused by many servers. This gamemode was released in 2015 and has continously been improved by Benjamin. I took over the development activities starting from 2017, and added features suggested or requested by the community. The experience was enriching since regular updates were made, and I have been well-supported by the staff team.
+                                                </p>
+                                            </Col>
+                                            <Col sm={4}>
+                                                <Image fluid src={samp1} className=""/>
+
+                                            </Col>
+                                        </Row>
+                                        <Row className="p-3">
+                                            <h5 className="border-bottom text-start p-3">Gallery</h5>
+                                            <Col sm={4}>
+                                                <Image thumbnail fluid src={samp2} className=""/>
+
+                                            </Col>
+                                            <Col sm={4}>
+                                                <Image thumbnail fluid src={samp4} className=""/>
+
+
+                                            </Col>
+                                            <Col sm={4}>
+                                                <Image thumbnail fluid src={samp3} className=""/>
+
+                                            </Col>
+                                        </Row>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header > 
+                                            <h5 className="border-bottom p-2 fw-bold">RCTDM - Mode-Libre (Freeroam)</h5> 
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                        <Row className="p-3">
+                                            <Col sm={4} className="d-flex flex-wrap align-items-center">
+                                                
+
+                                            </Col>
+                                            <Col sm={8} className="text-start px-5">
+                                                <h5 className="text-start">
+                                                    Mode-Libre? Freeroam?
+                                                </h5>
+                                                <p>
+                                                    As you know, SA-MP allows the developers to provide players any kind of experience. That means, various game modes coexist within the SA-MP community such as RPG (RolePlayGame), DM (DeathMatch), Mini-Game, and so on... Freeroam is one of them where the experience is inspired by all of other modes. Thus, some features from RPG are available (jobs, property management, objects & inventory) while excluding the RPG rules and constraints. These features are also combined with DM (DeathMatch) sessions and gang territory captures. In addition, the freeroam mod gives the opportunity of having fun through mini-games, races, stunts, and some other in-game missions.
+                                                    This way, users are free to play and benefits from any features matching their gameplay.
+
+                                                </p>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col sm={8} className="text-start px-5">
+                                                <h5 className="text-start">
+                                                    Birth of the server
+                                                </h5>
+                                                <p>
+                                                    This server has a long story since the core was initially developed in 2008. It had been running for many years, until 2014 when it came to an end due to many reasons and turnover within the staff. In parallel to this server, <a href="https://benjamin-wirtz.com/" className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Benjamin W.</a> & I started our first steps into Pawn coding and SA-MP development. 
+                                                    We contributed together to this new gamemode that later led to RCTDM - Mode Libre. The idea was to reborn the villages across San Andreas that were mostly left unused by many servers. This gamemode was released in 2015 and has continously been improved by Benjamin. I took over the development activities starting from 2017, and added features suggested or requested by the community. The experience was enriching since regular updates were made, and I have been well-supported by the staff team.
+                                                </p>
+                                            </Col>
+                                            <Col sm={4}>
+                                                <Image fluid src={samp1} className=""/>
+
+                                            </Col>
+                                        </Row>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    </Accordion>
                             </Col>
 
+                        </Row>
+                        <Row>
+                            <Carousel
+                                autoPlay
+                                emulateTouch
+                                infiniteLoop
+                                showStatus={false}
+                                swipeable
+                                useKeyboardArrows
+                                stopOnHover
+                                data-aos="zoom-in-up"
+                                className="border">                        
+                            </Carousel>
                         </Row>
                     </Card>
                 </Row>

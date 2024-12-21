@@ -12,6 +12,7 @@ import bgHiking from '../assets/img/bg/bg-hiking.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowDown} from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
+import { Carousel } from 'react-responsive-carousel';
 const cardStyle = {
     minWidth: '22rem', 
     height: '100%'
@@ -178,6 +179,7 @@ function Home({ theme, setTheme }) {
                     </Col>
 
                 </Row>
+
             </Container>
 
         </div>
