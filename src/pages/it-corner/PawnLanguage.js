@@ -14,8 +14,11 @@ import samp1 from "../../assets/img/samp/sa-mp-112.png"
 import samp2 from "../../assets/img/samp/unknown.png"
 import samp3 from "../../assets/img/samp/Sa-mp-002-0.webp"
 import samp4 from "../../assets/img/samp/Sa-mp-046.webp"
+import sao1 from "../../assets/img/samp/sao1.png"
+import surviveall from "../../assets/img/logos/surviveall-logo.png"
 
 import { Carousel } from "react-responsive-carousel";
+import TextLink from "../../components/TextLink";
 
 const pageTitle = `DN - Pawn`
 const snippet1 = 
@@ -61,7 +64,7 @@ function PawnLanguage({ theme, setTheme }) {
                     </h2>
                 </Row>
                 <Row className="justify-content-start text-left my-3"> 
-                    <Card>
+                    <Card className="py-5">
                         <Row className="m-5">
                             <CardTitle className="text-start border-bottom py-3">Introduction</CardTitle>
 
@@ -174,8 +177,10 @@ function PawnLanguage({ theme, setTheme }) {
 
                             </Col>
                         </Row>
-                        <Row className="m-5">
-                            <CardTitle className="text-start border-bottom py-2" id="samp">San Andreas: Multiplayer</CardTitle>
+                        <Row id="samp" className="m-5">
+                            <Link to="#samp">
+                                <CardTitle className="text-start border-bottom py-2" >San Andreas: Multiplayer</CardTitle>
+                            </Link>
                         </Row>
                         <Image src={sampLogo} fluid className="w-25 mx-auto d-block text-center" data-aos="flip-left"  data-aos-delay="500"></Image>
                         <Row>
@@ -188,16 +193,15 @@ function PawnLanguage({ theme, setTheme }) {
                                     As part of this mod, I contributed to many gamemodes with truly enjoyed working on it together with friends. You will find below the gamemodes I contributed to.
                                 </p>
                                 </CardBody>
-                                <Accordion defaultActiveKey="0">
+                                <Accordion >
                                     <Accordion.Item eventKey="0">
-                                        <Accordion.Header > 
-                                            <Image fluid src={rctdmLogo} className="w-25"/>
-
-                                            <h5 className="border-bottom mx-3 p-2 fw-bold">RCTDM - Mode-Libre (Freeroam)</h5> 
-
+                                        <Accordion.Header> 
+                                            <h5 className="border-bottom p-2 fw-bold">RCTDM - Mode-Libre (Freeroam)</h5> 
+                                            <Image fluid src={rctdmLogo} className="mx-3 w-25"/>
                                         </Accordion.Header>
-                                        <Accordion.Body>
-                                        <Row className="p-3">
+                                        <Accordion.Body
+                                            data-aos="fade-left">
+                                        <Row className="p-3" data-aos="fade-up" data-aos-delay="100">
                                             <Col sm={4} className="d-flex flex-wrap align-items-center">
                                                 <Image fluid thumbnail src={samp} className=""/>
 
@@ -213,22 +217,26 @@ function PawnLanguage({ theme, setTheme }) {
                                                 </p>
                                             </Col>
                                         </Row>
-                                        <Row>
+                                        <Row data-aos="fade-up" data-aos-delay="100">  
                                             <Col sm={8} className="text-start px-5">
                                                 <h5 className="text-start">
                                                     Birth of the server
                                                 </h5>
                                                 <p>
-                                                    This server has a long story since the core was initially developed in 2008. It had been running for many years, until 2014 when it came to an end due to many reasons and turnover within the staff. In parallel to this server, <a href="https://benjamin-wirtz.com/" className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Benjamin W.</a> & I started our first steps into Pawn coding and SA-MP development. 
+                                                    This server has a long story since the core was initially developed in 2008. It had been running for many years, until 2014 when it came to an end due to many reasons and turnover within the staff. In parallel to this server, <TextLink href="https://benjamin-wirtz.com/" text="Benjamin W."/> & I started our first steps into Pawn coding and SA-MP development. 
                                                     We contributed together to this new gamemode that later led to RCTDM - Mode Libre. The idea was to reborn the villages across San Andreas that were mostly left unused by many servers. This gamemode was released in 2015 and has continously been improved by Benjamin. I took over the development activities starting from 2017, and added features suggested or requested by the community. The experience was enriching since regular updates were made, and I have been well-supported by the staff team.
                                                 </p>
+                                                <p>
+                                                    As the server's gameplay has been getting more and more complex, a Wiki was created in order to guide new joiners and provide more details information on the in-game entities.
+                                                </p>
+                                                <TextLink href="https://rctdm.fandom.com/fr/wiki/Wiki_Mode_Libre_-_Serveur_Fun" text="See the wiki (fr)"/>
                                             </Col>
                                             <Col sm={4}>
                                                 <Image fluid src={samp1} className=""/>
 
                                             </Col>
                                         </Row>
-                                        <Row className="p-3">
+                                        <Row className="p-3" data-aos="fade-up" data-aos-delay="100">
                                             <h5 className="border-bottom text-start p-3">Gallery</h5>
                                             <Col sm={4}>
                                                 <Image thumbnail fluid src={samp2} className=""/>
@@ -248,37 +256,82 @@ function PawnLanguage({ theme, setTheme }) {
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="1">
                                         <Accordion.Header > 
-                                            <h5 className="border-bottom p-2 fw-bold">RCTDM - Mode-Libre (Freeroam)</h5> 
+                                            <h5 className="border-bottom p-2 fw-bold">San Andreas Online</h5> 
                                         </Accordion.Header>
                                         <Accordion.Body>
                                         <Row className="p-3">
-                                            <Col sm={4} className="d-flex flex-wrap align-items-center">
-                                                
+                                            <Col sm={4}>
+                                                <Image thumbnail fluid src={sao1} className=""/>
 
                                             </Col>
                                             <Col sm={8} className="text-start px-5">
-                                                <h5 className="text-start">
-                                                    Mode-Libre? Freeroam?
+                                                <h5>
+                                                    Concept
                                                 </h5>
                                                 <p>
-                                                    As you know, SA-MP allows the developers to provide players any kind of experience. That means, various game modes coexist within the SA-MP community such as RPG (RolePlayGame), DM (DeathMatch), Mini-Game, and so on... Freeroam is one of them where the experience is inspired by all of other modes. Thus, some features from RPG are available (jobs, property management, objects & inventory) while excluding the RPG rules and constraints. These features are also combined with DM (DeathMatch) sessions and gang territory captures. In addition, the freeroam mod gives the opportunity of having fun through mini-games, races, stunts, and some other in-game missions.
-                                                    This way, users are free to play and benefits from any features matching their gameplay.
-
+                                                    The project started in 2017 in collaboration with adrienspy. The main concept was inspired by the multiplayer mod of GTA V: Gta Online. Thus, the gamemode aimed to provide a storyline throughout the experience based on cinematics.
+                                                    And, apart from the story missions that unlock milestones and in-game capabilities, the gameplay remained flexible and free. Just like GTA Online, you could own houses, cars, or rob pedestrians as well as shops or banks. We intended to bring 
+                                                    an usual experience on SA-MP servers while keeping the key values of the mod.
+                                                </p>
+                                                <p>
+                                                    I contributed on the development of the most important features such as the NPCs bringing interactions or the different property systems. This project was running in parallel to the RCTDM server mentioned above. Unfortunately,
+                                                    due to personal reasons and the capacity of the team, it has been paused and never exited the beta phase. Nevertheless, the concept brought an innovative view on the SA-MP gamemodes and I really enjoyed working with my teammate
+                                                    since the workload was properly splitted based on our knowledge.
                                                 </p>
                                             </Col>
                                         </Row>
                                         <Row>
                                             <Col sm={8} className="text-start px-5">
-                                                <h5 className="text-start">
-                                                    Birth of the server
-                                                </h5>
-                                                <p>
-                                                    This server has a long story since the core was initially developed in 2008. It had been running for many years, until 2014 when it came to an end due to many reasons and turnover within the staff. In parallel to this server, <a href="https://benjamin-wirtz.com/" className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Benjamin W.</a> & I started our first steps into Pawn coding and SA-MP development. 
-                                                    We contributed together to this new gamemode that later led to RCTDM - Mode Libre. The idea was to reborn the villages across San Andreas that were mostly left unused by many servers. This gamemode was released in 2015 and has continously been improved by Benjamin. I took over the development activities starting from 2017, and added features suggested or requested by the community. The experience was enriching since regular updates were made, and I have been well-supported by the staff team.
-                                                </p>
+                                                
                                             </Col>
                                             <Col sm={4}>
-                                                <Image fluid src={samp1} className=""/>
+
+                                            </Col>
+                                        </Row>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header > 
+                                            <h5 className="border-bottom p-2 fw-bold">Survive-All</h5> 
+                                            <Image fluid src={surviveall} className="w-25 m-2"/>
+
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                        <Row className="p-3">
+                                            <Col sm={4} className="d-grid align-content-middle">
+                                                <Image thumbnail fluid src={surviveall} className=""/>
+
+                                            </Col>
+                                            <Col sm={8} className="text-start px-5">
+                                                <h5>
+                                                    The Server
+                                                </h5>
+                                                <p>
+                                                    The development of the server kicked off in 2016. Benjamin W., the creator, wanted to wrap the concept of a "DayZ" or "The Walking Dead" world into a server, where the gameplay is highly based on the community. Players evolve in the middle of an apocalyptic world full of zombies, corpses, and wrecks. Survivals can team up to beat death easier and start building up the society again.
+                                                </p>
+                                                <p>
+                                                    Although my friend mainly designed, developed, and imagined this server; I also had the honor of contributing. The main activity was to migrate the saved data from a file-based database to a relational database such as MySQL. The upsides were multiple: more security, faster to load the server (W/R file operations are time-consuming), a way more scalable.
+                                                    It required a lot of effort due to the whole data model relying on such system. However, we managed to tackle the migration, adapt and adjust the data model so that we can leverage the performances. It was also my pleasure being part of the beta-testers before the official release.
+                                                </p>
+                                            </Col>
+                                        </Row>
+                                        <Row className="p-3">
+                                            <Col sm={12} className="text-start px-5">
+                                                <p>
+                                                    In case you would like to know more about the server, do not hesitate to visit <TextLink href="https://benjamin-wirtz.com/article/2" text="this article from Benjamin."/>
+                                                    In addition, below is the trailer presenting the main scenario, and the main possibilities on the server.    
+                                                </p>
+                                                <div className="d-flex justify-content-center">
+                                                    <YouTube videoId="e8Lf97ALwfE" opts={options} onReady={_onReady}/>
+
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col sm={8} className="text-start px-5">
+                                                
+                                            </Col>
+                                            <Col sm={4}>
 
                                             </Col>
                                         </Row>
@@ -287,19 +340,6 @@ function PawnLanguage({ theme, setTheme }) {
                                     </Accordion>
                             </Col>
 
-                        </Row>
-                        <Row>
-                            <Carousel
-                                autoPlay
-                                emulateTouch
-                                infiniteLoop
-                                showStatus={false}
-                                swipeable
-                                useKeyboardArrows
-                                stopOnHover
-                                data-aos="zoom-in-up"
-                                className="border">                        
-                            </Carousel>
                         </Row>
                     </Card>
                 </Row>
