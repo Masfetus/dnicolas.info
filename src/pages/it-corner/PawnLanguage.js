@@ -20,7 +20,7 @@ import surviveall from "../../assets/img/logos/surviveall-logo.png"
 import { Carousel } from "react-responsive-carousel";
 import TextLink from "../../components/TextLink";
 
-const pageTitle = `DN - Pawn`
+const pageTitle = `DN - Pawn & SA-MP`
 const snippet1 = 
 `Float:GetDistance( Float:x1, Float:y1, Float:z1, Float:x2, Float:y2, Float:z2 )
 {

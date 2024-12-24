@@ -33,8 +33,8 @@ function Footer() {
               {t('itCornerLink')}
               </CardTitle>
               <Container className="py-2">
-                <NavLink disabled>
-                  <span>Pawn & SA-MP <Badge pill bg="warning">In work</Badge></span>
+                <NavLink href="/it/pawn">
+                  <span>Pawn & SA-MP </span>
                 </NavLink>
                 <NavLink disabled>
                   <span>Play Your Games <Badge pill bg="warning">In work</Badge></span> 

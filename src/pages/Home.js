@@ -90,7 +90,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                     {t('sampDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" href='/it/pawn#samp'>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
+                                <Button variant="secondary" href='/it/pawn#samp'>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/></Button>
                             </Card.Body>
                         </Card>
                         

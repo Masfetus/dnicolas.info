@@ -8,6 +8,8 @@ import Footer from './layout/Footer.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 
 import RightBar from './layout/RightBar.js';
 import PageNotFound from './pages/PageNotFound.js';
@@ -15,8 +17,8 @@ import AboutMe from './pages/about-me/AboutMe.js';
 import ProfessionalTimeline from './pages/about-me/ProfessionalTimeline.js';
 import EducationTimeline from './pages/about-me/EducationTimeline.js';
 import BrickPage from './pages/activities/BrickPage.js';
-import DocumentMeta from 'react-document-meta';
 import PawnLanguage from './pages/it-corner/PawnLanguage.js';
+import PlayYourGames from './pages/it-corner/PlayYourGames.js';
 function App() {
   const defaultDark = true;
 
@@ -26,21 +28,11 @@ function App() {
     "theme",
     defaultDark ? "dark" : "light"
   );
-  const meta = {
-    title: 'Dimitri Nicolas - IT Engineer',
-    description: 'Personal website of Dimitri Nicolas. IT Engineer, analyst, developer, and more to learn. Have a dive into a part of my life.',
-    meta: {
-      charset: 'utf-8',
-      name: {
-        keywords: 'Dimitri Nicolas,Lauterach,Personal,IT analyst,developer,engineer,utc,fendt'
-      }
-    }
-  };
+
   AOS.init();
   return (
 
     <div className="App bg-body-tertiary full-width" data-bs-theme={theme}>
-      <DocumentMeta {...meta}/>
       <Header/>
       <BrowserRouter>
         <Routes>
@@ -52,6 +44,7 @@ function App() {
           <Route path="/education" element={<EducationTimeline theme={theme} setTheme={setTheme}/>}/>
           {/*--------------------- IT Corner - Section ---------------------*/}  
           <Route path="/it/pawn" element={<PawnLanguage theme={theme} setTheme={setTheme}/>}/>
+          <Route path="/it/pyg" element={<PlayYourGames theme={theme} setTheme={setTheme}/>}/>
 
           {/*--------------------- ACTIVITIES - Section ---------------------*/}
           <Route path="/activities/bricks" element={<BrickPage theme={theme} setTheme={setTheme}/>}/>
