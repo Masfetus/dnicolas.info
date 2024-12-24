@@ -4,7 +4,7 @@ import sampLogo from "../../assets/img/logos/samp-logo.png"
 import rctdmLogo from "../../assets/img/logos/rctdm-logo.webp"
 import { Container, Row, Card, CardTitle, Col, Image, CardBody, ButtonGroup, Button, Accordion, Stack, NavLink } from "react-bootstrap";
 import { CodeBlock, atomOneDark, atomOneLight, CopyBlock, vs2015, paraisoDark, paraisoLight, a11yDark, a11yLight } from "react-code-blocks";
-import { Link } from "react-scroll";
+import { Element, scroller } from "react-scroll";
 import { faExternalLink, faChessPawn } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faWikipediaW } from "@fortawesome/free-brands-svg-icons";
@@ -53,18 +53,26 @@ function PawnLanguage({ theme, setTheme }) {
     useEffect(() => {
         // Update the document title using the browser API
         document.title = pageTitle;
+        console.log(window.location.hash)
+        if(window.location.hash === "#samp") {
+            console.log("scrolling")
+            scroller.scrollTo('samp', {
+                smooth: true,
+                containerId: 'containerSamp'
+            })
+        }
     });
-
+    
     return (
-        <div className="bg-body-tertiary">
-            <Container className='py-5' data-aos="fade-up" data-aos-delay="100">
+        <div className="bg-body-tertiary py-1">
+            <Container  data-aos="fade-up" data-aos-delay="100">
                 <Row className='my-3 ' >
                     <h2 className={`${theme === "dark" ? 'text-white ': 'text-dark '} border-bottom p-3 text-start my-5`}>
                         Pawn & SA-MP
                     </h2>
                 </Row>
                 <Row className="justify-content-start text-left my-3"> 
-                    <Card className="py-5">
+                    <Card className="py-3" id="cardId">
                         <Row className="m-5">
                             <CardTitle className="text-start border-bottom py-3">Introduction</CardTitle>
 
@@ -177,10 +185,11 @@ function PawnLanguage({ theme, setTheme }) {
 
                             </Col>
                         </Row>
-                        <Row id="samp" className="m-5">
-                            <Link to="#samp">
+                        <Row id="containerSamp" className="m-5">
+                            <Element name="samp">
                                 <CardTitle className="text-start border-bottom py-2" >San Andreas: Multiplayer</CardTitle>
-                            </Link>
+
+                            </Element>
                         </Row>
                         <Image src={sampLogo} fluid className="w-25 mx-auto d-block text-center" data-aos="flip-left"  data-aos-delay="500"></Image>
                         <Row>
@@ -254,42 +263,6 @@ function PawnLanguage({ theme, setTheme }) {
                                         </Row>
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="1">
-                                        <Accordion.Header > 
-                                            <h5 className="border-bottom p-2 fw-bold">San Andreas Online</h5> 
-                                        </Accordion.Header>
-                                        <Accordion.Body>
-                                        <Row className="p-3">
-                                            <Col sm={4}>
-                                                <Image thumbnail fluid src={sao1} className=""/>
-
-                                            </Col>
-                                            <Col sm={8} className="text-start px-5">
-                                                <h5>
-                                                    Concept
-                                                </h5>
-                                                <p>
-                                                    The project started in 2017 in collaboration with adrienspy. The main concept was inspired by the multiplayer mod of GTA V: Gta Online. Thus, the gamemode aimed to provide a storyline throughout the experience based on cinematics.
-                                                    And, apart from the story missions that unlock milestones and in-game capabilities, the gameplay remained flexible and free. Just like GTA Online, you could own houses, cars, or rob pedestrians as well as shops or banks. We intended to bring 
-                                                    an usual experience on SA-MP servers while keeping the key values of the mod.
-                                                </p>
-                                                <p>
-                                                    I contributed on the development of the most important features such as the NPCs bringing interactions or the different property systems. This project was running in parallel to the RCTDM server mentioned above. Unfortunately,
-                                                    due to personal reasons and the capacity of the team, it has been paused and never exited the beta phase. Nevertheless, the concept brought an innovative view on the SA-MP gamemodes and I really enjoyed working with my teammate
-                                                    since the workload was properly splitted based on our knowledge.
-                                                </p>
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col sm={8} className="text-start px-5">
-                                                
-                                            </Col>
-                                            <Col sm={4}>
-
-                                            </Col>
-                                        </Row>
-                                        </Accordion.Body>
-                                    </Accordion.Item>
                                     <Accordion.Item eventKey="2">
                                         <Accordion.Header > 
                                             <h5 className="border-bottom p-2 fw-bold">Survive-All</h5> 
@@ -327,6 +300,34 @@ function PawnLanguage({ theme, setTheme }) {
                                                 </div>
                                             </Col>
                                         </Row>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header > 
+                                            <h5 className="border-bottom p-2 fw-bold">San Andreas Online</h5> 
+                                        </Accordion.Header>
+                                        <Accordion.Body>
+                                        <Row className="p-3">
+                                            <Col sm={4}>
+                                                <Image thumbnail fluid src={sao1} className=""/>
+
+                                            </Col>
+                                            <Col sm={8} className="text-start px-5">
+                                                <h5>
+                                                    Concept
+                                                </h5>
+                                                <p>
+                                                    The project started in 2017 in collaboration with adrienspy. The main concept was inspired by the multiplayer mod of GTA V: Gta Online. Thus, the gamemode aimed to provide a storyline throughout the experience based on cinematics.
+                                                    And, apart from the story missions that unlock milestones and in-game capabilities, the gameplay remained flexible and free. Just like GTA Online, you could own houses, cars, or rob pedestrians as well as shops or banks. We intended to bring 
+                                                    an usual experience on SA-MP servers while keeping the key values of the mod.
+                                                </p>
+                                                <p>
+                                                    I contributed on the development of the most important features such as the NPCs bringing interactions or the different property systems. This project was running in parallel to the RCTDM server mentioned above. Unfortunately,
+                                                    due to personal reasons and the capacity of the team, it has been paused and never exited the beta phase. Nevertheless, the concept brought an innovative view on the SA-MP gamemodes and I really enjoyed working with my teammate
+                                                    since the workload was properly splitted based on our knowledge.
+                                                </p>
+                                            </Col>
+                                        </Row>
                                         <Row>
                                             <Col sm={8} className="text-start px-5">
                                                 
@@ -337,6 +338,7 @@ function PawnLanguage({ theme, setTheme }) {
                                         </Row>
                                         </Accordion.Body>
                                     </Accordion.Item>
+
                                     </Accordion>
                             </Col>
 
