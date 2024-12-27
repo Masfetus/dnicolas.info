@@ -36,7 +36,7 @@ function Footer() {
                 <NavLink href="/it/pawn">
                   <span>Pawn & SA-MP </span>
                 </NavLink>
-                <NavLink disabled>
+                <NavLink href="/it/pyg">
                   <span>Play Your Games <Badge pill bg="warning">In work</Badge></span> 
                 </NavLink>
                 <NavLink disabled>

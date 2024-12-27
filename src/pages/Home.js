@@ -77,7 +77,7 @@ function Home({ theme, setTheme }) {
                                 <Card.Text>
                                     {t('pygDescription')}
                                 </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')}  <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
+                                <Button variant="secondary" href='/it/pyg'>{t('learnMore')}  <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
                             </Card.Body>
                         </Card>
                         
