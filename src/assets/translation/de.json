@@ -116,6 +116,76 @@
             "item1": "Technischer Bachelor-Abschluss"
         }
     },
+    "pawnPage": {
+        "section1": {
+            "title": "Einleitung",
+            "text": "Hinweis für Schachspieler: Das hat nichts damit zu tun! Tatsächlich wurde Pawn früher Small genannt, in Anlehnung an Small-C und seine Ähnlichkeiten mit der C-Sprache. Trotz der C-ähnlichen Syntax funktioniert der Prozess anders, und jedes Pawn-Programm wird für eine abstrakte Maschine kompiliert. CompuPhase (der Schöpfer von Pawn) definierte die Schlüsselbegriffe als: Laufzeiteffizienz, Stabilität, Einfachheit. Tatsächlich zielt Pawn darauf ab, ressourcenschonende Programme auszuführen, beispielsweise in Mikrocontrollern. Die Sprache ist bis heute kostenlos nutzbar und unter der Apache-Lizenz."
+        },
+        "section2": {
+            "title": "Anwendungsfälle",
+            "li1": "Mikrocontroller: ARM Cortex M0, LPC2106 oder MSP430F1611 von Texas Instruments",
+            "li2": "Weltraum: Das Command and Data Handling System (CDHS) des ESTCube-1, eines estnischen Satelliten",
+            "li3": "Audiocontroller: Programmierbare Audioplayer - Modelle H0430, H0440",
+            "li4": "Apple: Die SMALL-Abstraktmaschine als Teil der Apple-iPod-Firmware-Updates",
+            "li5": "Netzwerk: SMALL-Lösung zur Fernsteuerung eines PCs über eine TCP/IP-Verbindung.",
+            "li6": "Web: Lösung von PMX, die Webentwicklung mit Pawn-Skripten ermöglicht",
+            "li7": "Konsolenspiele: Baldur's Gate: Dark Alliance - für PS2, Xbox und Gamecube",
+            "li8": "MMORPG, skriptfähig mit SMALL",
+            "li9": "San Andreas - Multiplayer: Eine bekannte Multiplayer-Mod für GTA San Andreas, die Pawn-Skripte zur Erstellung von Serverkernen und Neben-Mods ermöglicht.",
+            "seeMore": "Mehr anzeigen"
+        },
+        "section3": {
+            "title": "Warum so viel PAWN?",
+            "text": "Pawn ist nicht nur eine faszinierende Sprache, sondern auch meine allererste Programmiersprache. Sie weckte meine Neugier für das Programmieren und brachte mich mit meinen ersten Frustrationen in Kontakt. Ich habe viele Jahre vor dem Studium mit Pawn entwickelt und gelernt und habe gute Erinnerungen daran. Die Zufriedenheit, Fehler zu beheben, die Wertschätzung der Nutzer, die Fortschritte auf dem Weg – all diese Aspekte führen mich zu dieser Sprache zurück, mit der alles begann. Trotz der Nachteile der Sprache lehrte sie mich, mit knappen Ressourcen umzugehen und auf Optimierung zu achten."
+        },
+        "section4": {
+            "title": "Weitere Dokumentationen",
+            "text": "Falls diese Sprache Ihre Neugier geweckt hat, finden Sie unten einige Links zu offiziellen Dokumentationen, einschließlich der Wikipedia-Seite, zu der ich hauptsächlich beigetragen habe."
+        },
+        "section5": {
+            "title": "Code-Snippet 1: Entfernung zwischen zwei Punkten berechnen",
+            "text": "Hier ist ein Beispielcode aus einem Spielmodus, an dem ich gearbeitet habe. Er gibt die Entfernung zwischen zwei Koordinatensätzen (x, y, z) zurück:"
+        },
+        "section6": {
+            "title": "Code-Snippet 2: Eine Zahl von der hexadezimalen zur dezimalen Basis umrechnen",
+            "text": "Dieses Beispiel wandelt eine hexadezimale Zahl in eine dezimale um. Im SA-MP-Entwicklungskontext verwenden wir dies häufig zur Berechnung von Farbwerten:"
+        },
+        "section7": {
+            "p1": "San Andreas Multiplayer ist eine Multiplayer-Mod, die es Menschen ermöglicht, zusammen online auf einem Server zu spielen. Diese Mod basiert auf dem berühmten GTA San Andreas von Rockstar Games. Alle Server bestehen aus Spielmodi, Skripten und anderen Entitäten, um den Nutzern ein individuelles Erlebnis zu bieten.",
+            "p2": "Als Teil dieser Mod habe ich zu vielen Spielmodi beigetragen und es wirklich genossen, daran mit Freunden zu arbeiten. Unten finden Sie die Spielmodi, zu denen ich beigetragen habe."
+        },
+        "section8": {
+            "title": "RCTDM - Mode-Libre (Freeroam)",
+            "intro": {
+                "title": "Mode-Libre? Freeroam?",
+                "p1": "Wie Sie wissen, ermöglicht SA-MP den Entwicklern, den Spielern jede Art von Erfahrung zu bieten. Das bedeutet, dass innerhalb der SA-MP-Community verschiedene Spielmodi koexistieren, wie RPG (Role-Playing Game), DM (DeathMatch), Mini-Game usw. Freeroam ist einer davon, bei dem die Erfahrung von allen anderen Modi inspiriert ist. So sind einige Funktionen aus RPG verfügbar (Jobs, Immobilienverwaltung, Objekte & Inventar), während die RPG-Regeln und -Einschränkungen ausgeschlossen werden. Diese Funktionen werden auch mit DM-Sitzungen (DeathMatch) und der Eroberung von Gang-Territorien kombiniert. Darüber hinaus bietet der Freeroam-Mod die Möglichkeit, Spaß durch Mini-Spiele, Rennen, Stunts und einige andere Missionen im Spiel zu haben. Auf diese Weise sind die Nutzer frei zu spielen und profitieren von allen Funktionen, die zu ihrem Spielstil passen."
+            },
+            "birth": {
+                "title": "Geburt des Servers",
+                "p1-1": "Dieser Server hat eine lange Geschichte, da der Kern ursprünglich 2008 entwickelt wurde. Er lief viele Jahre lang, bis er 2014 aus verschiedenen Gründen und aufgrund von Fluktuationen innerhalb des Teams eingestellt wurde. Parallel zu diesem Server",
+                "p1-2": "& habe ich meine ersten Schritte in der Pawn-Programmierung und der SA-MP-Entwicklung gemacht. Wir haben gemeinsam zu diesem neuen Spielmodus beigetragen, der später zu RCTDM - Mode Libre wurde. Die Idee war, die Dörfer in San Andreas wiederzubeleben, die von vielen Servern meist ungenutzt blieben. Dieser Spielmodus wurde 2015 veröffentlicht und von Benjamin kontinuierlich verbessert. Ich habe die Entwicklungsaktivitäten ab 2017 übernommen und Funktionen hinzugefügt, die von der Community vorgeschlagen oder angefragt wurden. Die Erfahrung war bereichernd, da regelmäßige Updates durchgeführt wurden und ich von dem Team gut unterstützt wurde.",
+                "p2": "Da das Gameplay des Servers immer komplexer wurde, wurde ein Wiki erstellt, um neue Nutzer zu unterstützen und detailliertere Informationen zu den Spielentitäten bereitzustellen."
+            }
+        },
+        "section9": {
+            "server": {
+                "title": "Der Server",
+                "p1": "Die Entwicklung des Servers begann 2016. Benjamin W., der Schöpfer, wollte das Konzept einer „DayZ“- oder „The Walking Dead“-Welt in einen Server integrieren, auf dem das Gameplay stark auf der Community basiert. Die Spieler entwickeln sich inmitten einer apokalyptischen Welt voller Zombies, Leichen und Wracks. Überlebende können sich zusammenschließen, um den Tod leichter zu überwinden und mit dem Wiederaufbau der Gesellschaft zu beginnen.",
+                "p2": "Obwohl mein Freund diesen Server hauptsächlich entworfen, entwickelt und konzipiert hat, hatte ich auch die Ehre, beizutragen. Die Hauptaufgabe bestand darin, die gespeicherten Daten von einer dateibasierten Datenbank in eine relationale Datenbank wie MySQL zu migrieren. Die Vorteile waren vielfältig: mehr Sicherheit, schnelleres Laden des Servers (Lese-/Schreibvorgänge auf Dateien sind zeitaufwändig), deutlich skalierbarer. Dies erforderte viel Aufwand, da das gesamte Datenmodell auf einem solchen System beruhte. Dennoch haben wir es geschafft, die Migration zu bewältigen, das Datenmodell anzupassen und anzupassen, um die Leistung zu nutzen. Es war auch eine Freude, Teil der Beta-Tester vor der offiziellen Veröffentlichung zu sein.",
+                "p3-1": "Falls Sie mehr über den Server erfahren möchten, zögern Sie nicht,",
+                "p3-2": "diesen Artikel von Benjamin zu lesen.",
+                "p3-3": "Außerdem finden Sie unten den Trailer, der das Hauptszenario und die wichtigsten Möglichkeiten des Servers vorstellt."
+            }
+        },
+        "section10": {
+            "concept": {
+                "title": "Konzept",
+                "p1": "Das Projekt begann 2017 in Zusammenarbeit mit adrienspy. Das Hauptkonzept war inspiriert von der Multiplayer-Mod von GTA V: GTA Online. So zielte der Spielmodus darauf ab, eine Geschichte durch die Erfahrung zu bieten, basierend auf Zwischensequenzen. Und abgesehen von den Story-Missionen, die Meilensteine und Fähigkeiten im Spiel freischalten, blieb das Gameplay flexibel und frei. Genau wie bei GTA Online konnten Sie Häuser und Autos besitzen oder Fußgänger, Geschäfte oder Banken ausrauben. Wir beabsichtigten, ein ungewöhnliches Erlebnis auf SA-MP-Servern zu bieten und dabei die Kernwerte der Mod zu bewahren.",
+                "p2": "Ich habe an der Entwicklung der wichtigsten Funktionen mitgewirkt, wie den NPCs, die Interaktionen ermöglichen, oder den verschiedenen Immobilensystemen. Dieses Projekt lief parallel zu dem oben erwähnten RCTDM-Server. Leider wurde es aus persönlichen Gründen und aufgrund der Kapazitäten des Teams pausiert und hat nie die Beta-Phase verlassen. Dennoch brachte das Konzept eine innovative Sichtweise auf die SA-MP-Spielmodi, und ich habe es wirklich genossen, mit meinem Teamkollegen zusammenzuarbeiten, da die Arbeitsbelastung entsprechend unserem Wissen gut aufgeteilt war."
+            }
+        }
+    },
+
     "bricksPage": {
         "section1": {
             "title": "City Skylines",

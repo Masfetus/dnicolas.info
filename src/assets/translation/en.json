@@ -117,6 +117,75 @@
             "item1": "Technical Bachelor Degree"
         }
     },
+    "pawnPage": {
+        "section1": {
+            "title": "Introduction",
+            "text": "Disclaimer for chess players, nothing to do with it! In fact, Pawn was formerly named as Small refering to Small-C and its similarities to the C language. Despite its C-like syntax, the process is working differently and each Pawn program is compiled for an abstract machine. CompuPhase (creator of Pawn) defined the keywords as: run-time efficiency, stability, simplicity. In deed, Pawn truly aims to run low-resources programs in microcontrollers for example. The language is, up to this date, free to use and under an Apache License."
+        },
+        "section2": {
+            "title": "Use Cases",
+            "li1": "Microcontrollers: ARM Cortex M0, LPC2106 or Texas Instrument's MSP430F1611",
+            "li2": "Spatial: The Command and Data Handling System (CDHS) of the ESTCube-1, an Estonian satellite",
+            "li3": "Audiocontrollers: Programmable audio players - Model H0430, H0440",
+            "li4": "Apple: SMALL abstract machine as part of the Apple iPod firmware updates",
+            "li5": "Network: SMALL solution to remotely control a PC via a TCP/IP connection.",
+            "li6": "Web: Solution from PMX allowing web development from Pawn scripts",
+            "li7": "Console Games: Baldur's Gate: Dark Alliance - for PS2, Xbox and Gamecube",
+            "li8": "MMORPG scriptable with SMALL",
+            "li9": "San Andreas - Multiplayer: A well-known multiplayer mod for GTA San Andreas enabling Pawn scripts to create cores of servers and side-mods.",
+            "seeMore": "See more"
+        },
+        "section3": {
+            "title": "Why that much of PAWN?",
+            "text": "Pawn is not only an intriguing language, but also my very first language. It gave me this curiosity of coding, and made me face my first frustrations. I have been developing and learning Pawn for many years before college and keep good memories. The satisfaction of fixing, the appreciation from the users, the progress throughout the journey; all of these aspects bring me back to this language that started it all. Despite the language's downsides, that surely taught me to deal with low resources and pay close attention to optimization."
+        },
+        "section4": {
+            "title": "More documentation",
+            "text": "If this language aroused curiosity, you will find below a few links to official documentations including the Wikipedia page I maily contributed to."
+        },
+        "section5": {
+            "title": "Code snippet 1: Get Distance between two points",
+            "text": "Here is a code sample, from a gamemode I have been working on. It returns the distance between two sets of coordinates (x, y, z):"
+        },
+        "section6": {
+            "title": "Code snippet 2: Rebase a number from the hexadecimal base on the decimal one",
+            "text": "This sample converts a hexadecimal number to a decimal one. In the SA-MP development context, we use it often for color values computing:"
+        },
+        "section7": {
+            "p1": "San Andreas Multiplayer is a multiplayer mod allowing people to play online together on a server. This mod is based on the famous GTA San Andreas from Rockstar Games. All of the servers consist of game modes, scripts, and other entities to provide the users with a customized experience.",
+            "p2": "As part of this mod, I contributed to many gamemodes with truly enjoyed working on it together with friends. You will find below the gamemodes I contributed to."
+        },
+        "section8": {
+            "title": "RCTDM - Mode-Libre (Freeroam)",
+            "intro": {
+                "title": "Mode-Libre? Freeroam?",
+                "p1": "As you know, SA-MP allows the developers to provide players any kind of experience. That means, various game modes coexist within the SA-MP community such as RPG (RolePlayGame), DM (DeathMatch), Mini-Game, and so on... Freeroam is one of them where the experience is inspired by all of other modes. Thus, some features from RPG are available (jobs, property management, objects & inventory) while excluding the RPG rules and constraints. These features are also combined with DM (DeathMatch) sessions and gang territory captures. In addition, the freeroam mod gives the opportunity of having fun through mini-games, races, stunts, and some other in-game missions. This way, users are free to play and benefits from any features matching their gameplay."
+            },
+            "birth": {
+                "title": "Birth of the server",
+                "p1-1": "This server has a long story since the core was initially developed in 2008. It had been running for many years, until 2014 when it came to an end due to many reasons and turnover within the staff. In parallel to this server,",
+                "p1-2": "& I started our first steps into Pawn coding and SA-MP development. We contributed together to this new gamemode that later led to RCTDM - Mode Libre. The idea was to reborn the villages across San Andreas that were mostly left unused by many servers. This gamemode was released in 2015 and has continously been improved by Benjamin. I took over the development activities starting from 2017, and added features suggested or requested by the community. The experience was enriching since regular updates were made, and I have been well-supported by the staff team.",
+                "p2": "As the server's gameplay has been getting more and more complex, a Wiki was created in order to guide new joiners and provide more details information on the in-game entities."
+            }
+        },
+        "section9": {
+            "server": {
+                "title": "The Server",
+                "p1": "The development of the server kicked off in 2016. Benjamin W., the creator, wanted to wrap the concept of a \"DayZ\" or \"The Walking Dead\" world into a server, where the gameplay is highly based on the community. Players evolve in the middle of an apocalyptic world full of zombies, corpses, and wrecks. Survivals can team up to beat death easier and start building up the society again.",
+                "p2": "Although my friend mainly designed, developed, and imagined this server; I also had the honor of contributing. The main activity was to migrate the saved data from a file-based database to a relational database such as MySQL. The upsides were multiple: more security, faster to load the server (W/R file operations are time-consuming), a way more scalable. It required a lot of effort due to the whole data model relying on such system. However, we managed to tackle the migration, adapt and adjust the data model so that we can leverage the performances. It was also my pleasure being part of the beta-testers before the official release.",
+                "p3-1": "In case you would like to know more about the server, do not hesitate to visit",
+                "p3-2": "this article from Benjamin.",
+                "p3-3": "In addition, below is the trailer presenting the main scenario, and the main possibilities on the server."
+            }
+        },
+        "section10": {
+            "concept": {
+                "title": "Concept",
+                "p1": "The project started in 2017 in collaboration with adrienspy. The main concept was inspired by the multiplayer mod of GTA V: Gta Online. Thus, the gamemode aimed to provide a storyline throughout the experience based on cinematics. And, apart from the story missions that unlock milestones and in-game capabilities, the gameplay remained flexible and free. Just like GTA Online, you could own houses, cars, or rob pedestrians as well as shops or banks. We intended to bring an usual experience on SA-MP servers while keeping the key values of the mod.",
+                "p2": "I contributed on the development of the most important features such as the NPCs bringing interactions or the different property systems. This project was running in parallel to the RCTDM server mentioned above. Unfortunately, due to personal reasons and the capacity of the team, it has been paused and never exited the beta phase. Nevertheless, the concept brought an innovative view on the SA-MP gamemodes and I really enjoyed working with my teammate since the workload was properly splitted based on our knowledge."
+            }
+        }
+    },
     "bricksPage": {
         "section1": {
             "title": "City Skylines",
