@@ -8,7 +8,6 @@ import Footer from './layout/Footer.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 
 import RightBar from './layout/RightBar.js';

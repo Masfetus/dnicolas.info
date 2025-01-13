@@ -196,6 +196,14 @@
             "item1": {
                 "title": "Table de craft, Minecraft",
                 "description": "Minecraft est un jeu vidéo de type sandbox développé par Mojang Studios, dans lequel les joueurs peuvent construire, explorer et survivre dans un monde généré de manière procédurale et composé de blocs. Depuis sa sortie en 2011, il est devenu l'un des jeux vidéo les plus vendus de tous les temps. Le jeu permet aux joueurs de collecter des ressources, de fabriquer des objets et de créer des structures à partir de divers matériaux. L'un des éléments clés de Minecraft est la table de craft, que les joueurs utilisent pour fabriquer des objets et outils plus complexes. En plaçant des ressources dans une grille 3x3, les joueurs peuvent créer des armes, des armures et d'autres objets essentiels pour survivre et prospérer dans le jeu."
+            },
+            "item2": {
+                "title": "Château de Poudlard, Harry Potter",
+                "description": "Le château de Poudlard est l’école de magie emblématique de la série Harry Potter, créée par J.K. Rowling. Situé dans les Highlands écossais, il accueille de jeunes sorciers et sorcières pour y apprendre la magie. L’architecture étendue du château comprend des tours, des cachots, des escaliers mouvants et des salles de classe enchantées. Parmi les lieux célèbres figurent la Grande Salle, la Salle sur Demande et la Forêt Interdite à proximité. Poudlard est divisé en quatre maisons—Gryffondor, Serpentard, Serdaigle et Poufsouffle—qui favorisent des qualités uniques chez les élèves. Protégé par de puissants enchantements, il est invisible et inaccessible aux Moldus. Le château de Poudlard symbolise l’émerveillement, l’aventure et le pouvoir durable de l’amitié et du courage."
+            },
+            "item3": {
+                "title": "Papillon Morpho bleu (Morpho peleides)",
+                "description": "Le papillon Morpho bleu (Morpho peleides) est l’un des papillons les plus spectaculaires et reconnaissables au monde, originaire des forêts tropicales d’Amérique centrale et du Sud. Ses grandes ailes bleu vif, atteignant jusqu’à 15 centimètres d’envergure, sont le résultat de micro-écailles qui reflètent la lumière plutôt que de contenir des pigments. Le revers de ses ailes est brun avec des motifs en forme d’yeux, offrant un camouflage contre les prédateurs. Les Morphos bleus se trouvent généralement près des rivières, des ruisseaux et des lisières de forêt, où ils se nourrissent de fruits fermentés. Ils jouent un rôle essentiel dans leur écosystème en aidant à la dispersion des graines. Leur beauté fascinante en fait un symbole de transformation et de renouveau."
             }
         }
     }

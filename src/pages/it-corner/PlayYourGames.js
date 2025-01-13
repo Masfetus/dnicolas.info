@@ -70,9 +70,11 @@ function PlayYourGames({ theme, setTheme }) {
                                     Agario & Servers
                                 </h4>
                                 <p>
-                                    Play Your Games is a community created in 2017 out of the SA-MP server we had (<TextLink href="/it/pawn" text="go to the page"/>). As part of the growing Discord's community and the features that enabled more possibilities, we decided to open this Discord server to host our community by providing a place to discuss apart from the SA-MP server. 
+                                    As our main goal was to entertain the community organizing events & sessions, we also deployed a couple of game servers hosted on a dedicated machine. I took care of the servers' deployments as well as the system administration to keep them alive. 
                                 </p>
-                                
+                                <p>
+                                    Agario is a good example of the server we made available for the community. Even if the development of the game was not made by ourselves (<TextLink href="https://github.com/owenashurst/agar.io-clone" text="Github Repo"/>), it remained a place to gather community and to organize events around.  
+                                </p>
                             </CardBody>   
                         </Col>
                         <Col sm={5} className="d-flex flex-wrap align-items-center text-center">

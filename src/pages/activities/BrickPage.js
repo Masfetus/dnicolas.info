@@ -13,6 +13,9 @@ import sydney from "../../assets/img/bricks/sydney.png"
 
 
 import minecraft from "../../assets/img/bricks/minecraft.png"
+import hogwarts from "../../assets/img/bricks/hogwarts.png"
+import butterfly from "../../assets/img/bricks/butterfly.png"
+
 
 import arc_triomphe from "../../assets/img/bricks/arc-triomphe.png"
 import eiffel from "../../assets/img/bricks/eiffel.png"
@@ -20,6 +23,7 @@ import notre_dame from "../../assets/img/bricks/notre-dame.png"
 import pisaTower from "../../assets/img/bricks/pisa-tower.png"
 import santorini from "../../assets/img/bricks/santorini.png"
 import louvre from "../../assets/img/bricks/louvre.png"
+
 
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -102,6 +106,9 @@ function BrickPage({ theme, setTheme }) {
                     stopOnHover
                     className="border">
                     <CarouselElement image={minecraft} title={t("section3.item1.title")} description={t("section3.item1.description")} />
+                    <CarouselElement image={hogwarts} title={t("section3.item2.title")} description={t("section3.item2.description")} />
+                    <CarouselElement image={butterfly} title={t("section3.item3.title")} description={t("section3.item3.description")} />
+
                 </Carousel>
             </Container>
         </div>

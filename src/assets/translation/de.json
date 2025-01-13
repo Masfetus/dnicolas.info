@@ -196,6 +196,14 @@
             "item1": {
                 "title": "Crafting-Tisch, Minecraft",
                 "description": "Minecraft ist ein beliebtes Sandbox-Videospiel, das von Mojang Studios entwickelt wurde, in dem Spieler in einer blockartigen, prozedural generierten Welt bauen, erkunden und überleben können. Seit seiner Veröffentlichung im Jahr 2011 ist es eines der meistverkauften Spiele aller Zeiten. Das Spiel ermöglicht es den Spielern, Ressourcen zu sammeln, Gegenstände zu craften und Strukturen aus verschiedenen Materialien zu erstellen. Ein wichtiger Bestandteil von Minecraft ist der Crafting-Tisch, den die Spieler nutzen, um komplexere Gegenstände und Werkzeuge herzustellen. Indem sie Ressourcen in einem 3x3-Raster platzieren, können die Spieler Waffen, Rüstungen und andere essentielle Gegenstände erstellen, die für das Überleben und Gedeihen im Spiel notwendig sind."
+            },
+            "item2": {
+                "title": "Schloss Hogwarts, Harry Potter",
+                "description": "Das Schloss Hogwarts ist die ikonische Zauberschule aus der Harry-Potter-Reihe, erschaffen von J.K. Rowling. Es liegt in den schottischen Highlands und dient als Zufluchtsort für junge Hexen und Zauberer, um Magie zu erlernen. Die weitläufige Architektur des Schlosses umfasst Türme, Verliese, bewegliche Treppen und verzauberte Klassenzimmer. Berühmte Orte im Schloss sind die Große Halle, der Raum der Wünsche und der nahe gelegene Verbotene Wald. Hogwarts ist in vier Häuser unterteilt—Gryffindor, Slytherin, Ravenclaw und Hufflepuff—die jeweils besondere Eigenschaften in ihren Schülern fördern. Es wird durch mächtige Zauber geschützt und ist für Muggel unsichtbar und unzugänglich. Das Schloss Hogwarts symbolisiert Staunen, Abenteuer und die beständige Kraft von Freundschaft und Mut."
+            },
+            "item3": {
+                "title": "Blaue Morpho-Schmetterling (Morpho peleides)",
+                "description": "Der Blaue Morpho-Schmetterling (Morpho peleides) ist einer der beeindruckendsten und bekanntesten Schmetterlinge der Welt und stammt aus den tropischen Wäldern Mittel- und Südamerikas. Seine großen, leuchtend blauen Flügel mit einer Spannweite von bis zu 15 Zentimetern entstehen durch mikroskopisch kleine Schuppen, die Licht reflektieren, anstatt Pigmente zu enthalten. Die Unterseite seiner Flügel ist braun mit augenartigen Mustern, die als Tarnung vor Fressfeinden dienen. Blaue Morphos findet man häufig in der Nähe von Flüssen, Bächen und Waldrändern, wo sie sich von vergorenen Früchten ernähren. Sie spielen eine wichtige Rolle im Ökosystem, indem sie zur Samenverbreitung beitragen. Ihre faszinierende Schönheit macht sie zu einem Symbol für Transformation und Erneuerung."
             }
         }
     }     

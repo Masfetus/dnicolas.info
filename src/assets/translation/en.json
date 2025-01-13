@@ -197,6 +197,14 @@
             "item1": {
                 "title": "Crafting Table, Minecraft",
                 "description": "Minecraft is a popular sandbox video game developed by Mojang Studios, where players can build, explore, and survive in a blocky, procedurally generated world. Since its release in 2011, it has become one of the best-selling games of all time. The game allows players to gather resources, craft items, and create structures from a variety of materials. One of the key components in Minecraft is the Crafting Table, which players use to craft more complex items and tools. By placing resources in a 3x3 grid, players can create weapons, armor, and other essential items needed to survive and thrive in the game."
+            },
+            "item2": {
+                "title": "Hogwarts Castle, Harry Potter",
+                "description": "Hogwarts Castle is the iconic magical school in the Harry Potter series, created by J.K. Rowling. Located in the Scottish Highlands, it serves as a haven for young witches and wizards to learn magic. The castle’s sprawling architecture includes towers, dungeons, moving staircases, and enchanted classrooms. Famous locations within include the Great Hall, the Room of Requirement, and the Forbidden Forest nearby. Hogwarts is divided into four houses—Gryffindor, Slytherin, Ravenclaw, and Hufflepuff—each fostering unique qualities in its students. It is protected by powerful enchantments, making it invisible and inaccessible to Muggles. Hogwarts Castle symbolizes wonder, adventure, and the enduring power of friendship and bravery."
+            },
+            "item3": {
+                "title": "Blue Morpho Butterfly (Morpho peleides)",
+                "description": "The Blue Morpho butterfly (Morpho peleides) is one of the most stunning and recognizable butterflies in the world, native to the tropical forests of Central and South America. Its large, vibrant blue wings, spanning up to 15 centimeters, are created by microscopic scales that reflect light rather than pigment. The underside of its wings is brown with eye-like patterns, providing camouflage against predators. Blue Morphos are typically found near rivers, streams, and forest edges, where they feed on fermenting fruits. They play an essential role in their ecosystem by aiding in seed dispersal. Their mesmerizing beauty makes them a symbol of transformation and renewal."
             }
         }
     }  
