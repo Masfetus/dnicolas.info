@@ -116,6 +116,32 @@
             "item1": "Technischer Bachelor-Abschluss"
         }
     },
+    "pygPage": {
+        "section1": {
+            "title": "Einführung",
+            "p1-1": "Play Your Games ist eine Community, die 2017 aus dem SA-MP-Server entstand, den wir hatten (",
+            "p1-2": "zur Seite gehen",
+            "p1-3": "). Im Zuge des Wachstums der Discord-Community und der neuen Funktionen, die mehr Möglichkeiten eröffneten, haben wir beschlossen, diesen Discord-Server zu eröffnen, um unsere Community zu unterstützen und einen Ort für Diskussionen außerhalb des SA-MP-Servers zu schaffen.",
+            "p2": "Die ursprüngliche Idee war, diesen Server zur Unterstützung des SA-MP-Servers zu nutzen. Da jedoch die SA-MP-Community schrumpfte und sich die Leute anderen Spielen zuwandten, erschien es sinnvoll, den Umfang zu erweitern und Spieler aus allen möglichen Spielen willkommen zu heißen. Wir wollten diese Community als Gaming-Treffpunkt gestalten, an dem Menschen gemeinsam spielen und Ratschläge austauschen konnten. So waren viele Spiele in der Community vertreten, wie Rocket League, Eco, Minecraft, Ark, GTA V und viele andere. Unsere Rolle hat sich entsprechend verändert. Wir haben uns verpflichtet, die Community auf vielfältige Weise zu unterhalten. Online-Server (Ark, Minecraft, GTA), Online- und Offline-Events, Spielsitzungen; wir wollten wirklich die Spieler verschiedener Communities in einer einzigen zusammenführen.",
+            "p3": "Die Community bestand aus mehr als 150 Spielern, die auf die verschiedenen Aktivitäten verteilt waren, die wir anboten. Um einen solchen Server zu verwalten, gab es ein Team von 10 Personen, die verschiedene Rollen hatten: Administratoren, Entwickler, Event-Organisatoren, Moderatoren. Jede Rolle war wichtig, um den Server aktiv, respektvoll und in einer angenehmen Atmosphäre zu halten. Ich war Teil dieses Teams als Administrator/Entwickler und habe es sehr genossen, in diesem Teamgeist zu arbeiten. Alle waren in die Entscheidungsfindung eingebunden, um voranzukommen.",
+            "p4": "Der Erfolg unserer Community war real und erforderte viel Zeit von jedem Teammitglied. Aber er forderte uns auch dazu auf, über neue Wege der Unterhaltung nachzudenken, zum Beispiel durch Partnerschaften mit anderen Communities. Die Partnerschaft mit einem anderen Discord-Server brachte uns eine neue Perspektive darauf, wie man eine Community verwaltet, aber auch eine breitere Reichweite an Spielern. Auf diese Weise wurden neue Arten von Veranstaltungen organisiert, wie inter-kommunale Spielsitzungen oder Turniere."
+        },
+        "section2": {
+            "title": "Agario & Server",
+            "p1": "Da unser Hauptziel darin bestand, die Community durch die Organisation von Events und Sitzungen zu unterhalten, haben wir auch einige Spieleserver bereitgestellt, die auf einer dedizierten Maschine gehostet wurden. Ich kümmerte mich um die Bereitstellung der Server sowie um die Systemadministration, um sie am Laufen zu halten.",
+            "p2-1": "Agario ist ein gutes Beispiel für einen Server, den wir der Community zur Verfügung stellten. Obwohl die Entwicklung des Spiels nicht von uns gemacht wurde ",
+            "p2-2": ", blieb es ein Ort, an dem sich die Community versammeln und Veranstaltungen rund um das Spiel organisieren konnte.",
+            "p3": "Die langfristige Vision war es, der Community eine Plattform wie ein Hub anzubieten, die sie nutzen konnte, um sich mit einem Server zu verbinden, der sie interessiert, mit anderen Spielern zu spielen und durch Herausforderungen oder auf den Servern organisierte Events Preise zu gewinnen."
+        },
+        "section3": {
+            "title": "Bot - Discord",
+            "p1": "Der letzte Teil meines Beitrags zur Play Your Games-Community war die Entwicklung eines Discord-Bots, der den Spielern half, eine bessere Erfahrung auf unserem Discord-Server zu machen.",
+            "p2": "Eine Funktion dieses Bots war die Verbindung zu unserem bereitgestellten Agario-Server. Tatsächlich war die Verbindung zwischen dem Agario-Server und dem Discord-Bot bidirektional und ermöglichte es den Spielern, auf beiden Plattformen miteinander zu kommunizieren. Es ermutigte die Leute auch, sich einer Agario-Sitzung anzuschließen, indem es Informationen über die laufende Sitzung anzeigte (Spieler, die beigetreten sind, Punkte, Tode). Die endgültige Idee war es, sich über OAuth2 mit dem Discord-Konto am Agario-Server anzumelden, damit die Spieler eine Historie ihrer Sitzungen und Partien haben konnten; und dies hätte in Zukunft auf eine breitere Reichweite skaliert werden können.",
+            "p3-1": "Zusätzlich bot dieser Bot der Community die Möglichkeit, nach Bedarf Sprachkanäle zu erstellen (sowie den dazugehörigen Textkanal) und Informationen über ihre Sitzung anzuzeigen. Zum Beispiel, wenn ein Spieler begann, ein beliebiges Spiel zu streamen, wurde eine Ankündigung in den Hauptkanälen des Discord-Servers veröffentlicht, um andere Spieler zu ermutigen, sich anzuschließen. Die Namen und Bilder der Spiele wurden ebenfalls erwähnt, da der Bot mit dem ",
+            "p4": "Schließlich spielte der Bot auch eine wichtige Rolle als Überwachungsbot, der Fehler oder unerwartetes Verhalten während der Nutzung überwachte. Auf diese Weise wurde ein anderer Discord-Server für alle Entwicklungsaktivitäten rund um diesen Bot genutzt."
+        }
+    },
+
     "pawnPage": {
         "section1": {
             "title": "Einleitung",

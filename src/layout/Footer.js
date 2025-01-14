@@ -37,7 +37,7 @@ function Footer() {
                   <span>Pawn & SA-MP </span>
                 </NavLink>
                 <NavLink href="/it/pyg">
-                  <span>Play Your Games <Badge pill bg="warning">In work</Badge></span> 
+                  <span>Play Your Games </span> 
                 </NavLink>
                 <NavLink disabled>
                   <span>{t('softwareLink')} <Badge pill bg="warning">In work</Badge></span>

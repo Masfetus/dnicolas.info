@@ -117,6 +117,31 @@
             "item1": "Technical Bachelor Degree"
         }
     },
+    "pygPage": {
+        "section1": {
+            "title": "Introduction",
+            "p1-1": "Play Your Games is a community created in 2017 out of the SA-MP server we had (",
+            "p1-2": "go to the page",
+            "p1-3": "). As part of the growing Discord's community and the features that enabled more possibilities, we decided to open this Discord server to host our community by providing a place to discuss apart from the SA-MP server.",
+            "p2": "The initial idea was to get this server supporting the SA-MP server. However, as the SA-MP's community has been decreasing and people were turning towards other games, it made sense to expand the scope and welcome all players coming from all kind of games. We intended to make this community as a gaming placeholder where people had the opportunity to play together, share advice. Thus, many games were represented among the community such as Rocket League, Eco, Minecraft, Ark, GTA V, and many others. Our role has consequently changed. We committed to entertaining the community as much as possible through different ways. Online servers (Ark, Minecraft, Gta), offline & online events, gaming sessions; we really wanted to unite games' communities into a single one.",
+            "p3": "The community consisted of more than 150 players splitted on the different activities we were offering. In order to manage such server, a staff team of 10 people was present and has been assigned different roles: Administrators, Developers, Event Organizers, Moderators. Each of them was highly important to keep the server active respectfully and in a pleasant atmosphere. I was part of this team as an Administrator/Developer and truly enjoyed working under such a team spirit. Everyone was involved in making decisions to move forward.",
+            "p4": "The success of our community was real and required a demanding amount of time from every staff member. But it also pushed us to think about new ways of entertainment, through partnerships with other communities for example. Being a partner of another Discord server brought us another vision on how to handle a community but also a wider range of players. In that way, new kinds of events were organized like inter-community gaming sessions or tournaments."
+        },
+        "section2": {
+            "title": "Agario & Servers",
+            "p1": "As our main goal was to entertain the community organizing events & sessions, we also deployed a couple of game servers hosted on a dedicated machine. I took care of the servers' deployments as well as the system administration to keep them alive.",
+            "p2-1": "Agario is a good example of the server we made available for the community. Even if the development of the game was not made by ourselves ",
+            "p2-2": ", it remained a place to gather community and to organize events around.",
+            "p3": "The long-term vision was to offer the community a hub-like platform which they can use to hop into a server they are interested in, play with other players, and gain prizes through challenges or events organized on the different servers."
+        },
+        "section3": {
+           "title": "Bot - Discord",
+           "p1": "The last part of my contribution to the Play Your Games' community was the development of a Discord bot to assist players in having a better experience on our Discord server.",
+           "p2": "One functionality of this bot was the connection to our deployed Agario server. Indeed, the connection between the Agario server and the Discord bot was bi-directional and enabled players to chat with each other on both of the platforms. It also encouraged people to join a player in an Agario session by displaying information on the ongoing session (joining players, scores, deaths). The final idea was to log in the Agario server through an OAuth2 using the Discord account so that players can have an history of their records, parties; and it could have been scaled up to a broader range in the future.",
+           "p3-1": "In addition, this bot provided the community with creating on-demand vocal channels (and the associated text channel) and display information on their session. For example, when a player started streaming whatever game, an announce was published in the main channels of the Discord server encouraging other players to join in. Names and pictures of the game were also mentioned since the bot was connected to the ",
+           "p4": "Lastly, the bot also played an important role as a monitoring bot, watching after any occuring errors or unexpected behaviors throughout the usage. In this way, another Discord server was dedicated to all the development activities around this bot."
+        }
+    },
     "pawnPage": {
         "section1": {
             "title": "Introduction",
