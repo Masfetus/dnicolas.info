@@ -52,10 +52,7 @@ function Footer() {
               {t('activitiesLink')}
               </CardTitle>
               <Container className="py-2">
-                <NavLink disabled>
-                  <span>{t('tableTennisLink')} <Badge pill bg="warning">In work</Badge></span>
-                </NavLink>
-                <NavLink href="/bricks">
+                <NavLink href="/activities/bricks">
                   <span>{t('bricksLink')}</span> 
                 </NavLink>
                 <NavLink disabled>

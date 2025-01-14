@@ -6,21 +6,15 @@ import bgImage from '../assets/img/bg/bg-img2.jpg';
 import bgSamp from '../assets/img/bg/bg-samp.jpg';
 import bgPyg from '../assets/img/bg/bg-pyg.jpg'
 import tableTennis from '../assets/img/bg/table-tennis.jpg'
-import santorini from '../assets/img/bricks/santorini1.jpg'
+import santorini from '../assets/img/bricks/hogwarts.png'
 import ecoImg from '../assets/img/bg/bg-eco.png'
 import bgHiking from '../assets/img/bg/bg-hiking.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowDown} from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-responsive-carousel';
-const cardStyle = {
-    minWidth: '22rem', 
-    height: '100%'
-}
-const cardImageStyle = {
-    minHeight: "12vw", 
-    objectFit: "cover"
-}
+import CardElement from '../components/CardElement';
+
 const pageTitle = `DN - Home`
 var homeSectionStyle = {
     minHeight: "100vh",
@@ -55,7 +49,7 @@ function Home({ theme, setTheme }) {
                         </div>
                     </div>
                     <Row className='justify-content-center text-center'>
-                        <Button className='text-white btn-outline-secondary' variant="outline-secondary" onClick={executeScroll} style={{maxWidth: "25vw"}} size="lg">
+                        <Button className='text-white btn-outline-secondary' variant="outline-secondary" onClick={executeScroll} style={{maxWidth: "50vw"}} size="lg">
                             {t('seeMore')} <FontAwesomeIcon className='mx-1' icon={faArrowDown}/>
                         </Button> 
                     </Row>
@@ -70,116 +64,26 @@ function Home({ theme, setTheme }) {
                 </Row>
                 <Row className='my-5'>
                     <Col className='d-flex justify-content-center m-3' >
-                        <Card style={cardStyle} className='' data-aos='zoom-in' data-aos-delay="100"> 
-                            <Card.Img variant="top" src={bgPyg} style={cardImageStyle} />
-                            <Card.Body className='text-justify-bottom'>
-                                <Card.Title className='fw-bold'>Play Your Games</Card.Title>
-                                <Card.Text>
-                                    {t('pygDescription')}
-                                </Card.Text>
-                                <Button variant="secondary" href='/it/pyg'>{t('learnMore')}  <FontAwesomeIcon icon={faArrowRight}/></Button>
-                            </Card.Body>
-                        </Card>
-                        
+                        <CardElement image={bgPyg} title="Play Your Games" description={t('pygDescription')} btnRef="/it/pyg" t={t}/>
                     </Col>
                     <Col className='d-flex justify-content-center m-3'>
-                        <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="300" className='full-height'>
-                            <Card.Img variant="top" src={bgSamp} style={cardImageStyle}/>
-                            <Card.Body className='text-justify'>
-                                <Card.Title className='fw-bold'>{t('sampTitle')}</Card.Title>
-                                <Card.Text>
-                                    {t('sampDescription')}
-                                </Card.Text>
-                                <Button variant="secondary" href='/it/pawn#samp'>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/></Button>
-                            </Card.Body>
-                        </Card>
-                        
+                        <CardElement image={bgSamp} title={t('sampTitle')} description={t('sampDescription')} btnRef='/it/pawn#samp' t={t}/>
                     </Col>
                     <Col className='d-flex justify-content-center m-3'>
-                        <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="200" className='full-height'>
-                            <Card.Img variant="top" src={hololensImg} style={cardImageStyle} />
-                            <Card.Body className='text-justify'>
-                                <Card.Title className='fw-bold'>{t('mxTitle')}</Card.Title>
-                                <Card.Text>
-                                {t('mxDescription')}
-                                </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
-                            </Card.Body>
-                        </Card>
+                        <CardElement image={hololensImg} title={t('mxTitle')} description={t('mxDescription')} inWork t={t}/>
                     </Col>
-                </Row>
-                <Row className='my-5'>
-                    <Col className='d-flex justify-content-center m-3'>
-                        <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="300" className='full-height'>
-                            <Card.Img variant="top" src={qwirkleImage} style={cardImageStyle}/>
-                            <Card.Body className='text-justify'>
-                                <Card.Title className='fw-bold'>{t('qwirkleTitle')}</Card.Title>
-                                <Card.Text>
-                                {t('qwirkleDescription')}
-                                </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')}<FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col className='d-flex justify-content-center m-3'>
-                        <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="100"> 
-                            <Card.Img variant="top" src={santorini} style={cardImageStyle} />
-                            <Card.Body className='text-justify-bottom'>
-                                <Card.Title className='fw-bold'>{t('bricksTitle')}</Card.Title>
-                                <Card.Text>
-                                {t('bricksDescription')}
-                                </Card.Text>
-                                <Button variant="secondary" href='/activities/bricks'>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/></Button>
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                    <Col className='d-flex justify-content-center m-3'>
-                        <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="300" className='full-height'>
-                            <Card.Img variant="top" src={tableTennis} style={cardImageStyle}/>
-                            <Card.Body className='text-justify'>
-                                <Card.Title className='fw-bold'>{t('tableTennisTitle')}</Card.Title>
-                                <Card.Text>
-                                {t('tableTennisDescription')}
-                                </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                    
-
                 </Row>
                 <Row>
                     <Col className='d-flex justify-content-center m-3'>
-                        <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="200" className='full-height'>
-                            <Card.Img variant="top" src={ecoImg} style={cardImageStyle} />
-                            <Card.Body className='text-justify'>
-                                <Card.Title className='fw-bold'>{t('gamingTitle')}</Card.Title>
-                                <Card.Text>
-                                {t('gamingDescription')}
-                                </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')} <FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
-                            </Card.Body>
-                        </Card>
+                        <CardElement image={santorini} title={t('bricksTitle')} description={t('bricksDescription')} btnRef='/activities/bricks' t={t}/>   
                     </Col>
-                    <Col/>
                     <Col className='d-flex justify-content-center m-3'>
-                        <Card style={cardStyle} fluid data-aos='zoom-in' data-aos-delay="300" className='full-height'>
-                            <Card.Img variant="top" src={bgHiking} style={cardImageStyle}/>
-                            <Card.Body className='text-justify'>
-                                <Card.Title className='fw-bold'>{t('hikingTitle')}</Card.Title>
-                                <Card.Text>
-                                {t('hikingDescription')}
-                                </Card.Text>
-                                <Button variant="secondary" disabled>{t('learnMore')}<FontAwesomeIcon icon={faArrowRight}/> <Badge pill bg="warning">In work</Badge></Button>
-                            </Card.Body>
-                        </Card>
-                        
+                        <CardElement image={ecoImg} title={t('gamingTitle')} description={t('gamingDescription')} t={t} inWork/>
                     </Col>
-
+                    <Col className='d-flex justify-content-center m-3'>
+                        <CardElement image={bgHiking} title={t('hikingTitle')} description={t('hikingDescription')}  t={t} inWork/> 
+                    </Col>
                 </Row>
-
             </Container>
 
         </div>
