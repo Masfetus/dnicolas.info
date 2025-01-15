@@ -18,6 +18,7 @@ import EducationTimeline from './pages/about-me/EducationTimeline.js';
 import BrickPage from './pages/activities/BrickPage.js';
 import PawnLanguage from './pages/it-corner/PawnLanguage.js';
 import PlayYourGames from './pages/it-corner/PlayYourGames.js';
+import OutdoorsPage from './pages/activities/OutdoorsPage.js';
 function App() {
   const defaultDark = true;
 
@@ -47,6 +48,7 @@ function App() {
 
           {/*--------------------- ACTIVITIES - Section ---------------------*/}
           <Route path="/activities/bricks" element={<BrickPage theme={theme} setTheme={setTheme}/>}/>
+          <Route path="/activities/outdoors" element={<OutdoorsPage theme={theme} setTheme={setTheme}/>}/>
           <Route
                   path="*"
                   element={<PageNotFound />}

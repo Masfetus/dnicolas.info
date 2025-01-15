@@ -1,3 +1,5 @@
+@import '~maplibre-gl/dist/maplibre-gl.css';
+
 .App {
   text-align: center;
   height: 100vh;
@@ -24,12 +26,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
 .App-link {
   color: #61dafb;
 }
-
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
