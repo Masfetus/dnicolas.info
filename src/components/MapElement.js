@@ -1,7 +1,7 @@
 import'maplibre-gl';
 import React, { useEffect, useRef } from 'react';
 
-import config from "../config.json"
+import config from "../config/config.json"
 import { Map } from 'maplibre-gl';
 
 
@@ -27,7 +27,6 @@ function MapElement ({ mapIsReadyCallback }) {
         center: [initialState.lng, initialState.lat],
         zoom: initialState.zoom,      
       });/* To be triggered when a map object is created */
-
     mapIsReadyCallback(map);
   }, [mapContainer.current]);
 

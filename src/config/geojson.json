@@ -1,0 +1,203 @@
+{
+    "type": "FeatureCollection",
+    "iconSize": [20, 20],
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "matala.jpg",
+                "images": [
+                {
+                    "src": "matala.jpg",
+                    "legend": "Matala, Greece"
+                },
+                {
+                    "src": "matala2.jpg",
+                    "legend": "Matala, Greece"
+                }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [24.749451, 34.994965]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "santorini.jpg",
+                "images": [
+                {
+                    "src": "santorini.jpg",
+                    "legend": "Santorini, Greece"
+                },
+                {
+                    "src": "santorini2.jpg",
+                    "legend": "Santorini, Greece"
+                }]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [25.376683, 36.461823]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "balos.jpg",
+                "images": [
+                {
+                    "src": "balos.jpg",
+                    "legend": "Balos Beach, Kreta, Greece"
+                },
+                {
+                    "src": "balos2.jpg",
+                    "legend": "Balos Coast, Kreta, Greece"
+                }]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [23.595050, 35.583790]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "heraklion1.jpg",
+                "images": [
+                {
+                    "src": "heraklion1.jpg",
+                    "legend": "Heraklion, Kreta, Greece"
+                },
+                {
+                    "src": "heraklion2.jpg",
+                    "legend": "Knossos Palace, Kreta, Greece"
+                }]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [25.135567, 35.343857]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "krka.jpg",
+                "images": [
+                {
+                    "src": "krka.jpg",
+                    "legend": "Natural Park of Krka, Croatia"
+                },
+                {
+                    "src": "krka2.jpg",
+                    "legend": "Natural Park of Krka, Croatia"
+                },
+                {
+                    "src": "krka3.jpg",
+                    "legend": "Natural Park of Krka, Croatia"
+                },
+                {
+                    "src": "krka4.jpg",
+                    "legend": "Natural Park of Krka, Croatia"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [15.963437, 43.805630]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "split2.jpg",
+                "images": [
+                {
+                    "src": "split2.jpg",
+                    "legend": "Split, Croatia"
+                },
+                {
+                    "src": "split1.jpg",
+                    "legend": "Natural Park of Krka, Croatia"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [16.436065, 43.508422]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "telascica1.jpg",
+                "images": [
+                {
+                    "src": "telascica1.jpg",
+                    "legend": "Telascica Nature Park, Croatia"
+                },
+                {
+                    "src": "telascica2.jpg",
+                    "legend": "Telascica Nature Park, Croatia"
+                },
+                {
+                    "src": "telascica3.jpg",
+                    "legend": "Jezero Mir, Telascica Nature Park, Croatia"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [15.156795, 43.890685]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "zadar1.jpg",
+                "images": [
+                {
+                    "src": "zadar1.jpg",
+                    "legend": "Zadar, Croatia"
+                },
+                {
+                    "src": "zadar2.jpg",
+                    "legend": "Zadar, Croatia"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [15.231775, 44.107202]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "pise1.jpg",
+                "images": [
+                {
+                    "src": "pise1.jpg",
+                    "legend": "Pise Tower, Italy"
+                },
+                {
+                    "src": "pise2.jpg",
+                    "legend": "Pise Cathedral, Italy"
+                },
+                {
+                    "src": "pise3.jpg",
+                    "legend": "Pise, Italy"
+                },
+                {
+                    "src": "pise4.jpg",
+                    "legend": "Pise Cathedral, Italy"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.397179, 43.722689]
+            }
+        }
+    ]
+}
