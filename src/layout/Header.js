@@ -28,7 +28,7 @@ function Header({ theme, setTheme }) {
                 <NavDropdown title={t("activitiesLink")} id="basic-nav-dropdown">
                   <NavDropdown.Item href="/activities/bricks">{t("bricksLink")} </NavDropdown.Item>
                   <NavDropdown.Item disabled href="#action/3.4">{t("gamingLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
-                  <NavDropdown.Item disabled href="#action/3.2">{t("hikingLink")} <Badge pill bg="warning">In work</Badge></NavDropdown.Item>
+                  <NavDropdown.Item  href="/activities/outdoors">{t("hikingLink")} </NavDropdown.Item>
               </NavDropdown>
               </Nav>
 

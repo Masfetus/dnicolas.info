@@ -58,8 +58,8 @@ function Footer() {
                 <NavLink disabled>
                   <span>{t('gamingLink')} <Badge pill bg="warning">In work</Badge></span>
                 </NavLink>
-                <NavLink disabled> 
-                  <span>{t('hikingLink')} <Badge pill bg="warning">In work</Badge></span>
+                <NavLink href="/activities/outdoors"> 
+                  <span>{t('hikingLink')}</span>
                 </NavLink>
               </Container>
             </Col>

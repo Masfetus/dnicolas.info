@@ -81,7 +81,7 @@ function Home({ theme, setTheme }) {
                         <CardElement image={ecoImg} title={t('gamingTitle')} description={t('gamingDescription')} t={t} inWork/>
                     </Col>
                     <Col className='d-flex justify-content-center m-3'>
-                        <CardElement image={bgHiking} title={t('hikingTitle')} description={t('hikingDescription')}  t={t} inWork/> 
+                        <CardElement image={bgHiking} title={t('hikingTitle')} description={t('hikingDescription')}  t={t} btnRef='/activities/outdoors'/> 
                     </Col>
                 </Row>
             </Container>

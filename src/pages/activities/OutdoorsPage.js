@@ -7,22 +7,27 @@ import { PhotoProvider, PhotoSlider, PhotoView } from "react-photo-view";
 import PhotoViewer from "../../components/PhotoViewer";
 
 const pageTitle = `DN - Outdoors`
-let loadedMap = null
+var loadedMap = null
+
+
 function OutdoorsPage({ theme, setTheme }) {
     const [markerClicked, setMarkerClicked] = useState(geojson.features[0]);
     const [visible, setVisible] = useState(false)
-    const [index, setIndex] = useState(0);
 
-    const handlePopupClose = () => {
+
+    function onClosePhotoViewer() {
         setVisible(false)
-        loadedMap.setZoom(4)
+        loadedMap.flyTo({
+            center: geojson.initialPoint,
+            zoom: geojson.initialZoom
+        })
     }
     const mapIsReadyCallback = (map) => {
         loadedMap = map
         geojson.features.forEach((marker) => {
             // create a DOM element for the marker
             const el = document.createElement('img');
-            el.className = 'marker';
+            el.className = 'marker img-fluid p-0 mx-auto d-block img-thumbnail';
             el.style.backgroundImage = `url('/maps-pics/${marker.properties.imageURL}')`
             el.style.backgroundRepeat = 'no-repeat'
             el.style.backgroundSize = 'cover'
@@ -30,20 +35,19 @@ function OutdoorsPage({ theme, setTheme }) {
             el.style.height = `${geojson.iconSize[1]}px`;
 
             el.addEventListener('mouseenter', () => {
-                el.style.width = `${geojson.iconSize[0] * 3}px`
-                el.style.height = `${geojson.iconSize[1] * 3}px`
+                el.style.width = `${geojson.iconSize[0] * 5}px`
+                el.style.height = `${geojson.iconSize[1] * 5}px`
             })
             el.addEventListener('mouseleave', () => {
                 el.style.width = `${geojson.iconSize[0]}px`
                 el.style.height = `${geojson.iconSize[1]}px`
             })
             el.addEventListener('click', () => {
-                map.flyTo({
+                loadedMap.flyTo({
                     center: marker.geometry.coordinates,
                     zoom: 10
                 })
                 setMarkerClicked(marker)
-                setIndex(0)
                 setVisible(true)
             })
             // add marker to map
@@ -64,7 +68,7 @@ function OutdoorsPage({ theme, setTheme }) {
             <PhotoViewer
             visible={visible}
             images={markerClicked.properties.images}
-            onClose={() => setVisible(false)}
+            onClose={onClosePhotoViewer}
             theme={theme}/>
             <Container className="pb-3">
                 <h2 className={`${theme === "dark" ? 'text-white ': 'text-dark '} border-bottom p-3 text-start my-5`}>
@@ -74,14 +78,6 @@ function OutdoorsPage({ theme, setTheme }) {
                 <MapElement mapIsReadyCallback={mapIsReadyCallback}/>
 
             </Container>
-
-            <Container className="pb-3">
-                <h2 className={`${theme === "dark" ? 'text-white ': 'text-dark '} border-bottom p-3 text-start my-5`}>
-                    Interactive Gallery
-                </h2>              
-            </Container>
-
-
         </div>
 
 

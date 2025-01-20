@@ -1,6 +1,6 @@
 import'maplibre-gl';
 import React, { useEffect, useRef } from 'react';
-
+import geojson from "../config/geojson.json"
 import config from "../config/config.json"
 import { Map } from 'maplibre-gl';
 
@@ -16,9 +16,9 @@ function MapElement ({ mapIsReadyCallback }) {
         'https://maps.geoapify.com/v1/styles/positron/style.json';
   
       const initialState = {
-        lng: 11,
-        lat: 49,
-        zoom: 3,
+        lng: geojson.initialPoint[0],
+        lat: geojson.initialPoint[1],
+        zoom: geojson.initialZoom,
       };
   
       const map = new Map({

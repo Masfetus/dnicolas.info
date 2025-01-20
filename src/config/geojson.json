@@ -1,6 +1,8 @@
 {
     "type": "FeatureCollection",
     "iconSize": [20, 20],
+    "initialPoint": [11.0, 49.0],
+    "initialZoom": 3.0,
     "features": [
         {
             "type": "Feature",
@@ -198,6 +200,487 @@
                 "type": "Point",
                 "coordinates": [10.397179, 43.722689]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "garmisch3.jpg",
+                "images": [
+                {
+                    "src": "garmisch1.jpg",
+                    "legend": "Lermoos (Zugspitze, Germany), Tirol, Austria"
+                },
+                {
+                    "src": "garmisch2.jpg",
+                    "legend": "Garmisch-Partenkirschen, Bayern, Germany"
+                },
+                {
+                    "src": "garmisch3.jpg",
+                    "legend": "Frillensee (am Eibsee), Germany"
+                },
+                {
+                    "src": "garmisch4.jpg",
+                    "legend": "Eibsee, Germany"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.987685, 47.456123]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "grunten1.jpg",
+                "images": [
+                {
+                    "src": "grunten1.jpg",
+                    "legend": "Grünten, Allgäu, Germany"
+                },
+                {
+                    "src": "grunten2.jpg",
+                    "legend": "Grünten Tal, Allgäu, Germany"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.31065007226706, 47.55211986669327]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "grunten1.jpg",
+                "images": [
+                {
+                    "src": "grunten1.jpg",
+                    "legend": "Grünten, Allgäu, Germany"
+                },
+                {
+                    "src": "grunten2.jpg",
+                    "legend": "Grünten Tal, Allgäu, Germany"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.31065007226706, 47.55211986669327]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "meersburg2.jpg",
+                "images": [
+                {
+                    "src": "meersburg1.jpg",
+                    "legend": "Lindau, Bodensee, Germany"
+                },
+                {
+                    "src": "meersburg2.jpg",
+                    "legend": "Lindau, Bodensee, Germany"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [9.681173375866438, 47.5436622946173]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "schwangau2.jpg",
+                "images": [
+                {
+                    "src": "schwangau1.jpg",
+                    "legend": "Alpsee, Schwangau, Germany"
+                },
+                {
+                    "src": "schwangau2.jpg",
+                    "legend": "Neuschwanstein Castle, Schwangau, Germany"
+                },
+                {
+                    "src": "schwangau3.jpg",
+                    "legend": "Schwangau, Germany"
+                },
+                {
+                    "src": "schwangau4.jpg",
+                    "legend": "Schwangau, Germany"
+                },
+                {
+                    "src": "schwangau5.jpg",
+                    "legend": "Hopfensee, Schwangau, Germany"
+                },
+                {
+                    "src": "schwangau6.jpg",
+                    "legend": "Hopfen am See, Schwangau, Germany"
+                },
+                {
+                    "src": "schwangau7.jpg",
+                    "legend": "Lechfall (Füssen), Schwangau, Germany"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.755353, 47.556073]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "bonnette1.jpg",
+                "images": [
+                {
+                    "src": "bonnette1.jpg",
+                    "legend": "Col de la Bonnette, Alpes, France"
+                },
+                {
+                    "src": "bonnette2.jpg",
+                    "legend": "Col de la Bonnette, Alpes, France"
+                },
+                {
+                    "src": "bonnette3.jpg",
+                    "legend": "Col de la Bonnette, Alpes, France"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [6.806711, 44.321577]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "dornbirn1.jpg",
+                "images": [
+                {
+                    "src": "dornbirn1.jpg",
+                    "legend": "Rappenlochschlucht, Dornbirn (Vorarlberg), Austria"
+                },
+                {
+                    "src": "dornbirn2.jpg",
+                    "legend": "Rappenlochschlucht, Dornbirn (Vorarlberg), Austria"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [9.780153, 47.387907]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "etretat1.jpg",
+                "images": [
+                {
+                    "src": "etretat1.jpg",
+                    "legend": "Etretat, Normandy, France"
+                },
+                {
+                    "src": "etretat2.jpg",
+                    "legend": "Etretat, Normandy, France"
+                },
+                {
+                    "src": "etretat3.jpg",
+                    "legend": "Etretat, Normandy, France"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.194022, 49.706963]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "gerardmer2.jpg",
+                "images": [
+                {
+                    "src": "gerardmer1.jpg",
+                    "legend": "Saut des Cuves, Vosges, France"
+                },
+                {
+                    "src": "gerardmer2.jpg",
+                    "legend": "Gerardmer, Vosges, France"
+                },
+                {
+                    "src": "gerardmer3.jpg",
+                    "legend": "Gerardmer, Vosges, France"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [6.866636, 48.070966]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "grenoble1.jpg",
+                "images": [
+                {
+                    "src": "grenoble1.jpg",
+                    "legend": "Grenoble, France"
+                },
+                {
+                    "src": "grenoble2.jpg",
+                    "legend": "Grenoble, France"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [5.733169, 45.184562]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "lyon1.jpg",
+                "images": [
+                {
+                    "src": "lyon1.jpg",
+                    "legend": "Lyon, France"
+                },
+                {
+                    "src": "lyon2.jpg",
+                    "legend": "Lyon, France"
+                },
+                {
+                    "src": "lyon3.jpg",
+                    "legend": "Lyon, France"
+                },
+                {
+                    "src": "lyon4.jpg",
+                    "legend": "Lyon, France"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [4.828776, 45.758678]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "innsbruck2.jpg",
+                "images": [
+                {
+                    "src": "innsbruck1.jpg",
+                    "legend": "Triumphpforte, Innsbruck (Tirol), Austria"
+                },
+                {
+                    "src": "innsbruck2.jpg",
+                    "legend": "Innsbruck, Tirol, Austria"
+                },
+                {
+                    "src": "innsbruck3.jpg",
+                    "legend": "Seegrube, Innsbruck, Austria"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.395341, 47.268862]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "munich1.jpg",
+                "images": [
+                {
+                    "src": "munich1.jpg",
+                    "legend": "Mariensplatz, Munich, Germany"
+                },
+                {
+                    "src": "munich2.jpg",
+                    "legend": "Munich, Germany"
+                },
+                {
+                    "src": "munich3.jpg",
+                    "legend": "Oktoberfest, Munich, Germany"
+                },
+                {
+                    "src": "munich4.jpg",
+                    "legend": "Olympiapark, Munich, Germany"
+                },
+                {
+                    "src": "munich5.jpg",
+                    "legend": "Schloss Nymphenburg, Munich, Germany"
+                },
+                {
+                    "src": "munich6.jpg",
+                    "legend": "Karlsplatz, Munich, Germany"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.566091, 48.139128]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "oberstdorf1.jpg",
+                "images": [
+                {
+                    "src": "oberstdorf1.jpg",
+                    "legend": "Oberstdorf, Allgäu, Germany"
+                },
+                {
+                    "src": "oberstdorf2.jpg",
+                    "legend": "Gunzesried Säge, Allgäu, Germany"
+                },
+                {
+                    "src": "oberstdorf3.jpg",
+                    "legend": "Gunzesried Säge, Allgäu, Germany"
+                },
+                {
+                    "src": "oberstdorf4.jpg",
+                    "legend": "Breitachklamm, Oberstdorf, Allgäu, Germany"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [10.279359, 47.405502]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "paris1.jpg",
+                "images": [
+                {
+                    "src": "paris1.jpg",
+                    "legend": "Basilique du Sacré-Coeur, Paris, France"
+                },
+                {
+                    "src": "paris2.jpg",
+                    "legend": "Paris, France"
+                },
+                {
+                    "src": "paris3.jpg",
+                    "legend": "Le Louvre, Paris, France"
+                },
+                {
+                    "src": "paris4.jpg",
+                    "legend": "La Défense, Paris, France"
+                },
+                {
+                    "src": "paris5.jpg",
+                    "legend": "Panthéon, Paris, France"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [2.333781, 48.861756]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "singen2.jpg",
+                "images": [
+                {
+                    "src": "singen1.jpg",
+                    "legend": "Hohentwiel, Singen, Germany"
+                },
+                {
+                    "src": "singen2.jpg",
+                    "legend": "Singen, Germany"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.816971, 47.763422]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "treport1.jpg",
+                "images": [
+                {
+                    "src": "treport1.jpg",
+                    "legend": "Le Tréport, France"
+                },
+                {
+                    "src": "treport2.jpg",
+                    "legend": "Le Tréport, France"
+                },
+                {
+                    "src": "treport3.jpg",
+                    "legend": "Le Tréport, France"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [1.373088, 50.060767]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "ubaye1.jpg",
+                "images": [
+                {
+                    "src": "ubaye1.jpg",
+                    "legend": "Lac de Serre-Poncon, Alpes, France"
+                },
+                {
+                    "src": "ubaye2.jpg",
+                    "legend": "Ubaye, Alpes, France"
+                },
+                {
+                    "src": "ubaye3.jpg",
+                    "legend": "Barrage de Serre-Poncon, Alpes, France"
+                },
+                {
+                    "src": "ubaye4.jpg",
+                    "legend": "Rioclar (Ubaye), Alpes, France"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [6.322569, 44.471467]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "imageURL": "vaduz1.jpg",
+                "images": [
+                {
+                    "src": "vaduz1.jpg",
+                    "legend": "Vaduz, Liechtenstein"
+                },
+                {
+                    "src": "vaduz2.jpg",
+                    "legend": "Schloss Vaduz, Liechtenstein"
+                }
+            ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [9.525608, 47.139929]
+            }
         }
+        
     ]
 }
